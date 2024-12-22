@@ -1,0 +1,9 @@
+#.subsection Artifact & Coinage
+
+Show
+    BaseType == "Exotic Coinage"
+	#.import < < styles > currency -> general
+
+Show
+	BaseType == "Broken Circle Artifact" "Black Scythe Artifact" "Order Artifact" "Sun Artifact"
+	#.import < < styles > currency -> general-

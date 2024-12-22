@@ -1,0 +1,13 @@
+#.section Currency
+
+#.import distillation
+#.import omen
+#.import artifact
+#.import catalyst
+#.import essence
+#.import socketable
+#.import miscellaneous
+
+Show
+	Class == "Currency"
+	#.import < < styles > currency -> catchall

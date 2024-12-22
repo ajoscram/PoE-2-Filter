@@ -1,0 +1,40 @@
+Show #.name general+++
+	SetTextColor 255 0 0
+	SetBackgroundColor 255 255 255
+	MinimapIcon 0 White Circle
+	PlayEffect White
+	SetFontSize 45
+	#.import sound -> short -> t0
+
+Show #.name general++
+	SetTextColor 255 0 0
+	SetBackgroundColor 255 255 255
+	MinimapIcon 0 White Circle
+	PlayEffect White
+	#.import sound -> short -> t1
+
+Show #.name general+
+	SetBackgroundColor 255 255 255
+	MinimapIcon 1 White Circle
+	PlayEffect White
+	#.import sound -> short -> t2
+
+Show #.name general
+	SetBackgroundColor 255 240 210
+	MinimapIcon 2 White Circle
+	PlayEffect White Temp
+	#.import sound -> short -> t3
+
+Show #.name general-
+	SetBackgroundColor 170 155 130
+	MinimapIcon 2 White Circle
+
+Show #.name general--
+	SetBackgroundColor 110 95 80
+
+Show #.name general---
+	SetBackgroundColor 60 55 50
+
+Show #.name catchall
+	MinimapIcon 0 Pink Circle
+	#.import general -> catchall

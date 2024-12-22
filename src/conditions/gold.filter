@@ -1,0 +1,15 @@
+#.section Gold
+
+Show
+    BaseType == "Gold"
+    StackSize >= 1000
+    #.import < styles > gold -> general++
+
+Show
+    BaseType == "Gold"
+    StackSize >= 500
+    #.import < styles > gold -> general+
+
+Show
+    BaseType == "Gold"
+    #.import < styles > gold -> general

@@ -1,0 +1,13 @@
+Show #.name shown
+	SetBorderColor 0 0 0
+	SetFontSize 40
+
+Show #.name hidden
+	SetFontSize 15
+
+Show #.name catchall
+	SetTextColor 0 0 0 0
+	SetBorderColor 255 0 255
+	SetBackgroundColor 255 0 255
+	PlayEffect Pink
+	#.import sound -> error

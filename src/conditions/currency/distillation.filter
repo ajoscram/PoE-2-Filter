@@ -1,0 +1,17 @@
+#.subsection Distillation
+
+Show
+	BaseType == "Distilled Suffering" "Distilled Isolation"
+	#.import < < styles > currency -> general++
+
+Show
+	BaseType == "Distilled Despair" "Distilled Fear"
+	#.import < < styles > currency -> general+
+
+Show
+	BaseType == "Distilled Paranoia" "Distilled Envy" "Distilled Disgust"
+	#.import < < styles > currency -> general
+
+Show
+	BaseType == "Distilled Ire" "Distilled Guilt" "Distilled Greed"
+	#.import < < styles > currency -> general-

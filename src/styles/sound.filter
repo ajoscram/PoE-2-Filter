@@ -1,0 +1,23 @@
+Show #.name error
+	PlayAlertSoundPositional 15 300
+
+Show #.name short
+	PlayAlertSoundPositional 5 300 # t0
+	PlayAlertSoundPositional 4 300 # t1
+	PlayAlertSoundPositional 6 150 # t2
+	PlayAlertSoundPositional 13 75 # t3
+
+Show #.name wubby
+	PlayAlertSoundPositional 8 100 # t1
+	PlayAlertSoundPositional 7 100 # t2
+	PlayAlertSoundPositional 9 100 # t3
+	PlayAlertSoundPositional 14 100 # t4
+
+Show #.name long
+	PlayAlertSoundPositional 10 100 # t1
+	PlayAlertSoundPositional 1 100 # t2
+	PlayAlertSoundPositional 2 100 # t3
+	PlayAlertSoundPositional 3 100 # t4
+	PlayAlertSoundPositional 11 100 # t5
+	PlayAlertSoundPositional 16 100 # t6
+	PlayAlertSoundPositional 12 100 # t7

@@ -1,0 +1,29 @@
+#                       _,                ______     _           
+#                      / |    o   o      (  /    o  // _/_       
+#                     /--|   ,  __' (     -/--  ,  //  /   _  _  
+#                   _/   |__/|_(_) /_)_  _/     (_(/_ (__ (/_/ (_
+#                           /)                                   
+#                          (/                                    
+
+#.index
+
+#.alias BASE = 0 .alias NORMAL = 1 .alias STRICT = 2
+
+#.section General
+
+Show
+	Continue
+	#.import styles > general -> shown
+
+#.import conditions > quest
+#.import conditions > gold
+#.import conditions > currency > _main
+#.import conditions > mapping > _main
+#.import conditions > gem
+#.import conditions > gear > _main
+
+#.section Catchall
+
+Show
+    MinimapIcon 0 Pink Star
+    #.import styles > general -> catchall

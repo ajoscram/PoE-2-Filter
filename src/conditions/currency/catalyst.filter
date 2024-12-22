@@ -1,0 +1,9 @@
+#.subsection Catalyst
+
+Show
+	BaseType == "Flesh Catalyst" "Neural Catalyst" "Xoph's Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Chayula's Catalyst" "Reaver Catalyst" "Skittering Catalyst" "Adaptive Catalyst"
+	#.import < < styles > currency -> general-
+
+Show #.strict NORMAL
+	BaseType == "Carapace Catalyst" "Uul-Netol's Catalyst" "Sibilant Catalyst"
+	#.import < < styles > currency -> general--

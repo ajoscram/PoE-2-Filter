@@ -1,0 +1,9 @@
+#.section Quest
+
+Show
+	BaseType == "Gold Key" "Silver Key" "Bronze Key"
+	#.import < styles > quest -> general
+
+Show
+	Class == "Quest Items" "Atlas Upgrade Items"
+	#.import < styles > quest -> important
