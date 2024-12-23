@@ -1,3 +1,6 @@
+Show #.name black-text
+	SetTextColor 0 0 0
+
 Show #.name shown
 	SetBorderColor 0 0 0
 	SetFontSize 40
