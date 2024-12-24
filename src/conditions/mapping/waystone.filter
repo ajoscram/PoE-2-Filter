@@ -1,0 +1,47 @@
+#.subsection Waystone
+
+Show
+    Continue
+    BaseType "Waystone"
+    #.import < < styles > mapping -> general
+
+# Tier 1-3
+Show
+    WaystoneTier <= 3
+    AreaLevel <= 70
+Hide
+    WaystoneTier <= 3
+    AreaLevel > 70
+
+# Tier 4-6
+Show
+    WaystoneTier <= 6
+    AreaLevel <= 73
+Hide
+    WaystoneTier <= 6
+    AreaLevel > 73
+
+# Tier 7-9
+Show
+    WaystoneTier <= 9
+    AreaLevel <= 76
+Hide
+    WaystoneTier <= 9
+    AreaLevel > 76
+
+# Tier 10-12
+Show
+    WaystoneTier <= 12
+    AreaLevel <= 79
+Hide
+    WaystoneTier <= 12
+    AreaLevel > 79
+
+# Tier 13-15
+Show
+    WaystoneTier <= 15
+
+# Tier 16+
+Show
+    WaystoneTier > 15
+    #.import < < styles > mapping -> general+

@@ -1,0 +1,5 @@
+#.subsection Splinter
+
+Show
+    BaseType == "Breach Splinter" "Simulacrum Splinter"
+    #.import < < styles > currency -> general-

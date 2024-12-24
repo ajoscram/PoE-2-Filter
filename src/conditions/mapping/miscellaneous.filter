@@ -1,0 +1,13 @@
+#.subsection Miscellaneous
+
+Show
+    BaseType == "An Audience with the King" "Simulacrum" "Breachstone" "Faded Crisis Fragment"
+    #.import < < styles > mapping -> general++
+
+Show
+    BaseType == "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Ancient Crisis Fragment" "Weathered Crisis Fragment"
+    #.import < < styles > mapping -> general+
+
+Show
+    BaseType == "Expedition Logbook"
+    #.import < < styles > mapping -> general

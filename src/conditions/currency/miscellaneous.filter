@@ -24,7 +24,12 @@ Show #.strict NORMAL
 	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Armourer's Scrap" "Artificer's Orb" "Alchemy Shard" "Chance Shard" "Regal Shard"
 	#.import < < styles > currency -> general--
 
-Show #.strict BASE
+Hide #.name trash
 	BaseType == "Scroll of Wisdom" "Transmutation Shard" "Artificer's Shard"
+	AreaLevel >= 45
+    #.import < < styles > currency -> general---
+
+Show #.strict BASE
+	#.import -> trash -> BaseType
 	AreaLevel < 45
     #.import < < styles > currency -> general---

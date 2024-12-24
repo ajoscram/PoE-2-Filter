@@ -1,0 +1,9 @@
+#subsection Barya
+
+Show
+    BaseType == "Test of Will Barya" "Test of Cunning Barya" "Test of Time Barya"
+    #.import < < styles > mapping -> general+
+
+Show
+    BaseType == "Djinn Barya"
+    #.import < < styles > mapping -> general

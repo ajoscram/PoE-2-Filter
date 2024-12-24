@@ -1,0 +1,9 @@
+#.subsection Tablet
+
+Show
+    BaseType == "Ritual Precursor Tablet"
+    #.import < < styles > mapping -> general+
+
+Show
+    BaseType == "Precursor Tablet" "Breach Precursor Tablet" "Expedition Precursor Tablet" "Delirium Precursor Tablet"
+    #.import < < styles > mapping -> general
