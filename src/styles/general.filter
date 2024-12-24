@@ -7,6 +7,10 @@ Show #.name shown
 
 Show #.name hidden
 	SetFontSize 15
+    MinimapIcon -1
+    PlayEffect None
+    PlayAlertSoundPositional None
+    DisableDropSound None
 
 Show #.name catchall
 	PlayEffect Pink

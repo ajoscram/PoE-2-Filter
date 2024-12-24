@@ -2,12 +2,12 @@
 
 Show #.name primer
 	Continue
-	Class == "Pinnacle Keys" "Waystones" "Tablet" "Misc Map Item" "Map Fragments"
+	Class == "Pinnacle Keys" "Waystones" "Tablet" "Misc Map Items" "Map Fragments"
 	#.import < < styles > general -> black-text
 
-#.import barya
-#.import tablet
 #.import waystone
+#.import tablet
+#.import barya
 #.import miscellaneous
 
 Show

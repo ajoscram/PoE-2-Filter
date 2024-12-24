@@ -8,4 +8,4 @@ Show #.name general+
     #.import -> general
 
 Show #.name general
-    SetFontSize 25
+    SetFontSize 30
