@@ -1,11 +1,25 @@
 #.subsection Skill Gem
 
 Show
-    BaseType == "Uncut Skill Gem"
-    ItemLevel == 20
+    Class == "Skill Gems"
+    #.choose 2 1
+    GemLevel == 21
+    Sockets == 5
     #.import < < styles > gem -> general++
 
 Show
-    BaseType == "Uncut Skill Gem"
-    ItemLevel == 19
+    Class == "Skill Gems"
+    #.choose 2 1
+    GemLevel >= 19
+    Sockets == 4
     #.import < < styles > gem -> general+
+
+Show
+    Class == "Skill Gems"
+    Quality == 20
+    #.import < < styles > gem -> general
+
+Show
+    Class == "Skill Gems"
+    GemLevel < 19
+    #.import < < styles > gem -> general-

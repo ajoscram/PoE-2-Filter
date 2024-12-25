@@ -1,0 +1,62 @@
+#.subsection Uncut Spirit Gem
+
+# Logic based on https://poe2db.tw/us/Spirit_Gems#DropLevel
+
+Show
+    Continue
+    BaseType == "Uncut Spirit Gem"
+    #.import < < styles > gem -> general
+
+Hide
+    BaseType == "Uncut Spirit Gem"
+    ItemLevel == 14
+    AreaLevel >= 66
+    AreaLevel <= 69
+    #.import < < styles > general -> hidden
+
+Hide
+    BaseType == "Uncut Spirit Gem"
+    ItemLevel == 15
+    AreaLevel >= 70
+    AreaLevel <= 73
+    #.import < < styles > general -> hidden
+
+Hide
+    BaseType == "Uncut Spirit Gem"
+    ItemLevel == 16
+    AreaLevel >= 74
+    AreaLevel <= 77
+    #.import < < styles > general -> hidden
+
+Hide
+    BaseType == "Uncut Spirit Gem"
+    ItemLevel == 17
+    AreaLevel >= 78
+    AreaLevel <= 81
+    #.import < < styles > general -> hidden
+
+Show #.strict NORMAL
+    BaseType == "Uncut Spirit Gem"
+    ItemLevel == 18
+    AreaLevel >= 78
+    AreaLevel <= 81
+    #.if Hide .import < < styles > general -> hidden
+
+Hide
+    BaseType == "Uncut Spirit Gem"
+    ItemLevel == 18
+    AreaLevel >= 82
+    #.import < < styles > general -> hidden
+
+Show
+    BaseType == "Uncut Spirit Gem"
+    ItemLevel == 19
+    #.import < < styles > gem -> general+
+
+Show
+    BaseType == "Uncut Spirit Gem"
+    ItemLevel == 20
+    #.import < < styles > gem -> general++
+
+Show
+    BaseType == "Uncut Spirit Gem"

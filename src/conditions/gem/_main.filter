@@ -2,7 +2,7 @@
 
 Show #.name cut-primer
 	Continue
-	Class == "Skill Gems" "Support Gems" "Spirit Gems"
+	Class == "Skill Gems" "Support Gems"
 	#.import < < styles > general -> black-text
 Show #.name uncut-primer
 	Continue
@@ -10,7 +10,8 @@ Show #.name uncut-primer
 	#.import < < styles > general -> black-text
 
 #.import skill
-#.import spirit
+#.import uncut_skill
+#.import uncut_spirit
 #.import support
 
 Show

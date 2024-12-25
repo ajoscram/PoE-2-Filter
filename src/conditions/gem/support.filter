@@ -1,2 +1,10 @@
-#.subsection Support Gems
+#.subsection Cut & Uncut Support Gem
 
+Show
+    Class == "Support Gems"
+    #.import < < styles > gem -> general--
+
+Show #.strict BASE
+    BaseType == "Uncut Support Gem"
+    #.import < < styles > gem -> general-
+    #.if Hide .import < < styles > general -> hidden
