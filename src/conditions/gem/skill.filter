@@ -1,1 +1,11 @@
-#.subsection Skill Gems
+#.subsection Skill Gem
+
+Show
+    BaseType == "Uncut Skill Gem"
+    ItemLevel == 20
+    #.import < < styles > gem -> general++
+
+Show
+    BaseType == "Uncut Skill Gem"
+    ItemLevel == 19
+    #.import < < styles > gem -> general+

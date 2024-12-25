@@ -14,5 +14,5 @@ Show
     #.import < < styles > mapping -> general+
 
 Show
-    BaseType == "Expedition Logbook"
+    BaseType == "Expedition Logbook" "Inscribed Ultimatum"
     #.import < < styles > mapping -> general

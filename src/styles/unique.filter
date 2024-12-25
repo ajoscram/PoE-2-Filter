@@ -1,0 +1,11 @@
+Show #.name foreground
+	SetTextColor 255 165 0
+	#.import -> base
+
+Show #.name background
+	SetBackgroundColor 255 170 80
+	#.import -> base
+
+Show #.name base
+	PlayEffect Orange Temp
+	#.import sound -> long -> t2

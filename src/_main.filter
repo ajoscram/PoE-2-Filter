@@ -20,6 +20,7 @@ Show
 #.import conditions > currency > _main
 #.import conditions > mapping > _main
 #.import conditions > gem > _main
+#.import conditions > relic
 #.import conditions > gear > _main
 
 #.section Catchall

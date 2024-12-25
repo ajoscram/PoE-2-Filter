@@ -1,0 +1,30 @@
+Show #.name general++
+	SetTextColor 255 0 0
+	SetBackgroundColor 120 240 250
+	MinimapIcon 0 Cyan Diamond
+	PlayEffect Cyan
+	#.import sound -> short -> t1
+
+Show #.name general+
+	SetBackgroundColor 120 240 250
+	MinimapIcon 1 Cyan Diamond
+	PlayEffect Cyan
+	#.import sound -> short -> t2
+
+Show #.name general
+	SetBackgroundColor 80 210 200
+	MinimapIcon 2 Cyan Diamond
+	PlayEffect Cyan Temp
+	#.import sound -> short -> t3
+
+Show #.name general-
+	SetBackgroundColor 80 210 200
+	#.import sound -> short -> t3
+
+Show #.name general--
+	SetBackgroundColor 40 105 100
+
+Show
+    Show #.name catchall
+	MinimapIcon 0 Pink Diamond
+	#.import general -> catchall

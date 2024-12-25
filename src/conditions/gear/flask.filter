@@ -1,0 +1,68 @@
+#.subsection Flasks
+
+Show
+	Class "Flask"
+	Rarity = Unique
+	#.import < < styles > gear -> unique
+
+Show #.strict NORMAL
+	Class "Flasks"
+	Quality >= 20
+	##.import < < styles > flask -> quality
+
+# Levelling
+
+Show # Small
+	Class "Flasks"
+	DropLevel = 1
+	ItemLevel < 3
+
+Show # Medium
+	Class "Flasks"
+	DropLevel >= 3
+	ItemLevel < 6
+
+Show # Large
+	Class "Flasks"
+	DropLevel >= 6
+	ItemLevel < 12
+
+Show # Greater
+	Class "Flasks"
+	DropLevel >= 12
+	ItemLevel < 18
+
+Show # Grand
+	Class "Flasks"
+	DropLevel >= 18
+	ItemLevel < 24
+
+Show # Giant
+	Class "Flasks"
+	DropLevel >= 24
+	ItemLevel < 30
+
+Show # Colossal
+	Class "Flasks"
+	DropLevel >= 30
+	ItemLevel < 36
+
+Show # Sacred
+	Class "Flasks"
+	DropLevel >= 36
+	ItemLevel < 42
+
+Show # Hallowed
+	Class "Flasks"
+	DropLevel >= 42
+	ItemLevel < 50
+
+Show # Sanctified
+	Class "Flasks"
+	DropLevel >= 50
+	ItemLevel < 60
+
+Show # Divine and Eternal
+	Class "Flasks"
+	DropLevel >= 60
+	ItemLevel < 68

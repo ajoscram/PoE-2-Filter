@@ -1,5 +1,21 @@
-#.section Gem
+#.section Gems
+
+Show #.name cut-primer
+	Continue
+	Class == "Skill Gems" "Support Gems" "Spirit Gems"
+	#.import < < styles > general -> black-text
+Show #.name uncut-primer
+	Continue
+	BaseType == "Uncut Skill Gem" "Uncut Spirit Gem" "Uncut Support Gem"
+	#.import < < styles > general -> black-text
 
 #.import skill
 #.import spirit
 #.import support
+
+Show
+	#.import -> cut-primer -> Class
+	#.import < < styles > gem -> catchall
+Show
+	#.import -> uncut-primer -> BaseType
+	#.import < < styles > gem -> catchall
