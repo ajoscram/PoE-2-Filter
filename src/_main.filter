@@ -21,6 +21,7 @@ Show
 #.import conditions > mapping > _main
 #.import conditions > gem > _main
 #.import conditions > gear > _main
+#.import conditions > weapons > _main
 #.import conditions > relic
 
 #.section Catchall

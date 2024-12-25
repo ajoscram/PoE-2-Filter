@@ -1,0 +1,19 @@
+#.section Weapons
+
+#.import axe_1h
+#.import axe_2h
+#.import bow
+#.import claw
+#.import crossbow
+#.import dagger
+#.import flail
+#.import mace_1h
+#.import mace_2h
+#.import quarterstaff
+#.import sceptre
+#.import spear
+#.import staff
+#.import sword_1h
+#.import sword_2h
+#.import trap
+#.import wand
