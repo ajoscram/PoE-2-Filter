@@ -3,11 +3,11 @@
 #                     /--|   ,  __' (     -/--  ,  //  /   _  _  
 #                   _/   |__/|_(_) /_)_  _/     (_(/_ (__ (/_/ (_
 #                           /)                                   
-#                          (/                                    
+#                          (/                 PoE 2 - version VERSION
 
 #.index
 
-#.alias BASE = 0 .alias NORMAL = 1 .alias STRICT = 2
+#.alias BASE = 0, NORMAL = 1, STRICT = 2
 
 #.section General
 

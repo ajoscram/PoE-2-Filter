@@ -2,4 +2,5 @@ source .env
 
 touch "$OUTPUT"
 code "$OUTPUT"
-pfg.exe :watch "src/_main.filter" "$OUTPUT" .import .alias .choose .index .if
+VERSION=$(scripts/version.sh)
+pfg.exe :watch "src/_main.filter" "$OUTPUT" .import .alias VERSION=$VERSION .choose .index .if
