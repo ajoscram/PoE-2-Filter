@@ -1,3 +1,7 @@
+Show #.name general
+	MinimapIcon 2 Orange UpsideDownHouse
+	#.import -> foreground
+
 Show #.name foreground
 	SetTextColor 255 165 0
 	#.import -> base
@@ -8,4 +12,4 @@ Show #.name background
 
 Show #.name base
 	PlayEffect Orange Temp
-	#.import sound -> long -> t2
+	#.import < sound -> long -> t2

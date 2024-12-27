@@ -1,0 +1,12 @@
+Show #.name general+
+	SetBorderColor 255 255 255
+	MinimapIcon 2 Blue UpsideDownHouse
+	PlayEffect Blue
+	#.import sound -> short -> t3
+
+Show #.name general
+	SetBorderColor 255 240 210
+	PlayEffect Blue Temp
+
+Show #.name general-
+	SetBorderColor 170 155 130

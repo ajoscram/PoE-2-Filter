@@ -1,68 +1,67 @@
 #.subsection Flasks
 
+# Unique
+
 Show
-	Class "Flask"
-	Rarity = Unique
-	#.import < < styles > gear -> unique
+	Class == "Life Flasks" "Mana Flasks"
+	Rarity == Unique
+    #.import < < styles > rarity > unique -> general
 
-Show #.strict NORMAL
-	Class "Flasks"
+# Best bases
+
+Show #.strict STRICT .name best-bases
+	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+	Rarity == Magic
 	Quality >= 20
-	##.import < < styles > flask -> quality
+    #.import < < styles > rarity > magic -> general
 
-# Levelling
+Show #.strict STRICT
+	#.import -> best-bases -> BaseType
+	Rarity == Normal
+	Quality >= 20
+    #.import < < styles > rarity > normal -> general
 
-Show # Small
-	Class "Flasks"
-	DropLevel = 1
-	ItemLevel < 3
+# Miscellaneous
 
-Show # Medium
-	Class "Flasks"
-	DropLevel >= 3
-	ItemLevel < 6
+Show
+	BaseType == "Lesser Life Flask" "Lesser Mana Flask"
+    ItemLevel < 4
 
-Show # Large
-	Class "Flasks"
-	DropLevel >= 6
-	ItemLevel < 12
+Show
+	BaseType == "Medium Life Flask" "Medium Mana Flask"
+    ItemLevel < 10
 
-Show # Greater
-	Class "Flasks"
-	DropLevel >= 12
-	ItemLevel < 18
+Show
+	BaseType == "Greater Life Flask" "Greater Mana Flask"
+    ItemLevel < 16
 
-Show # Grand
-	Class "Flasks"
-	DropLevel >= 18
-	ItemLevel < 24
+Show
+	BaseType == "Grand Life Flask" "Grand Mana Flask"
+    ItemLevel < 23
 
-Show # Giant
-	Class "Flasks"
-	DropLevel >= 24
-	ItemLevel < 30
+Show
+	BaseType == "Giant Life Flask" "Giant Mana Flask"
+    ItemLevel < 30
 
-Show # Colossal
-	Class "Flasks"
-	DropLevel >= 30
-	ItemLevel < 36
+Show
+	BaseType == "Colossal Life Flask" "Colossal Mana Flask"
+    ItemLevel < 40
 
-Show # Sacred
-	Class "Flasks"
-	DropLevel >= 36
-	ItemLevel < 42
+Show
+	BaseType == "Gargantuan Life Flask" "Gargantuan Mana Flask"
+    ItemLevel < 50
 
-Show # Hallowed
-	Class "Flasks"
-	DropLevel >= 42
-	ItemLevel < 50
+Show
+	BaseType == "Transcendent Life Flask" "Transcendent Mana Flask"
+    ItemLevel < 60
 
-Show # Sanctified
-	Class "Flasks"
-	DropLevel >= 50
-	ItemLevel < 60
+Show #.name best-bases
+	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+    ItemLevel < 68
 
-Show # Divine and Eternal
-	Class "Flasks"
-	DropLevel >= 60
-	ItemLevel < 68
+Show #.strict BASE .if Show
+	#.import -> best-bases -> BaseType
+
+Hide
+    Class == "Life Flasks" "Mana Flasks"
+    #.import < < styles > general -> hidden

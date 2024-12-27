@@ -3,5 +3,7 @@
 ## 0.1
 ### General Changes
 * Implemented the base filter.
+* Item filtering does not currently account for mods on the item.
 * Added 3 different strictness subfilters.
-* Each strictness level has a set of subfilters intended for picking up valuable bases for crafting.
+* Each strictness level has a set of subfilters intended for picking up valuable white bases for crafting:
+    - Belts

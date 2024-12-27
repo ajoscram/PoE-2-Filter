@@ -1,1 +1,53 @@
 #.subsection Belt
+
+# Uniques
+
+Show
+    Class == "Belts"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Best bases
+
+Show #.name best-bases
+    BaseType == "Plate Belt" "Heavy Belt"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+# Miscellaneous
+
+Show #.strict STRICT .if Show
+    Class == "Belts"
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general-
+
+Show #.strict NORMAL .if Show
+    Class == "Belts"
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general-
+
+Show #.strict NORMAL .tag craft Belts .if Show
+    Class == "Belts"
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general-
+
+Hide
+    Class == "Belts"
+    #.import < < styles > general -> hidden

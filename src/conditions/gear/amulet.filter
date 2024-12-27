@@ -1,1 +1,53 @@
 #.subsection Amulet
+
+# Uniques
+
+Show
+    Class == "Amulets"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Best bases
+
+Show #.name best-bases
+    BaseType == "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Solar Amulet" "Gold Amulet"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+# Miscellaneous
+
+Show #.strict STRICT .if Show
+    Class == "Amulets"
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general-
+
+Show #.strict NORMAL .if Show
+    Class == "Amulets"
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general-
+
+Show #.strict NORMAL .tag craft _ .if Show
+    Class == "Amulets"
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general-
+
+Hide
+    Class == "Amulets"
+    #.import < < styles > general -> hidden

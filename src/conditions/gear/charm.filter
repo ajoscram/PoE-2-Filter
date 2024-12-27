@@ -1,4 +1,36 @@
 #.subsection Charm
 
+# Uniques
+
 Show
     Class == "Charms"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Best bases
+
+Show #.name best-bases
+    BaseType == "Thawing Charm" "Staunching Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Stone Charm" "Golden Charm" "Amethyst Charm" "Silver Charm"
+    ItemLevel >= 83
+    Rarity == Magic
+    #.import < < styles > rarity > magic -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    #.import < < styles > rarity > normal -> general
+
+# Miscellaneous
+
+Show
+    #.import -> best-bases -> BaseType
+    ItemLevel < 68
+
+Show #.strict BASE .if Show
+    #.import -> best-bases -> BaseType
+    ItemLevel >= 68
+
+Hide    
+    Class == "Charms"
+    #.import < < styles > general -> hidden
