@@ -1,13 +1,13 @@
 #.subsection Belt
 
-# Uniques
+# Unique
 
 Show
     Class == "Belts"
     Rarity == Unique
     #.import < < styles > rarity > unique -> general
 
-# Best bases
+# Exceptional
 
 Show #.name best-bases
     BaseType == "Plate Belt" "Heavy Belt"

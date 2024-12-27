@@ -7,7 +7,7 @@ Show
 	Rarity == Unique
     #.import < < styles > rarity > unique -> general
 
-# Best bases
+# Exceptional
 
 Show #.strict STRICT .name best-bases
 	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
@@ -21,46 +21,46 @@ Show #.strict STRICT
 	Quality >= 20
     #.import < < styles > rarity > normal -> general
 
-# Miscellaneous
+Show #.strict BASE .if Show
+	#.import -> best-bases -> BaseType
+
+# Progression
 
 Show
 	BaseType == "Lesser Life Flask" "Lesser Mana Flask"
-    ItemLevel < 4
+    AreaLevel < 4
 
 Show
 	BaseType == "Medium Life Flask" "Medium Mana Flask"
-    ItemLevel < 10
+    AreaLevel < 10
 
 Show
 	BaseType == "Greater Life Flask" "Greater Mana Flask"
-    ItemLevel < 16
+    AreaLevel < 16
 
 Show
 	BaseType == "Grand Life Flask" "Grand Mana Flask"
-    ItemLevel < 23
+    AreaLevel < 23
 
 Show
 	BaseType == "Giant Life Flask" "Giant Mana Flask"
-    ItemLevel < 30
+    AreaLevel < 30
 
 Show
 	BaseType == "Colossal Life Flask" "Colossal Mana Flask"
-    ItemLevel < 40
+    AreaLevel < 40
 
 Show
 	BaseType == "Gargantuan Life Flask" "Gargantuan Mana Flask"
-    ItemLevel < 50
+    AreaLevel < 50
 
 Show
 	BaseType == "Transcendent Life Flask" "Transcendent Mana Flask"
-    ItemLevel < 60
+    AreaLevel < 60
 
-Show #.name best-bases
+Show
 	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
-    ItemLevel < 68
-
-Show #.strict BASE .if Show
-	#.import -> best-bases -> BaseType
+    AreaLevel < 68
 
 Hide
     Class == "Life Flasks" "Mana Flasks"

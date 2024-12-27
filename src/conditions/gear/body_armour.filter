@@ -1,1 +1,100 @@
 #.subsection Body Armour
+
+# Unique
+
+Show
+    Class == "Body Armours"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Exceptional
+
+Show
+    BaseType == "Golden Mantle"
+    #.import < < styles > rarity > rare -> general+
+
+Show #.name best-bases
+    BaseType "Expert"
+    Class == "Body Armours"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> Class
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> Class
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+Show #.strict BASE .tag craft Bodies .if Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> Class
+    Corrupted == False
+
+Show #.strict NORMAL .if Show
+    Class == "Body Armours"
+    Rarity == Rare
+
+# Progression
+
+Show
+	BaseType == "Fur Plate" "Rusted Cuirass"
+    AreaLevel < 11
+
+Show
+	BaseType == "Iron Cuirass"
+    AreaLevel < 16
+
+Show
+	BaseType == "Raider Plate"
+    AreaLevel < 20
+
+Show
+	BaseType == "Maraketh Cuirass"
+    AreaLevel < 27
+
+Show
+	BaseType == "Steel Plate"
+    AreaLevel < 33
+
+Show
+	BaseType == "Full Plate"
+    AreaLevel < 37
+
+Show
+	BaseType == "Vaal Cuirass"
+    AreaLevel < 45
+
+Show
+	BaseType == "Advanced Fur Plate"
+    AreaLevel < 48
+
+Show
+	BaseType == "Advanced Iron Cuirass"
+    AreaLevel < 51
+
+Show
+	BaseType == "Advanced Maraketh Cuirass"
+    AreaLevel < 55
+
+Show
+	BaseType == "Advanced Steel Plate"
+    AreaLevel < 59
+
+Show
+	BaseType == "Advanced Full Plate"
+    AreaLevel < 62
+
+Show
+	BaseType == "Advanced Vaal Cuirass"
+    AreaLevel < 65

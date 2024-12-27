@@ -1,13 +1,13 @@
 #.subsection Amulet
 
-# Uniques
+# Unique
 
 Show
     Class == "Amulets"
     Rarity == Unique
     #.import < < styles > rarity > unique -> general
 
-# Best bases
+# Exceptional
 
 Show #.name best-bases
     BaseType == "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Solar Amulet" "Gold Amulet"

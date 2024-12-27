@@ -1,13 +1,13 @@
 #.subsection Ring
 
-# Uniques
+# Unique
 
 Show
     Class == "Rings"
     Rarity == Unique
     #.import < < styles > rarity > unique -> general
 
-# Best bases
+# Exceptional
 
 Show #.name best-bases
     BaseType == "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Gold Ring" "Breach Ring"

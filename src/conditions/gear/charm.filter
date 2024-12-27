@@ -1,13 +1,13 @@
 #.subsection Charm
 
-# Uniques
+# Unique
 
 Show
     Class == "Charms"
     Rarity == Unique
     #.import < < styles > rarity > unique -> general
 
-# Best bases
+# Exceptional
 
 Show #.name best-bases
     BaseType == "Thawing Charm" "Staunching Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Stone Charm" "Golden Charm" "Amethyst Charm" "Silver Charm"
