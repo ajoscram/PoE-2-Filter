@@ -21,15 +21,14 @@ Show
     Rarity == Normal
     #.import < < styles > rarity > normal -> general
 
-# Miscellaneous
-
-Show
-    #.import -> best-bases -> BaseType
-    ItemLevel < 68
-
 Show #.strict BASE .if Show
     #.import -> best-bases -> BaseType
-    ItemLevel >= 68
+
+# Progression
+
+Show #.strict BASE .if Show
+    Class == "Charms"
+    AreaLevel < 68
 
 Hide    
     Class == "Charms"

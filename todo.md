@@ -1,4 +1,5 @@
 # Immediately
+* FINISH BODY ARMOURS MISSING NON-STR BASES
 * Change and update all styles
     https://www.poewiki.net/wiki/Guide:Item_filter_guide#Color_Options
 

@@ -39,6 +39,7 @@ Show
 Show #.strict BASE .tag craft Bodies .if Show
     #.import -> best-bases -> BaseType
     #.import -> best-bases -> Class
+    Rarity == Normal
     Corrupted == False
 
 Show #.strict NORMAL .if Show
@@ -46,6 +47,7 @@ Show #.strict NORMAL .if Show
     Rarity == Rare
 
 # Progression
+# Logic based on https://www.poe2wiki.net/wiki/Body_armour
 
 Show
 	BaseType == "Fur Plate" "Rusted Cuirass"
@@ -98,3 +100,7 @@ Show
 Show
 	BaseType == "Advanced Vaal Cuirass"
     AreaLevel < 65
+
+Show #.strict BASE .if Show
+    BaseType "Expert"
+    Class == "Body Armours"

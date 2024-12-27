@@ -29,24 +29,26 @@ Show
     Corrupted == False
     #.import < < styles > rarity > normal -> general
 
-# Miscellaneous
+Show #.strict NORMAL .tag craft Belts .if Show
+    #.import -> best-bases -> BaseType
+    Rarity == Normal
+    Corrupted == False
 
 Show #.strict STRICT .if Show
     Class == "Belts"
     Rarity == Rare
-    #.import < < styles > rarity > rare -> general-
 
-Show #.strict NORMAL .if Show
-    Class == "Belts"
-    Rarity == Magic
-    Corrupted == False
-    #.import < < styles > rarity > magic -> general-
+# Progression
 
-Show #.strict NORMAL .tag craft Belts .if Show
+Show
     Class == "Belts"
-    Rarity == Normal
-    Corrupted == False
-    #.import < < styles > rarity > normal -> general-
+    Rarity == Rare
+    AreaLevel < 68
+
+Show #.strict BASE .if Show
+    Class == "Belts"
+    Rarity < Rare
+    AreaLevel < 68
 
 Hide
     Class == "Belts"

@@ -25,6 +25,7 @@ Show #.strict BASE .if Show
 	#.import -> best-bases -> BaseType
 
 # Progression
+# Logic based on https://www.poe2wiki.net/wiki/Flask
 
 Show
 	BaseType == "Lesser Life Flask" "Lesser Mana Flask"
