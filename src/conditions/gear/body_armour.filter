@@ -14,15 +14,13 @@ Show
     #.import < < styles > rarity > rare -> general+
 
 Show #.name best-bases
-    BaseType "Expert"
-    Class == "Body Armours"
+    BaseType == "Expert Hexer's Robe" "Expert Iron Cuirass" "Expert Pathfinder Coat" "Expert Pelt Mantle" "Expert Rogue Armour" "Expert Waxed Jacket" "Expert Cloaked Mail" "Expert Keth Raiment" "Expert Shaman Mantle" "Expert Steel Plate" "Expert Studded Vest" "Expert Wayfarer Jacket" "Expert Altar Robe" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Scalper's Jacket" "Expert Serpentscale Coat" "Expert Vaal Cuirass"
     ItemLevel >= 82
     Rarity == Rare
     #.import < < styles > rarity > rare -> general
 
 Show
     #.import -> best-bases -> BaseType
-    #.import -> best-bases -> Class
     #.import -> best-bases -> ItemLevel
     Rarity == Magic
     Corrupted == False
@@ -30,7 +28,6 @@ Show
 
 Show
     #.import -> best-bases -> BaseType
-    #.import -> best-bases -> Class
     #.import -> best-bases -> ItemLevel
     Rarity == Normal
     Corrupted == False
@@ -38,7 +35,6 @@ Show
 
 Show #.strict BASE .tag craft Bodies .if Show
     #.import -> best-bases -> BaseType
-    #.import -> best-bases -> Class
     Rarity == Normal
     Corrupted == False
 
@@ -50,57 +46,92 @@ Show #.strict NORMAL .if Show
 # Logic based on https://www.poe2wiki.net/wiki/Body_armour
 
 Show
-	BaseType == "Fur Plate" "Rusted Cuirass"
+    BaseType == "Tattered Robe"
+    AreaLevel < 5
+
+Show
+    BaseType == "Chain Mail" "Feathered Robe" "Fur Plate" "Hermit Garb" "Leather Vest" "Quilted Vest" "Rusted Cuirass"
     AreaLevel < 11
 
 Show
-	BaseType == "Iron Cuirass"
+    BaseType == "Pilgrim Vestments"
+    AreaLevel < 12
+
+Show
+    BaseType == "Hexer's Robe" "Iron Cuirass" "Pathfinder Coat" "Pelt Mantle" "Rogue Armour" "Waxed Jacket"
     AreaLevel < 16
 
 Show
-	BaseType == "Raider Plate"
+    BaseType == "Raider Plate"
     AreaLevel < 20
 
 Show
-	BaseType == "Maraketh Cuirass"
+    BaseType == "Bone Raiment" "Shrouded Vest"
+    AreaLevel < 22
+
+Show
+    BaseType == "Rhoahide Coat"
+    AreaLevel < 26
+
+Show
+    BaseType == "Maraketh Cuirass"
     AreaLevel < 27
 
 Show
-	BaseType == "Steel Plate"
+    BaseType == "Mail Vestments" "Marabout Garb" "Silk Robe"
+    AreaLevel < 28
+
+Show
+    BaseType == "Vagabond Armour"
+    AreaLevel < 32
+
+Show
+    BaseType == "Cloaked Mail" "Keth Raiment" "Shaman Mantle" "Steel Plate" "Studded Vest" "Wayfarer Jacket"
     AreaLevel < 33
 
 Show
-	BaseType == "Full Plate"
+    BaseType == "Ironclad Vestments" "Scout's Vest"
+    AreaLevel < 36
+
+Show
+    BaseType == "Explorer Armour" "Full Plate"
     AreaLevel < 37
 
 Show
-	BaseType == "Vaal Cuirass"
+    BaseType == "Anchorite Garb"
+    AreaLevel < 39
+
+Show
+    BaseType == "Votive Raiment"
+    AreaLevel < 40
+
+Show
+    BaseType == "Altar Robe" "Sacrificial Mantle" "Scale Mail" "Scalper's Jacket" "Serpentscale Coat" "Vaal Cuirass"
     AreaLevel < 45
 
 Show
-	BaseType == "Advanced Fur Plate"
+    BaseType == "Advanced Chain Mail" "Advanced Feathered Robe" "Advanced Fur Plate" "Advanced Hermit Garb" "Advanced Pilgrim Vestments" "Advanced Quilted Vest"
     AreaLevel < 48
 
 Show
-	BaseType == "Advanced Iron Cuirass"
+    BaseType == "Advanced Hexer's Robe" "Advanced Iron Cuirass" "Advanced Pathfinder Coat" "Advanced Pelt Mantle" "Advanced Rogue Armour" "Advanced Waxed Jacket"
     AreaLevel < 51
 
 Show
-	BaseType == "Advanced Maraketh Cuirass"
+    BaseType == "Advanced Mail Vestments" "Advanced Marabout Garb" "Advanced Maraketh Cuirass" "Advanced Rhoahide Coat" "Advanced Silk Robe" "Advanced Vagabond Armour"
     AreaLevel < 55
 
 Show
-	BaseType == "Advanced Steel Plate"
+    BaseType == "Advanced Cloaked Mail" "Advanced Keth Raiment" "Advanced Shaman Mantle" "Advanced Steel Plate" "Advanced Studded Vest" "Advanced Wayfarer Jacket"
     AreaLevel < 59
 
 Show
-	BaseType == "Advanced Full Plate"
+    BaseType == "Advanced Anchorite Garb" "Advanced Explorer Armour" "Advanced Full Plate" "Advanced Ironclad Vestments" "Advanced Scout's Vest" "Advanced Votive Raiment"
     AreaLevel < 62
 
 Show
-	BaseType == "Advanced Vaal Cuirass"
+    BaseType == "Advanced Altar Robe" "Advanced Sacrificial Mantle" "Advanced Scale Mail" "Advanced Scalper's Jacket" "Advanced Serpentscale Coat" "Advanced Vaal Cuirass"
     AreaLevel < 65
 
 Show #.strict BASE .if Show
-    BaseType "Expert"
-    Class == "Body Armours"
+    #.import -> best-bases -> BaseType

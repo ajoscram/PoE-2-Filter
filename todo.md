@@ -1,7 +1,8 @@
 # Immediately
-* FINISH BODY ARMOURS MISSING NON-STR BASES
 * Change and update all styles
     https://www.poewiki.net/wiki/Guide:Item_filter_guide#Color_Options
+    Match the beam colors from the game
+        Normal, Magic, Rare and Uniques might need a primer for their font color to match the beams
 
 # Later / Bugs
 * The base types for pinnacle keys cannot be used for filtering

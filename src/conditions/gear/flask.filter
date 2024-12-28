@@ -28,35 +28,35 @@ Show #.strict BASE .if Show
 # Logic based on https://www.poe2wiki.net/wiki/Flask
 
 Show
-	BaseType == "Lesser Life Flask" "Lesser Mana Flask"
+    BaseType == "Lesser Life Flask" "Lesser Mana Flask"
     AreaLevel < 4
 
 Show
-	BaseType == "Medium Life Flask" "Medium Mana Flask"
+    BaseType == "Medium Life Flask" "Medium Mana Flask"
     AreaLevel < 10
 
 Show
-	BaseType == "Greater Life Flask" "Greater Mana Flask"
+    BaseType == "Greater Life Flask" "Greater Mana Flask"
     AreaLevel < 16
 
 Show
-	BaseType == "Grand Life Flask" "Grand Mana Flask"
+    BaseType == "Grand Life Flask" "Grand Mana Flask"
     AreaLevel < 23
 
 Show
-	BaseType == "Giant Life Flask" "Giant Mana Flask"
+    BaseType == "Giant Life Flask" "Giant Mana Flask"
     AreaLevel < 30
 
 Show
-	BaseType == "Colossal Life Flask" "Colossal Mana Flask"
+    BaseType == "Colossal Life Flask" "Colossal Mana Flask"
     AreaLevel < 40
 
 Show
-	BaseType == "Gargantuan Life Flask" "Gargantuan Mana Flask"
+    BaseType == "Gargantuan Life Flask" "Gargantuan Mana Flask"
     AreaLevel < 50
 
 Show
-	BaseType == "Transcendent Life Flask" "Transcendent Mana Flask"
+    BaseType == "Transcendent Life Flask" "Transcendent Mana Flask"
     AreaLevel < 60
 
 Show
