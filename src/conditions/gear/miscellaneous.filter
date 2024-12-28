@@ -1,5 +1,5 @@
 #.subsection Miscellaneous
 
 Hide
-    Class == "Body Armours"
+    Class == "Body Armours" "Gloves" "Helmets"
     #.import < < styles > general -> hidden

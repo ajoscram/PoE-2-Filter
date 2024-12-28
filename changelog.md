@@ -13,4 +13,6 @@
 * Each strictness level has a set of subfilters intended for picking up valuable white bases for crafting:
     - Belts
     - Body Armours (Bodies)
+    - Gloves
+    - Helmets
 * All crafting subfilters show rings, amulets and jewels.

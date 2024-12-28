@@ -1,1 +1,105 @@
 #.subsection Gloves
+
+# Unique
+
+Show
+    Class == "Gloves"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Exceptional
+
+Show
+    BaseType == "Golden Bracers"
+    #.import < < styles > rarity > rare -> general+
+
+Show #.name best-bases
+    BaseType == "Advanced Spined Bracers" "Expert Aged Cuffs" "Expert Intricate Gloves" "Expert Linen Wraps" "Expert Ringmail Gauntlets" "Expert Riveted Mitts"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+Show #.strict BASE .tag craft Gloves .if Show
+    #.import -> best-bases -> BaseType
+    Rarity == Normal
+    Corrupted == False
+
+Show #.strict NORMAL .if Show
+    Class == "Gloves"
+    Rarity == Rare
+
+# Progression
+# Logic based on https://www.poe2wiki.net/wiki/Gloves
+
+Show
+    BaseType == "Stocky Mitts" "Suede Bracers"
+    AreaLevel < 11
+
+Show
+    BaseType == "Torn Gloves"
+    AreaLevel < 12
+
+Show
+    BaseType == "Firm Bracers" "Gauze Wraps" "Ringmail Gauntlets" "Riveted Mitts" "Rope Cuffs" "Sombre Gloves"
+    AreaLevel < 16
+
+Show
+    BaseType == "Stitched Gloves"
+    AreaLevel < 26
+
+Show
+    BaseType == "Tempered Mitts"
+    AreaLevel < 27
+
+Show
+    BaseType == "Bound Bracers"
+    AreaLevel < 28
+
+Show
+    BaseType == "Aged Cuffs" "Bolstered Mitts" "Jewelled Gloves" "Layered Gauntlets" "Linen Wraps" "Sectioned Bracers"
+    AreaLevel < 33
+
+Show
+    BaseType == "Doubled Gauntlets" "Goldcast Cuffs" "Intricate Gloves" "Moulded Mitts" "Spined Bracers" "Spiral Wraps"
+    AreaLevel < 45
+
+Show
+    BaseType == "Advanced Firm Bracers" "Advanced Gauze Wraps" "Advanced Ringmail Gauntlets" "Advanced Riveted Mitts" "Advanced Rope Cuffs" "Advanced Sombre Gloves" "Fine Bracers"
+    AreaLevel < 51
+
+Show
+    BaseType == "Advanced Stitched Gloves" "Advanced Tempered Mitts"
+    AreaLevel < 55
+
+Show
+    BaseType == "Advanced Bolstered Mitts" "Advanced Bound Bracers" "Advanced Jewelled Gloves" "Advanced Layered Gauntlets"
+    AreaLevel < 59
+
+Show
+    BaseType == "Advanced Aged Cuffs" "Advanced Doubled Gauntlets" "Advanced Intricate Gloves" "Advanced Linen Wraps" "Advanced Moulded Mitts"
+    AreaLevel < 65
+
+Show
+    BaseType == "Expert Gauze Wraps" "Expert Roge Cuffs" "Expert Sombre Gloves"
+    AreaLevel < 70
+
+Show
+    BaseType == "Expert Jewelled Gloves"
+    AreaLevel < 75
+
+Show #.strict BASE .if Show
+    #.import -> best-bases -> BaseType

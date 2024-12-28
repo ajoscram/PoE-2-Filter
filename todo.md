@@ -1,4 +1,5 @@
 # Immediately
+* Add a `#.strict BASE .if Show` for progression drops in case any gear base is outside campaign range
 * Change and update all styles
     https://www.poewiki.net/wiki/Guide:Item_filter_guide#Color_Options
     Match the beam colors from the game

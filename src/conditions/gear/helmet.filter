@@ -1,1 +1,125 @@
 #.subsection Helmet
+
+# Unique
+
+Show
+    Class == "Helmets"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Exceptional
+
+Show
+    BaseType == "Golden Wreath" "Golden Visage"
+    #.import < < styles > rarity > rare -> general+
+
+Show #.name best-bases
+    BaseType == "Expert Elite Greathelm" "Expert Feathered Tiara" "Expert Heavy Crown" "Expert Hunter Hood" "Expert Shielded Helm" "Expert Tribal Mask"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+Show #.strict BASE .tag craft Helmets .if Show
+    #.import -> best-bases -> BaseType
+    Rarity == Normal
+    Corrupted == False
+
+Show #.strict NORMAL .if Show
+    Class == "Helmets"
+    Rarity == Rare
+
+# Progression
+# Logic based on https://www.poe2wiki.net/wiki/Helmets
+
+Show
+    BaseType == "Hewn Mask" "Iron Crown" "Shabby Hood" "Twig Circlet"
+    AreaLevel < 10
+
+Show
+    BaseType == "Brimmed Helm"
+    AreaLevel < 11
+
+Show
+    BaseType == "Rusted Greathelm"
+    AreaLevel < 12
+
+Show
+    BaseType == "Face Mask" "Felt Cap" "Guarded Helm" "Horned Crown" "Soldier Greathelm" "Wicker Tiara"
+    AreaLevel < 16
+
+Show
+    BaseType == "Beaded Circlet" "Lace Hood" "Visored Helm"
+    AreaLevel < 26
+
+Show
+    BaseType == "Wrapped Greathelm"
+    AreaLevel < 27
+
+Show
+    BaseType == "Cultist Crown" "Hooded Mask"
+    AreaLevel < 28
+
+Show
+    BaseType == "Chain Tiara" "Cowled Helm" "Martyr Crown" "Spired Greathelm" "Swathed Cap" "Veiled Mask"
+    AreaLevel < 33
+
+Show
+    BaseType == "Elite Greathelm"
+    AreaLevel < 36
+
+Show
+    BaseType == "Hunter Hood"
+    AreaLevel < 38
+
+Show
+    BaseType == "Feathered Tiara"
+    AreaLevel < 40
+
+Show
+    BaseType == "Gold Circlet" "Heavy Crown" "Shielded Helm" "Tribal Mask" "Viper Cap" "Warrior Greathelm"
+    AreaLevel < 45
+
+Show
+    BaseType == "Advanced Brimmed Helm" "Advanced Hewn Mask" "Advanced Iron Crown" "Advanced Rusted Greathelm" "Advanced Shabby Hood" "Advanced Twig Circlet"
+    AreaLevel < 48
+
+Show
+    BaseType == "Advanced Face Mask" "Advanced Felt Cap" "Advanced Guarded Helm" "Advanced Horned Crown" "Advanced Soldier Greathelm" "Advanced Wicker Tiara"
+    AreaLevel < 51
+
+Show
+    BaseType == "Advanced Beaded Circlet" "Advanced Cultist Crown" "Advanced Hooded Mask" "Advanced Lace Hood" "Advanced Visored Helm" "Advanced Wrapped Greathelm"
+    AreaLevel < 55
+
+Show
+    BaseType == "Advanced Chain Tiara" "Advanced Cowled Helm" "Advanced Martyr Crown" "Advanced Spired Greathelm" "Advanced Swathed Cap" "Advanced Veiled Mask"
+    AreaLevel < 59
+
+Show
+    BaseType == "Advanced Elite Greathelm" "Advanced Feathered Tiara" "Advanced Heavy Crown" "Advanced Hunter Hood" "Advanced Shielded Helm" "Advanced Tribal Mask"
+    AreaLevel < 65
+
+Show
+    BaseType == "Expert Face Mask" "Expert Felt Cap" "Expert Guarded Helm" "Expert Horned Crown" "Expert Soldier Greathelm" "Expert Wicker Tiara"
+    AreaLevel < 70
+
+Show
+    BaseType == "Expert Chain Tiara" "Expert Cowled Helm" "Expert Martyr Crown" "Expert Spired Greathelm" "Expert Swathed Cap" "Expert Veiled Mask"
+    AreaLevel < 75
+
+Show #.strict BASE .if Show
+    #.import -> best-bases -> BaseType
