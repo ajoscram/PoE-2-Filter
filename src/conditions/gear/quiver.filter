@@ -1,1 +1,55 @@
 #.subsection Quiver
+
+# Unique
+
+Show
+    Class == "Quivers"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Exceptional
+
+Show #.name best-bases
+    BaseType == "Sacral Quiver" "Two-Point Quiver" "Blunt Quiver" "Toxic Quiver" "Serrated Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+Show #.strict NORMAL .tag craft Quivers .if Show
+    #.import -> best-bases -> BaseType
+    Rarity == Normal
+    Corrupted == False
+
+Show #.strict NORMAL .if Show
+    Class == "Quivers"
+    Rarity == Rare
+
+# Progression
+
+Show
+    Class == "Quivers"
+    Rarity == Rare
+    AreaLevel < 68
+
+Show #.strict BASE .if Show
+    Class == "Quivers"
+    Rarity < Rare
+    AreaLevel < 68
+
+Hide
+    Class == "Quivers"
+    #.import < < styles > general -> hidden

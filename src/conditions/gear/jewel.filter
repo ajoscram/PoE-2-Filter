@@ -1,1 +1,42 @@
 #.subsection Jewel
+
+# Unique
+
+Show
+    Class == "Jewels"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Exceptions
+
+Show #.name time-lost-bases
+    BaseType == "Time-Lost Ruby" "Time-Lost Emerald" "Time-Lost Sapphire"
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    #.import -> time-lost-bases -> BaseType
+    Rarity == Magic
+    #.import < < styles > rarity > magic -> general
+
+Show #.strict STRICT .if Show
+    Class == "Jewels"
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show #.strict NORMAL .if Show
+    Class == "Jewels"
+    Rarity == Magic
+    #.import < < styles > rarity > magic -> general
+
+# Progression
+
+Show
+    Class == "Jewels"
+    Rarity == Rare
+    AreaLevel < 68
+    #.import < < styles > rarity > rare -> general
+
+Hide
+    Class == "Jewels"
+    #.import < < styles > general -> hidden

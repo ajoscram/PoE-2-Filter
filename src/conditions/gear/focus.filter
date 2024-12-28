@@ -1,0 +1,109 @@
+#.subsection Focus
+
+# Unique
+
+Show
+    Class == "Foci"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Exceptional
+
+Show #.name best-bases
+    BaseType == "Expert Plumed Focus"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+Show #.strict BASE .tag craft Foci .if Show
+    #.import -> best-bases -> BaseType
+    Rarity == Normal
+    Corrupted == False
+
+Show #.strict NORMAL .if Show
+    Class == "Foci"
+    Rarity == Rare
+
+# Progression
+# Logic based on https://www.poe2wiki.net/wiki/Foci
+
+Show
+    BaseType == "Twig Focus"
+    AreaLevel < 6
+
+Show
+    BaseType == "Woven Focus"
+    AreaLevel < 10
+
+Show
+    BaseType == "Antler Focus"
+    AreaLevel < 16
+
+Show
+    BaseType == "Engraved Focus"
+    AreaLevel < 22
+
+Show
+    BaseType == "Tonal Focus"
+    AreaLevel < 26
+
+Show
+    BaseType == "Crystal Focus"
+    AreaLevel < 33
+
+Show
+    BaseType == "Voodoo Focus"
+    AreaLevel < 36
+
+Show
+    BaseType == "Plumed Focus"
+    AreaLevel < 45
+
+Show
+    BaseType == "Advanced Woven Focus"
+    AreaLevel < 48
+
+Show
+    BaseType == "Advanced Antler Focus"
+    AreaLevel < 51
+
+Show
+    BaseType == "Advanced Tonal Focus"
+    AreaLevel < 55
+
+Show
+    BaseType == "Advanced Crystal Focus"
+    AreaLevel < 59
+
+Show
+    BaseType == "Advanced Voodoo Focus"
+    AreaLevel < 61
+
+Show
+    BaseType == "Advanced Plumed Focus"
+    AreaLevel < 65
+
+Show
+    BaseType == "Expert Antler Focus"
+    AreaLevel < 70
+
+Show
+    BaseType == "Expert Crystal Focus"
+    AreaLevel < 75
+
+Show #.strict BASE .if Show
+    #.import -> best-bases -> BaseType

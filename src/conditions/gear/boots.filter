@@ -1,1 +1,97 @@
 #.subsection Boots
+
+# Unique
+
+Show
+    Class == "Boots"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Exceptional
+
+Show
+    BaseType == "Golden Caligae"
+    #.import < < styles > rarity > rare -> general+
+
+Show #.name best-bases
+    BaseType == "Expert Feathered Sandals" "Expert Hunting Shoes" "Expert Lizardscale Boots" "Expert Pelt Leggings" "Expert Stacked Sabatons" "Expert Stone Greaves"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+Show #.strict BASE .tag craft Boots .if Show
+    #.import -> best-bases -> BaseType
+    Rarity == Normal
+    Corrupted == False
+
+Show #.strict NORMAL .if Show
+    Class == "Boots"
+    Rarity == Rare
+
+# Progression
+# Logic based on https://www.poe2wiki.net/wiki/Boots
+
+Show
+    BaseType == "Rawhide Boots" "Rough Greaves" "Straw Sandals"
+    AreaLevel < 11
+
+Show
+    BaseType == "Frayed Shoes" "Iron Greaves" "Laced Boots" "Mail Sabatons" "Padded Leggings" "Wrapped Sandals"
+    AreaLevel < 16
+
+Show
+    BaseType == "Bronze Greaves" "Lattice Sandals"
+    AreaLevel < 27
+
+Show
+    BaseType == "Embossed Boots"
+    AreaLevel < 28
+
+Show
+    BaseType == "Braced Sabatons" "Secured Leggings" "Silk Slippers" "Steeltoe Boots" "Threaded Shoes" "Trimmed Greaves"
+    AreaLevel < 33
+
+Show
+    BaseType == "Feathered Sandals" "Hunting Shoes" "Lizardscale Boots" "Pelt Leggings" "Stacked Sabatons" "Stone Greaves"
+    AreaLevel < 45
+
+Show
+    BaseType == "Advanced Frayed Shoes" "Advanced Iron Greaves" "Advanced Laced Boots" "Advanced Mail Sabatons" "Advanced Padded Leggings" "Advanced Wrapped Sandals"
+    AreaLevel < 51
+
+Show
+    BaseType == "Advanced Bronze Greaves" "Advanced Embossed Boots" "Advanced Lattice Sandals"
+    AreaLevel < 55
+
+Show
+    BaseType == "Advanced Braced Sabatons" "Advanced Secured Leggings" "Advanced Silk Slippers" "Advanced Steeltoe Boots" "Advanced Threaded Shoes" "Advanced Trimmed Greaves"
+    AreaLevel < 59
+
+Show
+    BaseType == "Advanced Feathered Sandals" "Advanced Hunting Shoes" "Advanced Lizardscale Boots" "Advanced Pelt Leggings" "Advanced Stacked Sabatons" "Advanced Stone Greaves"
+    AreaLevel < 65
+
+Show
+    BaseType == "Expert Frayed Shoes" "Expert Iron Greaves" "Expert Laced Boots" "Expert Mail Sabatons" "Expert Padded Leggings" "Expert Wrapped Sandals"
+    AreaLevel < 70
+
+Show
+    BaseType == "Expert Braced Sabatons" "Expert Secured Leggings" "Expert Silk Slippers" "Expert Steeltoe Boots" "Expert Threaded Shoes" "Expert Trimmed Greaves"
+    AreaLevel < 75
+
+Show #.strict BASE .if Show
+    #.import -> best-bases -> BaseType

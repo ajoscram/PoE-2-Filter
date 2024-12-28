@@ -1,1 +1,129 @@
 #.subsection Shield
+
+# Unique
+
+Show
+    Class == "Shields"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Exceptional
+
+Show
+    BaseType == "Golden Flame"
+    #.import < < styles > rarity > rare -> general+
+
+Show #.name best-bases
+    BaseType == "Expert Feathered Targe" "Expert Omen Crest Shield" "Expert Stone Tower Shield"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+Show #.strict BASE .tag craft Shields .if Show
+    #.import -> best-bases -> BaseType
+    Rarity == Normal
+    Corrupted == False
+
+Show #.strict NORMAL .if Show
+    Class == "Shields"
+    Rarity == Rare
+
+# Progression
+# Logic based on https://www.poe2wiki.net/wiki/Shields
+
+Show
+    BaseType == "Splintered Tower Shield"
+    AreaLevel < 6
+
+Show
+    BaseType == "Hardwood Targe" "Sigil Crest Shield"
+    AreaLevel < 8
+
+Show
+    BaseType == "Painted Tower Shield"
+    AreaLevel < 12
+
+Show
+    BaseType == "Braced Tower Shield" "Pelage Targe"
+    AreaLevel < 16
+
+Show
+    BaseType == "Barricade Tower Shield"
+    AreaLevel < 21
+
+Show
+    BaseType == "Blazon Crest Shield"
+    AreaLevel < 24
+
+Show
+    BaseType == "Studded Targe"
+    AreaLevel < 26
+
+Show
+    BaseType == "Effigial Tower Shield" "Emblem Crest Shield"
+    AreaLevel < 28
+
+Show
+    BaseType == "Crescent Targe" "Jingling Crest Shield" "Rampart Tower Shield" "Stone Tower Shield"
+    AreaLevel < 33
+
+Show
+    BaseType == "Sectarian Crest Shield"
+    AreaLevel < 36
+
+Show
+    BaseType == "Chiseled Targe"
+    AreaLevel < 37
+
+Show
+    BaseType == "Feathered Targe" "Heraldric Tower Shield" "Omen Crest Shield"
+    AreaLevel < 45
+
+Show
+    BaseType == "Advanced Blazon Crest Shield" "Advanced Hardwood Targe" "Advanced Painted Tower Shield"
+    AreaLevel < 48
+
+Show
+    BaseType == "Advanced Braced Tower Shield" "Advanced Pelage Targe" "Advanced Sigil Crest Shield"
+    AreaLevel < 51
+
+Show
+    BaseType == "Advanced Effigial Tower Shield" "Advanced Emblem Crest Shield" "Advanced Studded Targe"
+    AreaLevel < 55
+
+Show
+    BaseType == "Advanced Crescent Targe" "Advanced Jingling Crest Shield" "Advanced Rampart Tower Shield" "Advanced Stone Tower Shield"
+    AreaLevel < 59
+
+Show
+    BaseType == "Advanced Chiseled Targe" "Advanced Sectarian Crest Shield"
+    AreaLevel < 62
+
+Show
+    BaseType == "Advanced Feathered Targe" "Advanced Heraldric Tower Shield" "Advanced Omen Crest Shield"
+    AreaLevel < 65
+
+Show
+    BaseType == "Expert Braced Tower Shield" "Expert Pelage Targe" "Expert Sigil Crest Shield"
+    AreaLevel < 70
+
+Show
+    BaseType == "Expert Crescent Targe" "Expert Jingling Crest Shield" "Expert Rampart Tower Shield"
+    AreaLevel < 75
+
+Show #.strict BASE .if Show
+    #.import -> best-bases -> BaseType

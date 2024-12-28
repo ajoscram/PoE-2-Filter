@@ -94,7 +94,7 @@ Show
     AreaLevel < 65
 
 Show
-    BaseType == "Expert Gauze Wraps" "Expert Roge Cuffs" "Expert Sombre Gloves"
+    BaseType == "Expert Gauze Wraps" "Expert Rope Cuffs" "Expert Sombre Gloves"
     AreaLevel < 70
 
 Show

@@ -10,7 +10,9 @@ BASE_URL_SUFFIXES_TO_DISCRIMINATE: list[str] = [
     "Gloves",
     "Boots",
     "Helmet",
-    "Shield"
+    "Shield",
+    "Focus",
+    "Crossbow"
 ]
 
 @dataclass

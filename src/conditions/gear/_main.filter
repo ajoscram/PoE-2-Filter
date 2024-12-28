@@ -1,15 +1,16 @@
 #.section Gear
 
 #.import jewel
+#.import charm
+#.import flask
+#.import belt
 #.import amulet
 #.import ring
-#.import belt
 #.import boots
 #.import body_armour
 #.import gloves
 #.import helmet
 #.import quiver
 #.import shield
-#.import charm
-#.import flask
-#.import miscellaneous
+#.import focus
+#.import salvage

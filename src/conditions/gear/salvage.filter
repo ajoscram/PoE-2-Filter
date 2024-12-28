@@ -1,0 +1,34 @@
+#.subsection Salvage
+
+# Sockets
+
+Show #.name salvage-bases .strict NORMAL .if Show
+    Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields" "Foci"
+    Sockets == 2
+
+Show #.strict BASE .if Show
+    #.import -> salvage-bases -> Class
+    Sockets == 1
+
+# Quality
+
+Show #.strict STRICT .if Show
+    #.import -> salvage-bases -> Class
+    Quality >= 18
+
+Show #.strict NORMAL .if Show
+    #.import -> salvage-bases -> Class
+    Quality >= 13
+
+Show #.strict BASE .if Show
+    #.import -> salvage-bases -> Class
+    Quality >= 8
+
+Show #.strict BASE .if Show
+    #.import -> salvage-bases -> Class
+    Quality >= 3
+    AreaLevel < 68
+
+Hide
+    #.import -> salvage-bases -> Class
+    #.import < < styles > general -> hidden
