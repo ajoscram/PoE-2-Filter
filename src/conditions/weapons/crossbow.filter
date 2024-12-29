@@ -1,1 +1,101 @@
 #.subsection Crossbow
+
+# Unique
+
+Show
+    Class == "Crossbows"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Exceptional
+
+Show #.name best-bases
+    BaseType == "Expert Bombard Crossbow" "Expert Dyad Crossbow" "Expert Forlorn Crossbow" "Expert Tense Crossbow"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+Show #.strict BASE .tag craft Crossbows .if Show
+    #.import -> best-bases -> BaseType
+    Rarity == Normal
+    Corrupted == False
+
+Show #.strict NORMAL .if Show
+    Class == "Crossbows"
+    Rarity == Rare
+
+# Progression
+# Logic based on https://www.poe2wiki.net/wiki/Crossbow
+
+Show
+    BaseType == "Makeshift Crossbow"
+    AreaLevel < 4
+
+Show
+    BaseType == "Tense Crossbow"
+    AreaLevel < 10
+
+Show
+    BaseType == "Sturdy Crossbow"
+    AreaLevel < 16
+
+Show
+    BaseType == "Varnished Crossbow"
+    AreaLevel < 20
+
+Show
+    BaseType == "Dyad Crossbow"
+    AreaLevel < 26
+
+Show
+    BaseType == "Alloy Crossbow"
+    AreaLevel < 33
+
+Show
+    BaseType == "Bombard Crossbow"
+    AreaLevel < 38
+
+Show
+    BaseType == "Construct Crossbow"
+    AreaLevel < 45
+
+Show
+    BaseType == "Advanced Tense Crossbow"
+    AreaLevel < 48
+
+Show
+    BaseType == "Advanced Sturdy Crossbow"
+    AreaLevel < 51
+
+Show
+    BaseType == "Advanced Varnished Crossbow"
+    AreaLevel < 55
+
+Show
+    BaseType == "Advanced Forlorn Crossbow"
+    AreaLevel < 67
+
+Show
+    BaseType == "Expert Sturdy Crossbow"
+    AreaLevel < 72
+
+Show
+    BaseType == "Expert Varnished Crossbow" "Advanced Bombard Crossbow" "Advanced Dyad Crossbow"
+    AreaLevel < 77
+
+Show #.strict BASE .if Show
+    #.import -> best-bases -> BaseType

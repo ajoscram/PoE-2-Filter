@@ -1,1 +1,44 @@
 #.subsection Staff
+
+# Unique
+
+Show
+    Class == "Staves"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Exceptional
+
+Show #.name best-bases
+    Class == "Staves"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    Class == "Staves"
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    Class == "Staves"
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+Show #.strict BASE .tag craft Staves .if Show
+    Class == "Staves"
+    Rarity == Normal
+    Corrupted == False
+
+# Miscellaneous
+
+Show #.strict NORMAL .if Show
+    Class == "Staves"
+    Rarity == Rare
+
+Show #.strict BASE .if Show
+    Class == "Staves"

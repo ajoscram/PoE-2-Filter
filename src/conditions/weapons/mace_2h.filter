@@ -1,1 +1,101 @@
-#.subsection Two-Handed Mace
+#.subsection Two-Hand Mace
+
+# Unique
+
+Show
+    Class == "Two Hand Maces"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Exceptional
+
+Show #.name best-bases
+    BaseType == "Expert Crumbling Maul" "Expert Cultist Greathammer" "Expert Oak Greathammer" "Expert Leaden Greathammer" "Expert Temple Maul"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+Show #.strict BASE .tag craft Maces_2h .if Show
+    #.import -> best-bases -> BaseType
+    Rarity == Normal
+    Corrupted == False
+
+Show #.strict NORMAL .if Show
+    Class == "Two Hand Maces"
+    Rarity == Rare
+
+# Progression
+# Logic based on https://www.poe2wiki.net/wiki/Mace
+
+Show
+    BaseType == "Felled Greatclub" "Oak Greathammer"
+    AreaLevel < 11
+
+Show
+    BaseType == "Forge Maul"
+    AreaLevel < 16
+
+Show
+    BaseType == "Studded Greatclub"
+    AreaLevel < 22
+
+Show
+    BaseType == "Cultist Greathammer"
+    AreaLevel < 28
+
+Show
+    BaseType == "Temple Maul"
+    AreaLevel < 33
+
+Show
+    BaseType == "Leaden Greathammer"
+    AreaLevel < 38
+
+Show
+    BaseType == "Crumbling Maul"
+    AreaLevel < 45
+
+Show
+    BaseType == "Advanced Oak Greathammer"
+    AreaLevel < 48
+
+Show
+    BaseType == "Advanced Forge Maul"
+    AreaLevel < 51
+
+Show
+    BaseType == "Advanced Cultist Greathammer"
+    AreaLevel < 55
+
+Show
+    BaseType == "Advanced Temple Maul"
+    AreaLevel < 59
+
+Show
+    BaseType == "Advanced Leaden Greathammer"
+    AreaLevel < 62
+
+Show
+    BaseType == "Advanced Crumbling Maul"
+    AreaLevel < 67
+
+Show
+    BaseType == "Expert Forge Maul"
+    AreaLevel < 72
+
+Show #.strict BASE .if Show
+    #.import -> best-bases -> BaseType

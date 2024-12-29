@@ -1,1 +1,85 @@
 #.subsection Bow
+
+# Unique
+
+Show
+    Class == "Bows"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Exceptional
+
+Show #.name best-bases
+    BaseType == "Expert Cultist Bow" "Expert Dualstring Bow" "Expert Warden Bow" "Expert Zealot Bow" "Expert Shortbow"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+Show #.strict BASE .tag craft Bows .if Show
+    #.import -> best-bases -> BaseType
+    Rarity == Normal
+    Corrupted == False
+
+Show #.strict NORMAL .if Show
+    Class == "Bows"
+    Rarity == Rare
+
+# Progression
+# Logic based on https://www.poe2wiki.net/wiki/Bows
+
+Show
+    BaseType == "Crude Bow"
+    AreaLevel < 5
+
+Show
+    BaseType == "Shortbow"
+    AreaLevel < 11
+
+Show
+    BaseType == "Warden Bow"
+    AreaLevel < 16
+
+Show
+    BaseType == "Recurve Bow"
+    AreaLevel < 22
+
+Show
+    BaseType == "Composite Bow"
+    AreaLevel < 28
+
+Show
+    BaseType == "Dualstring Bow"
+    AreaLevel < 33
+
+Show
+    BaseType == "Cultist Bow"
+    AreaLevel < 39
+
+Show
+    BaseType == "Zealot Bow"
+    AreaLevel < 45
+
+Show
+    BaseType == "Advanced Zealot Bow" "Advanced Cultist Bow" "Advanced Dualstring Bow" "Advanced Composite Bow" "Advanced Warden Bow" "Advanced Shortbow"
+    AreaLevel < 67
+
+Show
+    BaseType == "Expert Composite Bow"
+    AreaLevel < 77
+
+Show #.strict BASE .if Show
+    #.import -> best-bases -> BaseType

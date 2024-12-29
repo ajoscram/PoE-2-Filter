@@ -4,7 +4,7 @@ from dataclasses import dataclass
 
 URL = "https://www.poe2wiki.net/wiki/{0}"
 OUTPUT = "build/base_extractor/{0}.filter"
-BASE_URL_SUFFIXES_TO_DISCRIMINATE: list[str] = [
+URL_SUFFIXES: list[str] = [
     "Body_armour",
     "Flask",
     "Gloves",
@@ -12,7 +12,14 @@ BASE_URL_SUFFIXES_TO_DISCRIMINATE: list[str] = [
     "Helmet",
     "Shield",
     "Focus",
-    "Crossbow"
+    "Bow",
+    "Crossbow",
+    "Flail",
+    "Mace",
+    "Quarterstaff",
+    "Sceptre",
+    "Staff",
+    "Wand"
 ]
 
 @dataclass
@@ -75,7 +82,7 @@ def print_section(area_level: int, basenames: list[str]):
     return f"Show\n    BaseType == {basenames_str}\n    AreaLevel < {area_level}"
 
 def main():
-    for suffix in BASE_URL_SUFFIXES_TO_DISCRIMINATE:
+    for suffix in URL_SUFFIXES:
         print(f"Generating for '{suffix}'...")
         
         base_lists = extract(URL.format(suffix))

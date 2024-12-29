@@ -1,1 +1,93 @@
-#.subsection One-Handed Mace
+#.subsection One-Hand Mace
+
+# Unique
+
+Show
+    Class == "One Hand Maces"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Exceptional
+
+Show #.name best-bases
+    BaseType == "Expert Construct Hammer" "Expert Warpick" "Expert Smithing Hammer" "Expert Brigand Mace" "Expert Slim Mace"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+Show #.strict BASE .tag craft Maces_1h .if Show
+    #.import -> best-bases -> BaseType
+    Rarity == Normal
+    Corrupted == False
+
+Show #.strict NORMAL .if Show
+    Class == "One Hand Maces"
+    Rarity == Rare
+
+# Progression
+# Logic based on https://www.poe2wiki.net/wiki/Mace
+
+Show
+    BaseType == "Smithing Hammer" "Wooden Club"
+    AreaLevel < 10
+
+Show
+    BaseType == "Slim Mace"
+    AreaLevel < 16
+
+Show
+    BaseType == "Spiked Club"
+    AreaLevel < 22
+
+Show
+    BaseType == "Warpick"
+    AreaLevel < 26
+
+Show
+    BaseType == "Plated Mace"
+    AreaLevel < 33
+
+Show
+    BaseType == "Brigand Mace"
+    AreaLevel < 36
+
+Show
+    BaseType == "Construct Hammer"
+    AreaLevel < 45
+
+Show
+    BaseType == "Advanced Smithing Hammer"
+    AreaLevel < 48
+
+Show
+    BaseType == "Advanced Slim Mace"
+    AreaLevel < 51
+
+Show
+    BaseType == "Advanced Plated Mace"
+    AreaLevel < 59
+
+Show
+    BaseType == "Advanced Brigand Mace"
+    AreaLevel < 62
+
+Show
+    BaseType == "Expert Plated Mace" "Advanced Warpick" "Advanced Construct Hammer"
+    AreaLevel < 77
+
+Show #.strict BASE .if Show
+    #.import -> best-bases -> BaseType

@@ -1,1 +1,44 @@
 #.subsection Wand
+
+# Unique
+
+Show
+    Class == "Wands"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Exceptional
+
+Show #.name best-bases
+    Class == "Wands"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    Class == "Wands"
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    Class == "Wands"
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+Show #.strict BASE .tag craft Wands .if Show
+    Class == "Wands"
+    Rarity == Normal
+    Corrupted == False
+
+# Miscellaneous
+
+Show #.strict NORMAL .if Show
+    Class == "Wands"
+    Rarity == Rare
+
+Show #.strict BASE .if Show
+    Class == "Wands"

@@ -1,1 +1,44 @@
 #.subsection Sceptre
+
+# Unique
+
+Show
+    Class == "Sceptres"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Exceptional
+
+Show #.name best-bases
+    Class == "Sceptres"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    Class == "Sceptres"
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    Class == "Sceptres"
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+Show #.strict BASE .tag craft Sceptres .if Show
+    Class == "Sceptres"
+    Rarity == Normal
+    Corrupted == False
+
+# Miscellaneous
+
+Show #.strict NORMAL .if Show
+    Class == "Sceptres"
+    Rarity == Rare
+
+Show #.strict BASE .if Show
+    Class == "Sceptres"

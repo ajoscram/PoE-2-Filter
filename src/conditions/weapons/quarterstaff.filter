@@ -1,1 +1,97 @@
 #.subsection Quarterstaff
+
+# Unique
+
+Show
+    Class == "Quarterstaves"
+    Rarity == Unique
+    #.import < < styles > rarity > unique -> general
+
+# Exceptional
+
+Show #.name best-bases
+    BaseType == "Expert Barrier Quarterstaff" "Expert Crackling Quarterstaff" "Expert Slicing Quarterstaff" "Expert Long Quarterstaff" "Expert Crescent Quarterstaff" "Expert Gothic Quarterstaff"
+    ItemLevel >= 82
+    Rarity == Rare
+    #.import < < styles > rarity > rare -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Magic
+    Corrupted == False
+    #.import < < styles > rarity > magic -> general
+
+Show
+    #.import -> best-bases -> BaseType
+    #.import -> best-bases -> ItemLevel
+    Rarity == Normal
+    Corrupted == False
+    #.import < < styles > rarity > normal -> general
+
+Show #.strict BASE .tag craft Quarterstaves .if Show
+    #.import -> best-bases -> BaseType
+    Rarity == Normal
+    Corrupted == False
+
+Show #.strict NORMAL .if Show
+    Class == "Quarterstaves"
+    Rarity == Rare
+
+# Progression
+# Logic based on https://www.poe2wiki.net/wiki/Quarterstaff
+
+Show
+    BaseType == "Long Quarterstaff" "Wrapped Quarterstaff"
+    AreaLevel < 11
+
+Show
+    BaseType == "Gothic Quarterstaff"
+    AreaLevel < 16
+
+Show
+    BaseType == "Crackling Quarterstaff"
+    AreaLevel < 20
+
+Show
+    BaseType == "Crescent Quarterstaff"
+    AreaLevel < 28
+
+Show
+    BaseType == "Steelpoint Quarterstaff"
+    AreaLevel < 33
+
+Show
+    BaseType == "Slicing Quarterstaff"
+    AreaLevel < 37
+
+Show
+    BaseType == "Barrier Quarterstaff"
+    AreaLevel < 45
+
+Show
+    BaseType == "Advanced Long Quarterstaff"
+    AreaLevel < 48
+
+Show
+    BaseType == "Advanced Gothic Quarterstaff"
+    AreaLevel < 51
+
+Show
+    BaseType == "Advanced Crackling Quarterstaff"
+    AreaLevel < 55
+
+Show
+    BaseType == "Advanced Crescent Quarterstaff"
+    AreaLevel < 59
+
+Show
+    BaseType == "Advanced Slicing Quarterstaff"
+    AreaLevel < 62
+
+Show
+    BaseType == "Advanced Barrier Quarterstaff"
+    AreaLevel < 67
+
+Show #.strict BASE .if Show
+    #.import -> best-bases -> BaseType

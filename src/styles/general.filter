@@ -2,11 +2,10 @@ Show #.name black-text
 	SetTextColor 0 0 0
 
 Show #.name shown
-	SetBorderColor 0 0 0
-	SetFontSize 40
+	SetFontSize 36
 
 Show #.name hidden
-	SetFontSize 15
+	SetFontSize 18
     MinimapIcon -1
     PlayEffect None
     PlayAlertSoundPositional None

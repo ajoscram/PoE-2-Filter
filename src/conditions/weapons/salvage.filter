@@ -1,0 +1,34 @@
+#.subsection Salvage
+
+# Sockets
+
+Show #.name salvage-bases .strict NORMAL .if Show
+    Class == "Bows" "Crossbows" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Sceptres" "Staves" "Wands"
+    Sockets == 2
+
+Show #.strict BASE .if Show
+    #.import -> salvage-bases -> Class
+    Sockets == 1
+
+# Quality
+
+Show #.strict STRICT .if Show
+    #.import -> salvage-bases -> Class
+    Quality >= 18
+
+Show #.strict NORMAL .if Show
+    #.import -> salvage-bases -> Class
+    Quality >= 13
+
+Show #.strict BASE .if Show
+    #.import -> salvage-bases -> Class
+    Quality >= 8
+
+Show #.strict BASE .if Show
+    #.import -> salvage-bases -> Class
+    Quality >= 3
+    AreaLevel < 68
+
+Hide
+    #.import -> salvage-bases -> Class
+    #.import < < styles > general -> hidden
