@@ -17,9 +17,9 @@ Show
 Show
     Class == "Skill Gems"
     Quality == 20
-    #.import < < styles > gem -> general
+    #.import < < styles > gem -> general+
 
 Show
     Class == "Skill Gems"
     GemLevel < 19
-    #.import < < styles > gem -> general-
+    #.import < < styles > gem -> general

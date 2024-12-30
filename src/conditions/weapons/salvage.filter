@@ -14,19 +14,19 @@ Show #.strict BASE .if Show
 
 Show #.strict STRICT .if Show
     #.import -> salvage-bases -> Class
-    Quality >= 18
+    Quality >= 20
 
 Show #.strict NORMAL .if Show
     #.import -> salvage-bases -> Class
-    Quality >= 13
+    Quality >= 15
 
 Show #.strict BASE .if Show
     #.import -> salvage-bases -> Class
-    Quality >= 8
+    Quality >= 10
 
 Show #.strict BASE .if Show
     #.import -> salvage-bases -> Class
-    Quality >= 3
+    Quality >= 5
     AreaLevel < 68
 
 Hide

@@ -3,60 +3,29 @@
 # Logic based on https://poe2db.tw/us/Uncut_Skill_Gem#DropLevel
 
 Show
-    Continue
     BaseType == "Uncut Skill Gem"
-    #.import < < styles > gem -> general
+    ItemLevel <= 14
+    AreaLevel <= 61
 
-Hide
+Show
     BaseType == "Uncut Skill Gem"
-    ItemLevel == 14
-    AreaLevel >= 62
+    ItemLevel == 15
     AreaLevel <= 65
-    #.import < < styles > general -> hidden
 
-Hide
+Show
     BaseType == "Uncut Skill Gem"
-    ItemLevel >= 14
-    ItemLevel <= 15
-    AreaLevel >= 66
+    ItemLevel == 16
     AreaLevel <= 69
-    #.import < < styles > general -> hidden
 
-Hide
-    BaseType == "Uncut Skill Gem"
-    ItemLevel >= 15
-    ItemLevel <= 16
-    AreaLevel >= 70
-    AreaLevel <= 73
-    #.import < < styles > general -> hidden
-
-Hide
-    BaseType == "Uncut Skill Gem"
-    ItemLevel >= 16
-    ItemLevel <= 17
-    AreaLevel >= 74
-    AreaLevel <= 77
-    #.import < < styles > general -> hidden
-
-Hide
+Show
     BaseType == "Uncut Skill Gem"
     ItemLevel == 17
-    AreaLevel >= 78
-    AreaLevel <= 81
-    #.import < < styles > general -> hidden
+    AreaLevel <= 73
 
-Show #.strict NORMAL
+Show
     BaseType == "Uncut Skill Gem"
     ItemLevel == 18
-    AreaLevel >= 78
-    AreaLevel <= 81
-    #.if Hide .import < < styles > general -> hidden
-
-Hide
-    BaseType == "Uncut Skill Gem"
-    ItemLevel == 18
-    AreaLevel >= 82
-    #.import < < styles > general -> hidden
+    AreaLevel <= 77
 
 Show
     BaseType == "Uncut Skill Gem"
@@ -68,5 +37,6 @@ Show
     ItemLevel == 20
     #.import < < styles > gem -> general++
 
-Show
+Hide
     BaseType == "Uncut Skill Gem"
+    #.import < < styles > general -> hidden
