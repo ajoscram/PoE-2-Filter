@@ -3,11 +3,11 @@
 Show #.name cut-primer
 	Continue
 	Class == "Skill Gems" "Support Gems"
-	#.import < < styles > general -> black-text
+	#.import < < styles > gem -> general
 Show #.name uncut-primer
 	Continue
 	BaseType == "Uncut Skill Gem" "Uncut Spirit Gem" "Uncut Support Gem"
-	#.import < < styles > general -> black-text
+	#.import < < styles > gem -> general
 
 #.import skill
 #.import uncut_skill
