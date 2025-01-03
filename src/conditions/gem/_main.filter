@@ -1,22 +1,13 @@
 #.section Gems
 
-Show #.name cut-primer
-	Continue
-	Class == "Skill Gems" "Support Gems"
-	#.import < < styles > gem -> general
-Show #.name uncut-primer
-	Continue
-	BaseType == "Uncut Skill Gem" "Uncut Spirit Gem" "Uncut Support Gem"
-	#.import < < styles > gem -> general
-
 #.import skill
 #.import uncut_skill
 #.import uncut_spirit
 #.import support
 
 Show
-	#.import -> cut-primer -> Class
-	#.import < < styles > gem -> catchall
+	Class == "Skill Gems" "Support Gems"
+	#.import STYLE | gem -> catchall
 Show
-	#.import -> uncut-primer -> BaseType
-	#.import < < styles > gem -> catchall
+	BaseType == "Uncut Skill Gem" "Uncut Spirit Gem" "Uncut Support Gem"
+	#.import STYLE | gem -> catchall

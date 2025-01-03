@@ -1,10 +1,5 @@
 #.section Currency
 
-Show #.name primer
-	Continue
-	Class == "Currency" "Socketable"
-	#.import < < styles > general -> black-text
-
 #.import distillation
 #.import omen
 #.import artifact
@@ -15,5 +10,5 @@ Show #.name primer
 #.import miscellaneous
 
 Show
-	#.import -> primer -> Class
-	#.import < < styles > currency -> catchall
+	Class == "Currency" "Socketable"
+	#.import STYLE | currency -> catchall

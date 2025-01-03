@@ -30,13 +30,14 @@ Show
 Show
     BaseType == "Uncut Skill Gem"
     ItemLevel == 19
-    #.import < < styles > gem -> general+
+    #.import STYLE | gem -> t2
 
 Show
     BaseType == "Uncut Skill Gem"
     ItemLevel == 20
-    #.import < < styles > gem -> general++
+    #.import STYLE | gem -> t1
 
 Hide
     BaseType == "Uncut Skill Gem"
-    #.import < < styles > general -> hidden
+    #.import STYLE | gem -> t4
+    #.import STYLE | shared > miscellaneous -> hidden

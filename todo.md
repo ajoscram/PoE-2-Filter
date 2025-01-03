@@ -1,17 +1,17 @@
 # Immediately
-* The percent thing for salvage is wonky. Need to cull out lower percentages 
-* Uncut gem ranges are wonky. Refactor for sure, mirroring progression from gear
-* Waystones need a separate style from fragments
-* Waytones ranges are wonky. Maybe mirror structure from gear (?)
-* Rare waystones are worth showing until LENIENT cause need some for trash maps
-* Flasks need additional progression past the best possible flasks. They drop too much.
-* Check weapon mods for highest iLvl needed for best bases
-* Change NORMAL to LENIENT (to avoid confusion with normal rarity)
-* Add a `#.strict BASE .if Show` for progression drops in case any gear base is outside campaign range
-* Change and update all styles
+
+* Add the "Classic" style
     https://www.poewiki.net/wiki/Guide:Item_filter_guide#Color_Options
-    Match the beam colors from the game
-        Normal, Magic, Rare and Uniques might need a primer for their font color to match the beams
+
+
+* Review if rarity styles in beam should conform to all other styles
+* Change NORMAL to LENIENT (to avoid confusion with normal rarity)
+* CHARMS CAN HAVE QUALITY, AND QUALITY CHARMS ARE DROP ONLY. ADD TO FILTER ASAP
+* Add a BASE / NORMAL Show for uncut gems that are not the absolute highest tier that can drop
+* Rare waystones are worth showing until LENIENT cause need some for trash maps
+* Check weapon mods for highest iLvl needed for best bases
+* Add a `#.strict BASE .if Show` for progression drops in case any gear base is outside campaign range
+* Implement relics
 
 # Later / Bugs
 * The base types for pinnacle keys cannot be used for filtering

@@ -1,19 +1,16 @@
-Show #.name black-text
-	SetTextColor 0 0 0
-
 Show #.name shown
 	SetFontSize 36
 
 Show #.name hidden
 	SetFontSize 18
-    MinimapIcon -1
+    MinimapIcon ICON_DISABLED
     PlayEffect None
     PlayAlertSoundPositional None
     DisableDropSound None
 
 Show #.name catchall
 	PlayEffect Pink
-	SetBorderColor 255 0 255
-	SetBackgroundColor 255 0 255
-	#.import -> black-text
-	#.import sound -> error
+	SetBorderColor COLOR_BLACK
+	SetBackgroundColor COLOR_PINK
+	SetTextColor COLOR_BLACK
+	PlayAlertSoundPositional SOUND_ERROR

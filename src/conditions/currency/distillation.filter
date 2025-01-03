@@ -2,16 +2,16 @@
 
 Show
 	BaseType == "Distilled Suffering" "Distilled Isolation"
-	#.import < < styles > currency -> general++
+	#.import STYLE | currency -> t1
 
 Show
 	BaseType == "Distilled Despair" "Distilled Fear"
-	#.import < < styles > currency -> general+
+	#.import STYLE | currency -> t2
 
 Show
 	BaseType == "Distilled Paranoia" "Distilled Envy" "Distilled Disgust"
-	#.import < < styles > currency -> general
+	#.import STYLE | currency -> t3
 
 Show
 	BaseType == "Distilled Ire" "Distilled Guilt" "Distilled Greed"
-	#.import < < styles > currency -> general-
+	#.import STYLE | currency -> t4

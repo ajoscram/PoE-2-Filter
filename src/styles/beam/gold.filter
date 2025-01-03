@@ -1,0 +1,16 @@
+Show #.name t1
+    PlayEffect Yellow Temp
+    MinimapIcon 2 Yellow Circle
+    SetTextColor COLOR_YELLOW OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_NONE
+    #.import -> t3 -> SetFontSize
+
+Show #.name t2
+    SetTextColor COLOR_YELLOW OPACITY_MID
+    SetBackgroundColor COLOR_BLACK OPACITY_NONE
+    #.import -> t3 -> SetFontSize
+
+Show #.name t3
+    SetTextColor COLOR_YELLOW OPACITY_LOW
+    SetBackgroundColor COLOR_BLACK OPACITY_NONE
+    SetFontSize 30

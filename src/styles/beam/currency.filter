@@ -1,0 +1,42 @@
+Show #.name t0
+	SetTextColor COLOR_CREAM OPACITY_HIGH
+	SetBackgroundColor COLOR_RED OPACITY_HIGH
+	SetBorderColor COLOR_CREAM OPACITY_HIGH
+	PlayAlertSoundPositional SOUND_T0
+	PlayEffect White
+	MinimapIcon ICON_MEDIUM White Circle
+
+Show #.name t1
+	SetTextColor COLOR_CREAM OPACITY_HIGH
+	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+	SetBorderColor COLOR_CREAM OPACITY_HIGH
+	PlayAlertSoundPositional SOUND_T1
+	PlayEffect White
+	MinimapIcon ICON_MEDIUM White Circle
+
+Show #.name t2
+	SetTextColor COLOR_CREAM OPACITY_HIGH
+	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+	SetBorderColor COLOR_CREAM OPACITY_LOW
+	PlayAlertSoundPositional SOUND_T2
+	PlayEffect White
+	MinimapIcon ICON_SMALL White Circle
+
+Show #.name t3
+	SetTextColor COLOR_CREAM OPACITY_HIGH
+	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+	PlayAlertSoundPositional SOUND_T3
+	PlayEffect White Temp
+
+Show #.name t4
+	SetTextColor COLOR_CREAM OPACITY_MID
+	SetBackgroundColor COLOR_BLACK OPACITY_MID
+
+Show #.name t5
+    SetTextColor COLOR_CREAM OPACITY_LOW
+	SetBackgroundColor COLOR_BLACK OPACITY_LOW
+
+Show
+    Show #.name catchall
+	MinimapIcon ICON_LARGE Pink Circle
+	#.import shared > miscellaneous -> catchall

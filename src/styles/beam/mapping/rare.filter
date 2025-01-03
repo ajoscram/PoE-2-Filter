@@ -1,0 +1,16 @@
+Show #.name t1
+	#.import < shared > rare -> t1
+	MinimapIcon ICON_MEDIUM Yellow Square
+
+Show #.name t2
+	#.import < shared > rare -> t2
+	MinimapIcon ICON_SMALL Yellow Square
+
+Show #.name t3
+	#.import < shared > rare -> t3
+
+Show #.name t4
+	#.import < shared > rare -> t4
+
+Show #.name t5
+	#.import < shared > rare -> t5

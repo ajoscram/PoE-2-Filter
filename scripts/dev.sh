@@ -1,6 +1,10 @@
 source .env
 
-touch "$OUTPUT"
-code "$OUTPUT"
+STYLE=${1:-"classic"}
 VERSION=$(scripts/version.sh)
-pfg.exe :watch "src/_main.filter" "$OUTPUT" .import .alias VERSION=$VERSION .choose .index .if
+
+touch "$OUTPUT" && code "$OUTPUT"
+pfg.exe :watch "src/_main.filter" "$OUTPUT" \
+    .import STYLE=styles \> $STYLE \
+    .alias VERSION=$VERSION \
+    .choose .index .if

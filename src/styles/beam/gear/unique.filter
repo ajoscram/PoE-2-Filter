@@ -1,0 +1,16 @@
+Show #.name t1
+	#.import < shared > unique -> t1
+	MinimapIcon ICON_MEDIUM Orange UpsideDownHouse
+
+Show #.name t2
+	#.import < shared > unique -> t2
+	MinimapIcon ICON_SMALL Orange UpsideDownHouse
+
+Show #.name t3
+	#.import < shared > unique -> t3
+
+Show #.name t4
+	#.import < shared > unique -> t4
+
+Show #.name t5
+	#.import < shared > unique -> t5

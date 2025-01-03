@@ -4,15 +4,15 @@ Show
     # patched in the class because these are not supported as base types:
     # "Faded Crisis Fragment" "Ancient Crisis Fragment" "Weathered Crisis Fragment" 
     Class == "Pinnacle Keys"
-    #.import < < styles > mapping -> general++
+    #.import STYLE | mapping > miscellaneous -> t1
 Show
     BaseType == "An Audience with the King" "Simulacrum" "Breachstone" 
-    #.import < < styles > mapping -> general++
+    #.import STYLE | mapping > miscellaneous -> t1
 
 Show
     BaseType == "Cowardly Fate" "Deadly Fate" "Victorious Fate"
-    #.import < < styles > mapping -> general+
+    #.import STYLE | mapping > miscellaneous -> t2
 
 Show
     BaseType == "Expedition Logbook" "Inscribed Ultimatum"
-    #.import < < styles > mapping -> general
+    #.import STYLE | mapping > miscellaneous -> t3

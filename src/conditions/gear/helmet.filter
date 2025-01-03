@@ -5,33 +5,33 @@
 Show
     Class == "Helmets"
     Rarity == Unique
-    #.import < < styles > rarity > unique -> general
+    #.import STYLE | gear > unique -> t3
 
 # Exceptional
 
 Show
     BaseType == "Golden Wreath" "Golden Visage"
-    #.import < < styles > rarity > rare -> general+
+    #.import STYLE | gear > rare -> t1
 
 Show #.name best-bases
     BaseType == "Expert Elite Greathelm" "Expert Feathered Tiara" "Expert Heavy Crown" "Expert Hunter Hood" "Expert Shielded Helm" "Expert Tribal Mask"
     ItemLevel >= 82
     Rarity == Rare
-    #.import < < styles > rarity > rare -> general
+    #.import STYLE | gear > rare -> t2
 
 Show
     #.import -> best-bases -> BaseType
     #.import -> best-bases -> ItemLevel
     Rarity == Magic
     Corrupted == False
-    #.import < < styles > rarity > magic -> general
+    #.import STYLE | gear > magic -> t2
 
 Show
     #.import -> best-bases -> BaseType
     #.import -> best-bases -> ItemLevel
     Rarity == Normal
     Corrupted == False
-    #.import < < styles > rarity > normal -> general
+    #.import STYLE | gear > normal -> t2
 
 Show #.strict BASE .tag craft Helmets .if Show
     #.import -> best-bases -> BaseType

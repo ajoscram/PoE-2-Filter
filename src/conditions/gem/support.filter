@@ -2,12 +2,9 @@
 
 Show
     Class == "Support Gems"
-    #.import < < styles > gem -> general
+    #.import STYLE | gem -> t3
 
-Show #.strict BASE .if Show
+Show #.strict BASE
     BaseType == "Uncut Support Gem"
-    #.import < < styles > gem -> general
-
-Hide
-    BaseType == "Uncut Support Gem"
-    #.import < < styles > general -> hidden
+    #.import STYLE | gem -> t4
+    #.if Hide .import STYLE | shared > miscellaneous -> hidden

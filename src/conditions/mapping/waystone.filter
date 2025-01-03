@@ -1,61 +1,122 @@
 #.subsection Waystone
 
+# Priming
+
 Show
     Continue
-    BaseType "Waystone"
-    #.import < < styles > mapping -> general
+    Class == "Waystones"
+    Rarity == Rare
+    #.import STYLE | gear > rare -> t3
 
-# Tier 1-3
 Show
-    BaseType "Waystone"
-    WaystoneTier <= 3
+    Continue
+    Class == "Waystones"
+    Rarity == Magic
+    #.import STYLE | gear > magic -> t3
+
+Show
+    Continue
+    Class == "Waystones"
+    Rarity == Normal
+    #.import STYLE | gear > normal -> t3
+
+# T16+
+
+Show
+    Class == "Waystones"
+    WaystoneTier >= 16
+    Rarity == Rare
+    #.import STYLE | gear > rare -> t2
+
+Show
+    Class == "Waystones"
+    WaystoneTier >= 16
+    Rarity == Magic
+    #.import STYLE | gear > magic -> t2
+
+Show
+    Class == "Waystones"
+    WaystoneTier >= 16
+    Rarity == Normal
+    #.import STYLE | gear > normal -> t2
+
+# Progression
+# Logic based on https://poe2db.tw/us/Waystones
+
+Show
+    Class == "Waystones"
+    WaystoneTier == 1
+    AreaLevel <= 67
+
+Show
+    Class == "Waystones"
+    WaystoneTier == 2
+    AreaLevel <= 68
+
+Show
+    Class == "Waystones"
+    WaystoneTier == 3
+    AreaLevel <= 69
+
+Show
+    Class == "Waystones"
+    WaystoneTier == 4
     AreaLevel <= 70
-Hide
-    BaseType "Waystone"
-    WaystoneTier <= 3
-    AreaLevel > 70
-    #.import < < styles > general -> hidden
 
-# Tier 4-6
 Show
-    BaseType "Waystone"
-    WaystoneTier <= 6
+    Class == "Waystones"
+    WaystoneTier == 5
+    AreaLevel <= 71
+
+Show
+    Class == "Waystones"
+    WaystoneTier == 6
+    AreaLevel <= 72
+
+Show
+    Class == "Waystones"
+    WaystoneTier == 7
     AreaLevel <= 73
-Hide
-    BaseType "Waystone"
-    WaystoneTier <= 6
-    AreaLevel > 73
-    #.import < < styles > general -> hidden
 
-# Tier 7-9
 Show
-    BaseType "Waystone"
-    WaystoneTier <= 9
+    Class == "Waystones"
+    WaystoneTier == 8
+    AreaLevel <= 74
+
+Show
+    Class == "Waystones"
+    WaystoneTier == 9
+    AreaLevel <= 75
+
+Show
+    Class == "Waystones"
+    WaystoneTier == 10
     AreaLevel <= 76
-Hide
-    BaseType "Waystone"
-    WaystoneTier <= 9
-    AreaLevel > 76
-    #.import < < styles > general -> hidden
 
-# Tier 10-12
 Show
-    BaseType "Waystone"
-    WaystoneTier <= 12
+    Class == "Waystones"
+    WaystoneTier == 11
+    AreaLevel <= 77
+
+Show
+    Class == "Waystones"
+    WaystoneTier == 12
+    AreaLevel <= 78
+
+Show
+    Class == "Waystones"
+    WaystoneTier == 13
     AreaLevel <= 79
+
+Show
+    Class == "Waystones"
+    WaystoneTier == 14
+
+Show
+    Class == "Waystones"
+    WaystoneTier == 15
+
 Hide
-    BaseType "Waystone"
-    WaystoneTier <= 12
-    AreaLevel > 79
-    #.import < < styles > general -> hidden
-
-# Tier 13-15
-Show
-    BaseType "Waystone"
+    Class == "Waystones"
     WaystoneTier <= 15
-
-# Tier 16+
-Show
-    BaseType "Waystone"
-    WaystoneTier > 15
-    #.import < < styles > mapping -> general+
+    #.import STYLE | shared > miscellaneous -> hidden

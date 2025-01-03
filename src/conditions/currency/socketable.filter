@@ -2,20 +2,20 @@
 
 Show
 	BaseType == "Soul Core of Azcapa"
-	#.import < < styles > currency -> general++
+	#.import STYLE | currency -> t1
 
 Show
 	BaseType == "Soul Core of Zalatl"
-	#.import < < styles > currency -> general+
+	#.import STYLE | currency -> t2
 
 Show
 	BaseType == "Iron Rune" "Soul Core of Tacati" "Soul Core of Jiquani" "Soul Core of Citaqualotl" "Soul Core of Puhuarte" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Quipolatl" "Soul Core of Ticaba"
-	#.import < < styles > currency -> general
+	#.import STYLE | currency -> t3
 
 Show
 	BaseType == "Soul Core of Opiloti" "Soul Core of Topotante" "Soul Core of Atmohua" "Soul Core of Cholotl" "Soul Core of Zantipi"
-	#.import < < styles > currency -> general-
+	#.import STYLE | currency -> t4
 
 Show #.strict NORMAL
 	BaseType == "Desert Rune" "Glacial Rune" "Storm Rune" "Body Rune" "Mind Rune" "Rebirth Rune" "Inspiration Rune" "Stone Rune" "Vision Rune"
-	#.import < < styles > currency -> general--
+	#.import STYLE | currency -> t4

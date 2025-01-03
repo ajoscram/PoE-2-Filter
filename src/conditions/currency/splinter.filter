@@ -2,4 +2,4 @@
 
 Show
     BaseType == "Breach Splinter" "Simulacrum Splinter"
-    #.import < < styles > currency -> general-
+    #.import STYLE | currency -> t4

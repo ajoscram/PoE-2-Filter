@@ -5,21 +5,21 @@ Show
     #.choose 2 1
     GemLevel == 21
     Sockets == 5
-    #.import < < styles > gem -> general++
+    #.import STYLE | gem -> t1
 
 Show
     Class == "Skill Gems"
     #.choose 2 1
     GemLevel >= 19
     Sockets == 4
-    #.import < < styles > gem -> general+
+    #.import STYLE | gem -> t2
 
 Show
     Class == "Skill Gems"
     Quality == 20
-    #.import < < styles > gem -> general+
+    #.import STYLE | gem -> t3
 
 Show
     Class == "Skill Gems"
     GemLevel < 19
-    #.import < < styles > gem -> general
+    #.import STYLE | gem -> t4

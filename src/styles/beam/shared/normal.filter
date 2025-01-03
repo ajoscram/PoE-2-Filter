@@ -1,0 +1,24 @@
+Show #.name t1
+	SetTextColor COLOR_WHITE OPACITY_HIGH
+	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+	SetBorderColor COLOR_WHITE OPACITY_HIGH
+	PlayEffect White
+	PlayAlertSoundPositional SOUND_T2
+
+Show #.name t2
+	SetTextColor COLOR_WHITE OPACITY_HIGH
+	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+	SetBorderColor COLOR_WHITE OPACITY_LOW
+	PlayEffect White Temp
+
+Show #.name t3
+	SetTextColor COLOR_WHITE OPACITY_HIGH
+	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+
+Show #.name t4
+	SetTextColor COLOR_WHITE OPACITY_MID
+	SetBackgroundColor COLOR_BLACK OPACITY_MID
+
+Show #.name t5
+    SetTextColor COLOR_WHITE OPACITY_LOW
+	SetBackgroundColor COLOR_BLACK OPACITY_LOW

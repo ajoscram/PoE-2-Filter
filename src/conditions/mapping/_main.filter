@@ -1,15 +1,11 @@
 #.section Mapping
 
-Show #.name primer
-	Continue
-	Class == "Pinnacle Keys" "Waystones" "Tablet" "Misc Map Items" "Map Fragments"
-	#.import < < styles > general -> black-text
-
 #.import waystone
 #.import tablet
 #.import barya
 #.import miscellaneous
 
 Show
-	#.import -> primer -> Class
-	#.import < < styles > mapping -> catchall
+	Class == "Pinnacle Keys" "Waystones" "Tablet" "Misc Map Items" "Map Fragments"
+
+	#.import STYLE | mapping > miscellaneous -> catchall

@@ -1,0 +1,35 @@
+#.# Colors
+
+#.alias COLOR_BLACK   = 0 0 0
+#.alias COLOR_WHITE   = 255 255 255
+#.alias COLOR_CREAM   = 255 255 210
+#.alias COLOR_RED     = 255 75 75
+#.alias COLOR_GREEN   = 115 255 75
+#.alias COLOR_BLUE    = 50 150 255
+#.alias COLOR_BROWN   = 200 100 0
+#.alias COLOR_YELLOW  = 255 200 0
+#.alias COLOR_CYAN    = 0 255 255
+#.alias COLOR_ORANGE  = 255 150 0
+#.alias COLOR_PINK    = 255 100 255
+#.alias COLOR_PURPLE  = 150 100 255
+
+#.# Opacities
+#.alias OPACITY_HIGH = 255
+#.alias OPACITY_MID = 192
+#.alias OPACITY_LOW = 128
+#.alias OPACITY_NONE = 0
+
+#.# Icon Sizes
+
+#.alias ICON_DISABLED   = -1
+#.alias ICON_LARGE      =  0
+#.alias ICON_MEDIUM     =  1
+#.alias ICON_SMALL      =  2
+
+#.# Sounds
+
+#.alias SOUND_ERROR = 15 300
+#.alias SOUND_T0    = 5 300
+#.alias SOUND_T1    = 4 300
+#.alias SOUND_T2    = 6 150
+#.alias SOUND_T3    = 13 75

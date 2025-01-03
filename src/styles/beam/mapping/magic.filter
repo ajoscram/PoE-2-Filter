@@ -1,0 +1,16 @@
+Show #.name t1
+	#.import < shared > magic -> t1
+	MinimapIcon ICON_MEDIUM Blue Square
+
+Show #.name t2
+	#.import < shared > magic -> t2
+	MinimapIcon ICON_SMALL Blue Square
+
+Show #.name t3
+	#.import < shared > magic -> t3
+
+Show #.name t4
+	#.import < shared > magic -> t4
+
+Show #.name t5
+	#.import < shared > magic -> t5

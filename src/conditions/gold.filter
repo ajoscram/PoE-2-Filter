@@ -3,13 +3,13 @@
 Show
     BaseType == "Gold"
     StackSize >= 1000
-    #.import < styles > gold -> general++
+    #.import STYLE | gold -> t1
 
 Show
     BaseType == "Gold"
     StackSize >= 500
-    #.import < styles > gold -> general+
+    #.import STYLE | gold -> t2
 
 Show
     BaseType == "Gold"
-    #.import < styles > gold -> general
+    #.import STYLE | gold -> t3

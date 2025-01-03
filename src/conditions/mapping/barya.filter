@@ -2,8 +2,8 @@
 
 Show
     BaseType == "Test of Will Barya" "Test of Cunning Barya" "Test of Time Barya"
-    #.import < < styles > mapping -> general+
+    #.import STYLE | mapping > miscellaneous -> t2
 
 Show
     BaseType == "Djinn Barya"
-    #.import < < styles > mapping -> general
+    #.import STYLE | mapping > miscellaneous -> t3

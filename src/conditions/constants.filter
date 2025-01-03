@@ -1,0 +1,6 @@
+#.# Strictness levels
+
+#.alias BASE    = 0
+#.alias LENIENT = 1
+#.alias STRICT  = 2
+#.alias UBER    = 4

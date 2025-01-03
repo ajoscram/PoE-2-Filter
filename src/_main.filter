@@ -7,14 +7,7 @@
 
 #.index
 
-#.alias BASE = 0, NORMAL = 1, STRICT = 2
-
-#.section General
-
-Show
-	Continue
-	#.import styles > general -> shown
-
+#.import conditions > priming
 #.import conditions > quest
 #.import conditions > gold
 #.import conditions > currency > _main
@@ -28,4 +21,7 @@ Show
 
 Show
     MinimapIcon 0 Pink Star
-    #.import styles > general -> catchall
+    #.import STYLE | shared > miscellaneous -> catchall
+
+#.import conditions > constants
+#.import STYLE | constants

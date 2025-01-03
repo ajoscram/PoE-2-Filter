@@ -2,16 +2,16 @@
 
 Show
 	BaseType == "Greater Essence of Haste"
-	#.import < < styles > currency -> general++
+	#.import STYLE | currency -> t1
 
 Show
 	BaseType == "Greater Essence of the Body" "Greater Essence of the Mind" "Greater Essence of Enhancement" "Greater Essence of Torment" "Greater Essence of Flames" "Greater Essence of Ice" "Greater Essence of Electricity" "Greater Essence of Ruin" "Greater Essence of Sorcery"
-	#.import < < styles > currency -> general+
+	#.import STYLE | currency -> t2
 
 Show
 	BaseType == "Essence of Torment" "Essence of Flames" "Essence of Ice" "Essence of Electricity" "Essence of Ruin" "Essence of Battle" "Essence of Sorcery" "Essence of Haste" "Greater Essence of Battle" "Greater Essence of the Infinite"
-	#.import < < styles > currency -> general
+	#.import STYLE | currency -> t3
 
 Show
 	BaseType == "Essence of the Body" "Essence of the Mind" "Essence of Enhancement"  "Essence of the Infinite"
-	#.import < < styles > currency -> general-
+	#.import STYLE | currency -> t4

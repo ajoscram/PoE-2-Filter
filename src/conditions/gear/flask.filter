@@ -5,7 +5,7 @@
 Show
 	Class == "Life Flasks" "Mana Flasks"
 	Rarity == Unique
-    #.import < < styles > rarity > unique -> general
+    #.import STYLE | gear > unique -> t3
 
 # Exceptional
 
@@ -13,13 +13,13 @@ Show #.name best-bases
 	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
     ItemLevel >= 83
 	Rarity == Magic
-    #.import < < styles > rarity > magic -> general
+    #.import STYLE | gear > magic -> t2
 
 Show
 	#.import -> best-bases -> BaseType
     ItemLevel >= 83
 	Rarity == Normal
-    #.import < < styles > rarity > normal -> general
+    #.import STYLE | gear > normal -> t2
 
 # Quality
 
@@ -27,13 +27,13 @@ Show #.strict STRICT
 	#.import -> best-bases -> BaseType
 	Rarity == Magic
 	Quality >= 20
-    #.import < < styles > rarity > magic -> general
+    #.import STYLE | gear > magic -> t3
 
 Show #.strict STRICT
 	#.import -> best-bases -> BaseType
 	Rarity == Normal
 	Quality >= 20
-    #.import < < styles > rarity > normal -> general
+    #.import STYLE | gear > normal -> t3
 
 Show #.strict NORMAL .if Show
     #.import -> best-bases -> BaseType
@@ -84,4 +84,4 @@ Show
 
 Hide
     Class == "Life Flasks" "Mana Flasks"
-    #.import < < styles > general -> hidden
+    #.import STYLE | shared > miscellaneous -> hidden

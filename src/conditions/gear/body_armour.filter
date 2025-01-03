@@ -5,33 +5,33 @@
 Show
     Class == "Body Armours"
     Rarity == Unique
-    #.import < < styles > rarity > unique -> general
+    #.import STYLE | gear > unique -> t3
 
 # Exceptional
 
 Show
     BaseType == "Golden Mantle"
-    #.import < < styles > rarity > rare -> general+
+    #.import STYLE | gear > rare -> t1
 
 Show #.name best-bases
     BaseType == "Expert Hexer's Robe" "Expert Iron Cuirass" "Expert Pathfinder Coat" "Expert Pelt Mantle" "Expert Rogue Armour" "Expert Waxed Jacket" "Expert Cloaked Mail" "Expert Keth Raiment" "Expert Shaman Mantle" "Expert Steel Plate" "Expert Studded Vest" "Expert Wayfarer Jacket" "Expert Altar Robe" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Scalper's Jacket" "Expert Serpentscale Coat" "Expert Vaal Cuirass"
     ItemLevel >= 82
     Rarity == Rare
-    #.import < < styles > rarity > rare -> general
+    #.import STYLE | gear > rare -> t2
 
 Show
     #.import -> best-bases -> BaseType
     #.import -> best-bases -> ItemLevel
     Rarity == Magic
     Corrupted == False
-    #.import < < styles > rarity > magic -> general
+    #.import STYLE | gear > magic -> t2
 
 Show
     #.import -> best-bases -> BaseType
     #.import -> best-bases -> ItemLevel
     Rarity == Normal
     Corrupted == False
-    #.import < < styles > rarity > normal -> general
+    #.import STYLE | gear > normal -> t2
 
 Show #.strict BASE .tag craft Bodies .if Show
     #.import -> best-bases -> BaseType

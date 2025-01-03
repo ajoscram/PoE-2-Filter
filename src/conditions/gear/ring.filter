@@ -5,7 +5,7 @@
 Show
     Class == "Rings"
     Rarity == Unique
-    #.import < < styles > rarity > unique -> general
+    #.import STYLE | gear > unique -> t3
 
 # Exceptional
 
@@ -13,21 +13,21 @@ Show #.name best-bases
     BaseType == "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Gold Ring" "Breach Ring"
     ItemLevel >= 82
     Rarity == Rare
-    #.import < < styles > rarity > rare -> general
+    #.import STYLE | gear > rare -> t2
 
 Show
     #.import -> best-bases -> BaseType
     #.import -> best-bases -> ItemLevel
     Rarity == Magic
     Corrupted == False
-    #.import < < styles > rarity > magic -> general
+    #.import STYLE | gear > magic -> t2
 
 Show
     #.import -> best-bases -> BaseType
     #.import -> best-bases -> ItemLevel
     Rarity == Normal
     Corrupted == False
-    #.import < < styles > rarity > normal -> general
+    #.import STYLE | gear > normal -> t2
 
 Show #.strict NORMAL .tag craft _ .if Show
     #.import -> best-bases -> BaseType
@@ -52,4 +52,4 @@ Show #.strict BASE .if Show
 
 Hide
     Class == "Rings"
-    #.import < < styles > general -> hidden
+    #.import STYLE | shared > miscellaneous -> hidden
