@@ -13,23 +13,4 @@
 #.alias COLOR_PINK    = 255 100 255
 #.alias COLOR_PURPLE  = 150 100 255
 
-#.# Opacities
-#.alias OPACITY_HIGH = 255
-#.alias OPACITY_MID = 192
-#.alias OPACITY_LOW = 128
-#.alias OPACITY_NONE = 0
-
-#.# Icon Sizes
-
-#.alias ICON_DISABLED   = -1
-#.alias ICON_LARGE      =  0
-#.alias ICON_MEDIUM     =  1
-#.alias ICON_SMALL      =  2
-
-#.# Sounds
-
-#.alias SOUND_ERROR = 15 300
-#.alias SOUND_T0    = 5 300
-#.alias SOUND_T1    = 4 300
-#.alias SOUND_T2    = 6 150
-#.alias SOUND_T3    = 13 75
+#.import < constants

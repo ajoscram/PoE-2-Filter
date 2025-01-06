@@ -35,7 +35,7 @@ Show #.strict STRICT
 	Quality >= 20
     #.import STYLE | gear > normal -> t3
 
-Show #.strict NORMAL .if Show
+Show #.strict LENIENT .if Show
     #.import -> best-bases -> BaseType
     Quality > 10
 

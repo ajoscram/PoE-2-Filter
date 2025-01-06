@@ -34,7 +34,7 @@ Show #.strict BASE .tag craft Maces_1h .if Show
     Rarity == Normal
     Corrupted == False
 
-Show #.strict NORMAL .if Show
+Show #.strict LENIENT .if Show
     Class == "One Hand Maces"
     Rarity == Rare
 

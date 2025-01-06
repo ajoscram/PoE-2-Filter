@@ -3,9 +3,9 @@
 #                     /--|   ,  __' (     -/--  ,  //  /   _  _  
 #                   _/   |__/|_(_) /_)_  _/     (_(/_ (__ (/_/ (_
 #                           /)                                   
-#                          (/                 PoE 2 - version VERSION
+#                          (/                                    
 
-#.index
+#.index PoE 2 | vVERSION | STYLE | VARIANT
 
 #.import conditions > priming
 #.import conditions > quest
@@ -24,4 +24,3 @@ Show
     #.import STYLE | shared > miscellaneous -> catchall
 
 #.import conditions > constants
-#.import STYLE | constants

@@ -16,6 +16,6 @@ Show
 	BaseType == "Soul Core of Opiloti" "Soul Core of Topotante" "Soul Core of Atmohua" "Soul Core of Cholotl" "Soul Core of Zantipi"
 	#.import STYLE | currency -> t4
 
-Show #.strict NORMAL
+Show #.strict LENIENT
 	BaseType == "Desert Rune" "Glacial Rune" "Storm Rune" "Body Rune" "Mind Rune" "Rebirth Rune" "Inspiration Rune" "Stone Rune" "Vision Rune"
 	#.import STYLE | currency -> t4

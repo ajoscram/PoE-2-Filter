@@ -24,7 +24,7 @@ Show #.strict STRICT .if Show
     Rarity == Rare
     #.import STYLE | gear > rare -> t3
 
-Show #.strict NORMAL .if Show
+Show #.strict LENIENT .if Show
     Class == "Jewels"
     Rarity == Magic
     #.import STYLE | gear > magic -> t3

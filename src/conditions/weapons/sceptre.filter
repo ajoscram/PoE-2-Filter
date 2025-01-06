@@ -36,7 +36,7 @@ Show #.strict BASE .tag craft Sceptres .if Show
 
 # Miscellaneous
 
-Show #.strict NORMAL .if Show
+Show #.strict LENIENT .if Show
     Class == "Sceptres"
     Rarity == Rare
 

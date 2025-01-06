@@ -29,7 +29,7 @@ Show
     Corrupted == False
     #.import STYLE | gear > normal -> t2
 
-Show #.strict NORMAL .tag craft _ .if Show
+Show #.strict LENIENT .tag craft _ .if Show
     #.import -> best-bases -> BaseType
     Rarity == Normal
     Corrupted == False

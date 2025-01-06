@@ -34,7 +34,7 @@ Show #.strict BASE .tag craft Bows .if Show
     Rarity == Normal
     Corrupted == False
 
-Show #.strict NORMAL .if Show
+Show #.strict LENIENT .if Show
     Class == "Bows"
     Rarity == Rare
 

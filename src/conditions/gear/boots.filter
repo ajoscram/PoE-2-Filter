@@ -38,7 +38,7 @@ Show #.strict BASE .tag craft Boots .if Show
     Rarity == Normal
     Corrupted == False
 
-Show #.strict NORMAL .if Show
+Show #.strict LENIENT .if Show
     Class == "Boots"
     Rarity == Rare
 

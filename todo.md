@@ -3,7 +3,6 @@
 * Add the "Classic" style
     https://www.poewiki.net/wiki/Guide:Item_filter_guide#Color_Options
 
-
 * Review if rarity styles in beam should conform to all other styles
 * Change NORMAL to LENIENT (to avoid confusion with normal rarity)
 * CHARMS CAN HAVE QUALITY, AND QUALITY CHARMS ARE DROP ONLY. ADD TO FILTER ASAP

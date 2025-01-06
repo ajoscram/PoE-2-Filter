@@ -2,7 +2,7 @@
 
 # Sockets
 
-Show #.name salvage-bases .strict NORMAL .if Show
+Show #.name salvage-bases .strict LENIENT .if Show
     Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields" "Foci"
     Sockets == 2
 
@@ -16,7 +16,7 @@ Show #.strict STRICT .if Show
     #.import -> salvage-bases -> Class
     Quality >= 20
 
-Show #.strict NORMAL .if Show
+Show #.strict LENIENT .if Show
     #.import -> salvage-bases -> Class
     Quality >= 15
 

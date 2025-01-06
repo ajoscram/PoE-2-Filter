@@ -4,3 +4,5 @@
 #.alias LENIENT = 1
 #.alias STRICT  = 2
 #.alias UBER    = 4
+
+#.import STYLE | constants

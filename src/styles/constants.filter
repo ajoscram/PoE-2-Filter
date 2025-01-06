@@ -1,0 +1,35 @@
+#.# Opacities
+
+#.alias OPACITY_HIGH    = 255
+#.alias OPACITY_MID     = 192
+#.alias OPACITY_LOW     = 128
+#.alias OPACITY_NONE    = 0
+
+#.# Icon Sizes
+
+#.alias ICON_DISABLED   = -1
+#.alias ICON_LARGE      =  0
+#.alias ICON_MEDIUM     =  1
+#.alias ICON_SMALL      =  2
+
+#.# Sounds
+
+#.alias SOUND_ERROR       = 15 300
+
+#.alias SOUND_SHORT_T0    = 5 300
+#.alias SOUND_SHORT_T1    = 4 300
+#.alias SOUND_SHORT_T2    = 6 150
+#.alias SOUND_SHORT_T3    = 13 75
+
+#.alias SOUND_WUBBY_T1    = 8 300
+#.alias SOUND_WUBBY_T2    = 7 300
+#.alias SOUND_WUBBY_T3    = 9 150
+#.alias SOUND_WUBBY_T4    = 14 100
+
+#.alias SOUND_LONG_T1     = 10 100
+#.alias SOUND_LONG_T2     = 1 100
+#.alias SOUND_LONG_T3     = 2 100
+#.alias SOUND_LONG_T4     = 3 100
+#.alias SOUND_LONG_T5     = 11 100
+#.alias SOUND_LONG_T6     = 16 100
+#.alias SOUND_LONG_T7     = 12 100

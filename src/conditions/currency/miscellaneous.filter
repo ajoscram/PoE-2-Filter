@@ -20,7 +20,7 @@ Show
 	BaseType == "Blacksmith's Whetstone" "Arcanist's Etcher" "Regal Orb"
 	#.import STYLE | currency -> t4
 
-Show #.strict NORMAL
+Show #.strict LENIENT
 	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Armourer's Scrap" "Artificer's Orb" "Alchemy Shard" "Chance Shard" "Regal Shard"
 	#.import STYLE | currency -> t4
     #.if Hide .import STYLE | shared > miscellaneous -> hidden

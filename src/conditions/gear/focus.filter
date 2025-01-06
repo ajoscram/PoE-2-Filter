@@ -34,7 +34,7 @@ Show #.strict BASE .tag craft Foci .if Show
     Rarity == Normal
     Corrupted == False
 
-Show #.strict NORMAL .if Show
+Show #.strict LENIENT .if Show
     Class == "Foci"
     Rarity == Rare
 

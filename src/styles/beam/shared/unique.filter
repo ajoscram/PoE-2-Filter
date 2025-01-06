@@ -3,7 +3,7 @@ Show #.name t1
 	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
 	SetBorderColor COLOR_ORANGE OPACITY_HIGH
 	PlayEffect Orange
-	PlayAlertSoundPositional SOUND_T2
+	PlayAlertSoundPositional SOUND_SHORT_T2
 
 Show #.name t2
 	SetTextColor COLOR_ORANGE OPACITY_HIGH

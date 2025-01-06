@@ -36,7 +36,7 @@ Show #.strict BASE .tag craft Wands .if Show
 
 # Miscellaneous
 
-Show #.strict NORMAL .if Show
+Show #.strict LENIENT .if Show
     Class == "Wands"
     Rarity == Rare
 

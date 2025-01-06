@@ -38,7 +38,7 @@ Show #.strict BASE .tag craft Shields .if Show
     Rarity == Normal
     Corrupted == False
 
-Show #.strict NORMAL .if Show
+Show #.strict LENIENT .if Show
     Class == "Shields"
     Rarity == Rare
 
