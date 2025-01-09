@@ -1,13 +1,23 @@
 #.section Gems
 
+Show #.name gem-classes
+    Continue
+    Class == "Skill Gems" "Support Gems"
+    #.import STYLE | gem -> t4
+
+Show #.name gem-bases
+    Continue
+	BaseType == "Uncut Skill Gem" "Uncut Spirit Gem" "Uncut Support Gem"
+    #.import STYLE | gem -> t4
+
 #.import skill
 #.import uncut_skill
 #.import uncut_spirit
 #.import support
 
 Show
-	Class == "Skill Gems" "Support Gems"
+	#.import -> gem-classes -> Class
 	#.import STYLE | gem -> catchall
 Show
-	BaseType == "Uncut Skill Gem" "Uncut Spirit Gem" "Uncut Support Gem"
+	#.import -> gem-bases -> BaseType
 	#.import STYLE | gem -> catchall

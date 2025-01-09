@@ -31,4 +31,4 @@ Show #.strict BASE .if Show
 
 Hide
     #.import -> salvage-bases -> Class
-    #.import STYLE | shared > miscellaneous -> hidden
+    #.import STYLE | miscellaneous -> hidden

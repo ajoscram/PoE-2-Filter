@@ -52,4 +52,4 @@ Show #.strict BASE .if Show
 
 Hide
     Class == "Belts"
-    #.import STYLE | shared > miscellaneous -> hidden
+    #.import STYLE | miscellaneous -> hidden

@@ -1,0 +1,13 @@
+Show #.name shown
+	SetFontSize 36
+
+Show #.name hidden
+	SetFontSize 18
+    MinimapIcon ICON_DISABLED
+    PlayEffect None
+    PlayAlertSoundPositional None
+    DisableDropSound None
+
+Show #.name catchall
+    MinimapIcon ICON_LARGE Pink Star
+    #.import shared > miscellaneous -> catchall

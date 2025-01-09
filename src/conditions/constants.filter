@@ -3,6 +3,6 @@
 #.alias BASE    = 0
 #.alias LENIENT = 1
 #.alias STRICT  = 2
-#.alias UBER    = 4
+#.alias UBER    = 3
 
 #.import STYLE | constants

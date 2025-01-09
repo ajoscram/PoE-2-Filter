@@ -3,15 +3,15 @@
 Show
     Class == "Skill Gems"
     #.choose 2 1
-    GemLevel == 21
-    Sockets == 5
+        GemLevel == 21
+        Sockets == 5
     #.import STYLE | gem -> t1
 
 Show
     Class == "Skill Gems"
     #.choose 2 1
-    GemLevel >= 19
-    Sockets == 4
+        GemLevel >= 19
+        Sockets == 4
     #.import STYLE | gem -> t2
 
 Show

@@ -1,5 +1,22 @@
 #.section Weapons
 
+# Subsection Priming
+
+Show
+    Continue
+    Rarity == Rare
+	#.import STYLE | gear > rare -> t4
+
+Show
+    Continue
+    Rarity == Magic
+	#.import STYLE | gear > magic -> t4
+
+Show
+    Continue
+    Rarity == Normal
+	#.import STYLE | gear > normal -> t4
+
 #.import axe_1h
 #.import axe_2h
 #.import bow

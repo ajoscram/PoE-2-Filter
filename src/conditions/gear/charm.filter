@@ -32,4 +32,4 @@ Show #.strict BASE .if Show
 
 Hide    
     Class == "Charms"
-    #.import STYLE | shared > miscellaneous -> hidden
+    #.import STYLE | miscellaneous -> hidden

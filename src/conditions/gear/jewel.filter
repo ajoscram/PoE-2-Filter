@@ -39,4 +39,4 @@ Show
 
 Hide
     Class == "Jewels"
-    #.import STYLE | shared > miscellaneous -> hidden
+    #.import STYLE | miscellaneous -> hidden

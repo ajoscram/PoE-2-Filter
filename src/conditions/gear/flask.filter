@@ -84,4 +84,4 @@ Show
 
 Hide
     Class == "Life Flasks" "Mana Flasks"
-    #.import STYLE | shared > miscellaneous -> hidden
+    #.import STYLE | miscellaneous -> hidden

@@ -8,9 +8,12 @@ Show #.name t2
 
 Show #.name t3
 	#.import < shared > magic -> t3
+    SetBorderColor COLOR_BLACK OPACITY_NONE
 
 Show #.name t4
 	#.import < shared > magic -> t4
+    SetBorderColor COLOR_BLACK OPACITY_NONE
 
 Show #.name t5
 	#.import < shared > magic -> t5
+    SetBorderColor COLOR_BLACK OPACITY_NONE

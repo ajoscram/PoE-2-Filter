@@ -8,9 +8,12 @@ Show #.name t2
 
 Show #.name t3
 	#.import < shared > rare -> t3
+    SetBorderColor COLOR_BLACK OPACITY_NONE
 
 Show #.name t4
 	#.import < shared > rare -> t4
+    SetBorderColor COLOR_BLACK OPACITY_NONE
 
 Show #.name t5
 	#.import < shared > rare -> t5
+    SetBorderColor COLOR_BLACK OPACITY_NONE

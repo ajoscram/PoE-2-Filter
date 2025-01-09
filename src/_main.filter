@@ -7,7 +7,12 @@
 
 #.index PoE 2 | vVERSION | STYLE | VARIANT
 
-#.import conditions > priming
+#.section Priming
+
+Show
+	Continue
+	#.import STYLE | miscellaneous -> shown
+
 #.import conditions > quest
 #.import conditions > gold
 #.import conditions > currency > _main
@@ -20,7 +25,6 @@
 #.section Catchall
 
 Show
-    MinimapIcon 0 Pink Star
-    #.import STYLE | shared > miscellaneous -> catchall
+    #.import STYLE | miscellaneous -> catchall
 
 #.import conditions > constants

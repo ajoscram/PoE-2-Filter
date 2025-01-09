@@ -23,16 +23,16 @@ Show
 Show #.strict LENIENT
 	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Armourer's Scrap" "Artificer's Orb" "Alchemy Shard" "Chance Shard" "Regal Shard"
 	#.import STYLE | currency -> t4
-    #.if Hide .import STYLE | shared > miscellaneous -> hidden
+    #.if Hide .import STYLE | miscellaneous -> hidden
 
 Hide #.name trash
 	BaseType == "Scroll of Wisdom" "Transmutation Shard" "Artificer's Shard"
 	AreaLevel >= 45
     #.import STYLE | currency -> t5
-    #.import STYLE | shared > miscellaneous -> hidden
+    #.import STYLE | miscellaneous -> hidden
 
 Show #.strict BASE
 	#.import -> trash -> BaseType
 	AreaLevel < 45
     #.import STYLE | currency -> t5
-    #.if Hide .import STYLE | shared > miscellaneous -> hidden
+    #.if Hide .import STYLE | miscellaneous -> hidden

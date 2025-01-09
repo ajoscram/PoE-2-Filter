@@ -7,4 +7,4 @@ Show
 Show #.strict BASE
     BaseType == "Uncut Support Gem"
     #.import STYLE | gem -> t4
-    #.if Hide .import STYLE | shared > miscellaneous -> hidden
+    #.if Hide .import STYLE | miscellaneous -> hidden

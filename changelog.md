@@ -10,7 +10,7 @@
     - **Normal**: for most players from early to late maps
     - **Strict**: for players running T15's
     - **Uber**: for the most zoomer degenerate gameplay
-* Each strictness level past the base has a set of crafting subfilters intended for picking up valuable bases:
+* Each strictness level has a set of crafting subfilters intended for picking up valuable bases:
     - **Belts**
     - **Bodies** (Body Armours)
     - **Boots**

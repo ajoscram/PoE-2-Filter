@@ -1,5 +1,22 @@
 #.section Mapping
 
+# Subsection Priming
+
+Show
+    Continue
+    Rarity == Rare
+	#.import STYLE | mapping > rare -> t4
+
+Show
+    Continue
+    Rarity == Magic
+	#.import STYLE | mapping > magic -> t4
+
+Show
+    Continue
+    Rarity == Normal
+	#.import STYLE | mapping > normal -> t4
+
 #.import waystone
 #.import tablet
 #.import barya
@@ -7,5 +24,4 @@
 
 Show
 	Class == "Pinnacle Keys" "Waystones" "Tablet" "Misc Map Items" "Map Fragments"
-
 	#.import STYLE | mapping > miscellaneous -> catchall

@@ -119,4 +119,4 @@ Show
 Hide
     Class == "Waystones"
     WaystoneTier <= 15
-    #.import STYLE | shared > miscellaneous -> hidden
+    #.import STYLE | miscellaneous -> hidden

@@ -40,4 +40,4 @@ Show
 Hide
     BaseType == "Uncut Skill Gem"
     #.import STYLE | gem -> t4
-    #.import STYLE | shared > miscellaneous -> hidden
+    #.import STYLE | miscellaneous -> hidden
