@@ -23,3 +23,8 @@ extract(){
 line(){
     sed "0,/$1/b; Q" | tail -n 1
 }
+
+# turns the text received lowercase, then capitalizes the first letter
+title(){
+    echo ${1,,} | sed 's/./\u&/'
+}
