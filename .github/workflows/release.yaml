@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       leaguestart:
-        description: "Leaguestart?"
+        description: "Leaguestart"
         type: boolean
         required: true
         default: false
