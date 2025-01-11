@@ -11,6 +11,8 @@
 * Add the "Classic" style
     https://www.poewiki.net/wiki/Guide:Item_filter_guide#Color_Options
 
+* Pimp-up the readme file
+
 # Later / Bugs
 * The base types for pinnacle keys cannot be used for filtering
 * Investigate why there is no `Meta Gems` item class
