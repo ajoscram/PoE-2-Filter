@@ -27,12 +27,12 @@ Show #.strict LENIENT
 
 Hide #.name trash
 	BaseType == "Scroll of Wisdom" "Transmutation Shard" "Artificer's Shard"
-	AreaLevel >= 45
+	AreaLevel >= LEVEL_CAMPAIGN_MIDDLE
     #.import STYLE | currency -> t5
     #.import STYLE | miscellaneous -> hidden
 
 Show #.strict BASE
 	#.import -> trash -> BaseType
-	AreaLevel < 45
+	AreaLevel < LEVEL_CAMPAIGN_MIDDLE
     #.import STYLE | currency -> t5
     #.if Hide .import STYLE | miscellaneous -> hidden

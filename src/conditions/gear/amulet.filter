@@ -43,12 +43,12 @@ Show #.strict STRICT .if Show
 Show
     Class == "Amulets"
     Rarity == Rare
-    AreaLevel < 68
+    AreaLevel < LEVEL_ENDGAME_START
 
 Show #.strict BASE .if Show
     Class == "Amulets"
     Rarity < Rare
-    AreaLevel < 68
+    AreaLevel < LEVEL_ENDGAME_START
 
 Hide
     Class == "Amulets"

@@ -5,4 +5,10 @@
 #.alias STRICT  = 2
 #.alias UBER    = 3
 
+#.# Area levels
+
+#.alias LEVEL_CAMPAIGN_MIDDLE   = 45
+#.alias LEVEL_ENDGAME_START     = 68
+#.alias LEVEL_ENDGAME_T15       = 79
+
 #.import STYLE | constants

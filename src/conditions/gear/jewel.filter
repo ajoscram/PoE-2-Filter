@@ -34,7 +34,7 @@ Show #.strict LENIENT .if Show
 Show
     Class == "Jewels"
     Rarity == Rare
-    AreaLevel < 68
+    AreaLevel < LEVEL_ENDGAME_START
     #.import STYLE | gear > rare -> t3
 
 Hide

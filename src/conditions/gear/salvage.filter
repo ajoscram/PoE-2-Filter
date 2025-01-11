@@ -27,7 +27,7 @@ Show #.strict BASE .if Show
 Show #.strict BASE .if Show
     #.import -> salvage-bases -> Class
     Quality >= 5
-    AreaLevel < 68
+    AreaLevel < LEVEL_ENDGAME_START
 
 Hide
     #.import -> salvage-bases -> Class
