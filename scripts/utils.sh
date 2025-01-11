@@ -28,3 +28,8 @@ line(){
 title(){
     echo ${1,,} | sed 's/./\u&/'
 }
+
+# gets the list of the filter's style names
+get_styles(){
+    find src/styles -mindepth 1 -maxdepth 1 -type d | sed -rn 's/.*\/(.*)/\1/p'
+}

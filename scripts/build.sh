@@ -1,10 +1,6 @@
 source scripts/utils.sh
 source .env
 
-get_styles(){
-    find src/styles -mindepth 1 -maxdepth 1 -type d | sed -rn 's/.*\/(.*)/\1/p'
-}
-
 get_strictness_values(){
     cat src/conditions/constants.filter | \
     sed -rn 's/^[[:space:]]*#\.alias[[:space:]]*([[:alnum:]]+)[[:space:]]*=[[:space:]]*([[:digit:]]+)/\1 \2/p'

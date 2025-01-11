@@ -1,0 +1,59 @@
+# gh workflow run release -f leaguestart=true
+name: release
+run-name: "${{ github.workflow }} by ${{ github.triggering_actor }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      leaguestart:
+        description: "Leaguestart?"
+        type: boolean
+        required: true
+        default: false
+
+jobs:
+  release:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Download PFG
+      uses: robinraju/release-downloader@v1.9
+      with:
+        repository: ajoscram/PoE-Filter-Generator
+        fileName: "pfg.exe"
+        latest: true
+
+    - name: Set up environment
+      shell: bash
+      run: |
+        echo "OUTPUT=\"temp.filter\"" > .env
+        echo $GITHUB_WORKSPACE >> $GITHUB_PATH
+
+    - name: Build filters
+      shell: bash
+      run: |
+        leaguestart="" && ${{ github.event.inputs.leaguestart }} && leaguestart="leaguestart"
+        scripts/build.sh $leaguestart
+    
+    - name: Create release artifacts
+      shell: bash
+      run: scripts/create-release.sh
+    
+    - name: Get release metadata
+      id: metadata
+      shell: bash
+      run: |
+        echo "LEAGUE=$(scripts/league.sh)" >> $GITHUB_OUTPUT
+        echo "VERSION=$(scripts/version.sh)" >> $GITHUB_OUTPUT
+        scripts/notes.sh > notes.md
+    
+    - name: Create release
+      uses: ncipollo/release-action@v1
+      with:
+        name: ${{ steps.metadata.outputs.VERSION }} Ajoscram's PoE 2 Filter Update - ${{ steps.metadata.outputs.LEAGUE }}
+        tag: ${{ steps.metadata.outputs.VERSION }}
+        bodyFile: "notes.md"
+        artifacts: "release/*.*"
