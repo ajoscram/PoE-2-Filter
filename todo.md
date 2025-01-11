@@ -1,10 +1,10 @@
 # Immediately
-* Rare waystones are worth showing until LENIENT cause need some for trash maps
 * Abstract area levels into a set of constants (campaign midpoint, start of maps, high tier maps, etc)
 
 * Go over conditions looking for: 
     * Check weapon mods for highest iLvl needed for best bases
     * Add a `#.strict BASE .if Show` for progression drops in case any gear base is outside campaign range
+    * Ensure progressions that hide at the end always set tier to 5
 
 * Find a final solution for gold tiering
 * Implement relics

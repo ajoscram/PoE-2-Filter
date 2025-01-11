@@ -4,18 +4,21 @@
 
 Show
     Continue
+	Class == "Waystones" "Tablet"
     Rarity == Rare
-	#.import STYLE | mapping > rare -> t4
+	#.import STYLE | mapping > rare -> t3
 
 Show
     Continue
+	Class == "Waystones" "Tablet"
     Rarity == Magic
-	#.import STYLE | mapping > magic -> t4
+	#.import STYLE | mapping > magic -> t3
 
 Show
     Continue
+	Class == "Waystones" "Tablet"
     Rarity == Normal
-	#.import STYLE | mapping > normal -> t4
+	#.import STYLE | mapping > normal -> t3
 
 #.import waystone
 #.import tablet

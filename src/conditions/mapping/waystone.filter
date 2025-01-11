@@ -1,44 +1,28 @@
 #.subsection Waystone
 
-# Priming
-
-Show
-    Continue
-    Class == "Waystones"
-    Rarity == Rare
-    #.import STYLE | gear > rare -> t3
-
-Show
-    Continue
-    Class == "Waystones"
-    Rarity == Magic
-    #.import STYLE | gear > magic -> t3
-
-Show
-    Continue
-    Class == "Waystones"
-    Rarity == Normal
-    #.import STYLE | gear > normal -> t3
-
-# T16+
+# Exceptional
 
 Show
     Class == "Waystones"
     WaystoneTier >= 16
     Rarity == Rare
-    #.import STYLE | gear > rare -> t2
+    #.import STYLE | mapping > rare -> t2
 
 Show
     Class == "Waystones"
     WaystoneTier >= 16
     Rarity == Magic
-    #.import STYLE | gear > magic -> t2
+    #.import STYLE | mapping > magic -> t2
 
 Show
     Class == "Waystones"
     WaystoneTier >= 16
     Rarity == Normal
-    #.import STYLE | gear > normal -> t2
+    #.import STYLE | mapping > normal -> t2
+
+Show #.strict STRICT .if Show
+    Class == "Waystones"
+    Rarity == Rare
 
 # Progression
 # Logic based on https://poe2db.tw/us/Waystones

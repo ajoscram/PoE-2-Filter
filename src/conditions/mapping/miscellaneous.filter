@@ -5,6 +5,7 @@ Show
     # "Faded Crisis Fragment" "Ancient Crisis Fragment" "Weathered Crisis Fragment" 
     Class == "Pinnacle Keys"
     #.import STYLE | mapping > miscellaneous -> t1
+
 Show
     BaseType == "An Audience with the King" "Simulacrum" "Breachstone" 
     #.import STYLE | mapping > miscellaneous -> t1
