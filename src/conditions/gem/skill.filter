@@ -12,17 +12,22 @@ Show
 
 Show
     Class == "Skill Gems"
-    GemLevel >= 19
-    #.import STYLE | gem -> t2
-
-Show
-    Class == "Skill Gems"
     Sockets == 4
     #.import STYLE | gem -> t2
 
 Show
     Class == "Skill Gems"
-    Quality == 20
+    GemLevel == 20
+    #.import STYLE | gem -> t2
+
+Show
+    Class == "Skill Gems"
+    GemLevel == 19
+    #.import STYLE | gem -> t3
+
+Show
+    Class == "Skill Gems"
+    Quality >= 20
     #.import STYLE | gem -> t3
 
 Show

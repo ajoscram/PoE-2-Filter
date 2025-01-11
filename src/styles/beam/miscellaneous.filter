@@ -2,7 +2,7 @@ Show #.name shown
 	SetFontSize 36
 
 Show #.name hidden
-	SetFontSize 18
+    SetFontSize 18
     MinimapIcon ICON_SIZE_DISABLED
     PlayEffect None
     PlayAlertSoundPositional None

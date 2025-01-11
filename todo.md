@@ -1,7 +1,4 @@
 # Immediately
-* Add a BASE / LENIENT Show for uncut gems that are not the absolute highest tier that can drop
-* Review which low level uncut gems need to get exceptions as they are expensive
-
 * Rare waystones are worth showing until LENIENT cause need some for trash maps
 * Abstract area levels into a set of constants (campaign midpoint, start of maps, high tier maps, etc)
 

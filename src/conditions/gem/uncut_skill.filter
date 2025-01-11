@@ -1,5 +1,13 @@
 #.subsection Uncut Skill Gem
 
+# Exceptional
+
+Show
+    BaseType == "Uncut Skill Gem"
+    ItemLevel <= 3
+    #.import STYLE | gem -> t3
+
+# Progression
 # Logic based on https://poe2db.tw/us/Uncut_Skill_Gem#DropLevel
 
 Show
@@ -7,30 +15,55 @@ Show
     ItemLevel <= 14
     AreaLevel <= 61
 
+Show #.strict BASE .if Show
+    BaseType == "Uncut Skill Gem"
+    ItemLevel <= 14
+    AreaLevel <= 65
+
 Show
     BaseType == "Uncut Skill Gem"
     ItemLevel == 15
     AreaLevel <= 65
+
+Show #.strict BASE .if Show
+    BaseType == "Uncut Skill Gem"
+    ItemLevel == 15
+    AreaLevel <= 69
 
 Show
     BaseType == "Uncut Skill Gem"
     ItemLevel == 16
     AreaLevel <= 69
 
+Show #.strict BASE .if Show
+    BaseType == "Uncut Skill Gem"
+    ItemLevel == 16
+    AreaLevel <= 73
+
 Show
     BaseType == "Uncut Skill Gem"
     ItemLevel == 17
     AreaLevel <= 73
+
+Show #.strict BASE .if Show
+    BaseType == "Uncut Skill Gem"
+    ItemLevel == 17
+    AreaLevel <= 77
 
 Show
     BaseType == "Uncut Skill Gem"
     ItemLevel == 18
     AreaLevel <= 77
 
+Show #.strict BASE .if Show
+    BaseType == "Uncut Skill Gem"
+    ItemLevel == 18
+    AreaLevel <= 81
+
 Show
     BaseType == "Uncut Skill Gem"
     ItemLevel == 19
-    #.import STYLE | gem -> t2
+    #.import STYLE | gem -> t3
 
 Show
     BaseType == "Uncut Skill Gem"

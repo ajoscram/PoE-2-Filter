@@ -18,6 +18,7 @@ Show #.name gem-bases
 Show
 	#.import -> gem-classes -> Class
 	#.import STYLE | gem -> catchall
+
 Show
 	#.import -> gem-bases -> BaseType
 	#.import STYLE | gem -> catchall
