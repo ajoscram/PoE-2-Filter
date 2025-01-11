@@ -1,5 +1,4 @@
 # Immediately
-* Review if rarity styles in beam should conform to all other styles
 * CHARMS CAN HAVE QUALITY, AND QUALITY CHARMS ARE DROP ONLY. ADD TO FILTER ASAP
 * Add a BASE / LENIENT Show for uncut gems that are not the absolute highest tier that can drop
 * Rare waystones are worth showing until LENIENT cause need some for trash maps

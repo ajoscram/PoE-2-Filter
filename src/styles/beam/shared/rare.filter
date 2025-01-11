@@ -2,18 +2,21 @@ Show #.name t1
 	SetTextColor COLOR_YELLOW OPACITY_HIGH
 	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
 	SetBorderColor COLOR_YELLOW OPACITY_HIGH
+	PlayAlertSoundPositional SOUND_SHORT_T1
 	PlayEffect Yellow
-	PlayAlertSoundPositional SOUND_SHORT_T2
 
 Show #.name t2
 	SetTextColor COLOR_YELLOW OPACITY_HIGH
 	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
 	SetBorderColor COLOR_YELLOW OPACITY_LOW
-	PlayEffect Yellow Temp
+	PlayAlertSoundPositional SOUND_SHORT_T2
+	PlayEffect Yellow
 
 Show #.name t3
 	SetTextColor COLOR_YELLOW OPACITY_HIGH
 	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+	PlayAlertSoundPositional SOUND_SHORT_T3
+	PlayEffect Yellow Temp
 
 Show #.name t4
 	SetTextColor COLOR_YELLOW OPACITY_MID
