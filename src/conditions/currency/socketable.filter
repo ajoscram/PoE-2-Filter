@@ -1,5 +1,7 @@
 #.subsection Socketable
 
+# Tiered
+
 Show
 	BaseType == "Soul Core of Azcapa"
 	#.import STYLE | currency -> t1
@@ -16,6 +18,13 @@ Show
 	BaseType == "Soul Core of Opiloti" "Soul Core of Topotante" "Soul Core of Atmohua" "Soul Core of Cholotl" "Soul Core of Zantipi"
 	#.import STYLE | currency -> t4
 
-Show #.strict LENIENT
+Show #.name trash .strict BASE .if Show
 	BaseType == "Desert Rune" "Glacial Rune" "Storm Rune" "Body Rune" "Mind Rune" "Rebirth Rune" "Inspiration Rune" "Stone Rune" "Vision Rune"
 	#.import STYLE | currency -> t4
+
+# Hidden
+
+Hide
+	#.import -> trash -> BaseType
+    #.import STYLE | currency -> t5
+    #.import STYLE | miscellaneous -> hidden

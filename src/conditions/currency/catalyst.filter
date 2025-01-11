@@ -2,8 +2,8 @@
 
 Show
 	BaseType == "Flesh Catalyst" "Neural Catalyst" "Xoph's Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Chayula's Catalyst" "Reaver Catalyst" "Skittering Catalyst" "Adaptive Catalyst"
-	#.import STYLE | currency -> t4
+	#.import STYLE | currency -> t3
 
-Show #.strict LENIENT
+Show
 	BaseType == "Carapace Catalyst" "Uul-Netol's Catalyst" "Sibilant Catalyst"
 	#.import STYLE | currency -> t4

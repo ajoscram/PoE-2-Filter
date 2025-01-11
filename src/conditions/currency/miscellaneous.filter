@@ -1,5 +1,7 @@
 #.subsection Miscellaneous
 
+# Tiered
+
 Show
 	BaseType == "Mirror of Kalandra" "Albino Rhoa Feather"
 	#.import STYLE | currency -> t0
@@ -20,19 +22,23 @@ Show
 	BaseType == "Blacksmith's Whetstone" "Arcanist's Etcher" "Regal Orb"
 	#.import STYLE | currency -> t4
 
-Show #.strict LENIENT
+Show #.name common .strict LENIENT .if Show
 	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Armourer's Scrap" "Artificer's Orb" "Alchemy Shard" "Chance Shard" "Regal Shard"
 	#.import STYLE | currency -> t4
-    #.if Hide .import STYLE | miscellaneous -> hidden
 
-Hide #.name trash
+Show #.name trash .strict BASE .if Show
 	BaseType == "Scroll of Wisdom" "Transmutation Shard" "Artificer's Shard"
-	AreaLevel >= LEVEL_CAMPAIGN_MIDDLE
+	AreaLevel < LEVEL_CAMPAIGN_MIDDLE
+    #.import STYLE | currency -> t5
+
+# Hidden
+
+Hide
+	#.import -> common -> BaseType
     #.import STYLE | currency -> t5
     #.import STYLE | miscellaneous -> hidden
 
-Show #.strict BASE
+Hide
 	#.import -> trash -> BaseType
-	AreaLevel < LEVEL_CAMPAIGN_MIDDLE
     #.import STYLE | currency -> t5
-    #.if Hide .import STYLE | miscellaneous -> hidden
+    #.import STYLE | miscellaneous -> hidden

@@ -9,6 +9,8 @@
 #.import socketable
 #.import miscellaneous
 
+#.subsection Catchall
+
 Show
 	Class == "Currency" "Socketable"
 	#.import STYLE | currency -> catchall
