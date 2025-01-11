@@ -20,7 +20,7 @@ BASES=($(get_craft_bases))
 
 get_styles | while read style; do
     title_style=$(title $style)
-    pfg.exe "src/_main.filter" "$OUTPUT" .import STYLE=styles \> $style .choose || exit
+    pfg.exe "src/_main.filter" "$OUTPUT" .import STYLE=styles \> $style || exit
 
     get_strictness_values | while read strictness number; do
         title_strictness=$(title $strictness)

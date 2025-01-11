@@ -9,4 +9,4 @@ touch "$OUTPUT" && code "$OUTPUT"
 pfg.exe :watch "src/_main.filter" "$OUTPUT" \
     .import STYLE=styles \> $STYLE \
     .alias VARIANT=${STRICTNESS^}, STYLE=${STYLE^}, VERSION=$VERSION \
-    .index .alias $DOT_STAND_IN=. .choose .if
+    .index .alias $DOT_STAND_IN=. .if
