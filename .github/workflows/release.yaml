@@ -2,14 +2,7 @@
 name: release
 run-name: "${{ github.workflow }} by ${{ github.triggering_actor }}"
 
-on:
-  workflow_dispatch:
-    inputs:
-      leaguestart:
-        description: "Leaguestart?"
-        type: boolean
-        required: true
-        default: false
+on: [push]
 
 jobs:
   release:
