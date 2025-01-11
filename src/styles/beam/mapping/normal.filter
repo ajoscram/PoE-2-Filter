@@ -1,14 +1,15 @@
 Show #.name t1
 	#.import < shared > normal -> t1
-	MinimapIcon ICON_MEDIUM White Square
+	MinimapIcon ICON_SIZE_LARGE White ICON_MAP
 
 Show #.name t2
 	#.import < shared > normal -> t2
-	MinimapIcon ICON_SMALL White Square
+	MinimapIcon ICON_SIZE_MEDIUM White ICON_MAP
 
 Show #.name t3
 	#.import < shared > normal -> t3
     SetBorderColor COLOR_BLACK OPACITY_NONE
+	MinimapIcon ICON_SIZE_SMALL White ICON_MAP
 
 Show #.name t4
 	#.import < shared > normal -> t4

@@ -13,4 +13,12 @@
 #.alias COLOR_PINK    = 255 100 255
 #.alias COLOR_PURPLE  = 150 100 255
 
+#.# ICONS
+
+#.alias ICON_QUEST      = Star
+#.alias ICON_CURRENCY   = Circle
+#.alias ICON_GEM        = Diamond
+#.alias ICON_GEAR       = UpsideDownHouse
+#.alias ICON_MAP        = Square
+
 #.import < constants

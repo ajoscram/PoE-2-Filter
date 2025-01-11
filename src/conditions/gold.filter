@@ -2,12 +2,12 @@
 
 Show
     BaseType == "Gold"
-    StackSize >= 1000
+    StackSize >= 3000
     #.import STYLE | gold -> t1
 
 Show
     BaseType == "Gold"
-    StackSize >= 500
+    StackSize >= 1500
     #.import STYLE | gold -> t2
 
 Show

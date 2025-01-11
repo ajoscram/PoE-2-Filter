@@ -1,13 +1,14 @@
 Show #.name t1
 	#.import < shared > magic -> t1
-	MinimapIcon ICON_MEDIUM Blue UpsideDownHouse
+	MinimapIcon ICON_SIZE_LARGE Blue ICON_GEAR
 
 Show #.name t2
 	#.import < shared > magic -> t2
-	MinimapIcon ICON_SMALL Blue UpsideDownHouse
+	MinimapIcon ICON_SIZE_MEDIUM Blue ICON_GEAR
 
 Show #.name t3
 	#.import < shared > magic -> t3
+	MinimapIcon ICON_SIZE_SMALL Blue ICON_GEAR
 
 Show #.name t4
 	#.import < shared > magic -> t4

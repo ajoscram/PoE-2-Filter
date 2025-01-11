@@ -2,13 +2,13 @@ Show #.name t1
     #.import -> base
 	PlayEffect Green
 	PlayAlertSoundPositional SOUND_SHORT_T3
-	MinimapIcon ICON_LARGE Green Star
+	MinimapIcon ICON_SIZE_LARGE Green Star
 
 Show #.name t2
     #.import -> base
 	PlayEffect Green Temp
 	PlayAlertSoundPositional SOUND_SHORT_T3
-	MinimapIcon ICON_SMALL Green Star
+	MinimapIcon ICON_SIZE_SMALL Green Star
 
 Show #.name base
 	SetTextColor COLOR_GREEN OPACITY_HIGH

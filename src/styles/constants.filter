@@ -7,10 +7,10 @@
 
 #.# Icon Sizes
 
-#.alias ICON_DISABLED   = -1
-#.alias ICON_LARGE      =  0
-#.alias ICON_MEDIUM     =  1
-#.alias ICON_SMALL      =  2
+#.alias ICON_SIZE_DISABLED   = -1
+#.alias ICON_SIZE_LARGE      =  0
+#.alias ICON_SIZE_MEDIUM     =  1
+#.alias ICON_SIZE_SMALL      =  2
 
 #.# Sounds
 

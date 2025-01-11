@@ -19,9 +19,9 @@ Show #.name t3
 	PlayEffect Blue Temp
 
 Show #.name t4
-	SetTextColor COLOR_BLUE OPACITY_MID
+	SetTextColor COLOR_BLUE OPACITY_HIGH
 	SetBackgroundColor COLOR_BLACK OPACITY_MID
 
 Show #.name t5
-    SetTextColor COLOR_BLUE OPACITY_LOW
+    SetTextColor COLOR_BLUE OPACITY_MID
 	SetBackgroundColor COLOR_BLACK OPACITY_LOW

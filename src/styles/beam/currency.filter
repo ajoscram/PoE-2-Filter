@@ -4,7 +4,7 @@ Show #.name t0
 	SetBorderColor COLOR_CREAM OPACITY_HIGH
 	PlayAlertSoundPositional SOUND_SHORT_T0
 	PlayEffect White
-	MinimapIcon ICON_MEDIUM White Circle
+	MinimapIcon ICON_SIZE_LARGE White ICON_CURRENCY
 
 Show #.name t1
 	SetTextColor COLOR_CREAM OPACITY_HIGH
@@ -12,7 +12,7 @@ Show #.name t1
 	SetBorderColor COLOR_CREAM OPACITY_HIGH
 	PlayAlertSoundPositional SOUND_SHORT_T1
 	PlayEffect White
-	MinimapIcon ICON_MEDIUM White Circle
+	MinimapIcon ICON_SIZE_LARGE White ICON_CURRENCY
 
 Show #.name t2
 	SetTextColor COLOR_CREAM OPACITY_HIGH
@@ -20,23 +20,24 @@ Show #.name t2
 	SetBorderColor COLOR_CREAM OPACITY_LOW
 	PlayAlertSoundPositional SOUND_SHORT_T2
 	PlayEffect White
-	MinimapIcon ICON_SMALL White Circle
+	MinimapIcon ICON_SIZE_MEDIUM White ICON_CURRENCY
 
 Show #.name t3
 	SetTextColor COLOR_CREAM OPACITY_HIGH
 	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
 	PlayAlertSoundPositional SOUND_SHORT_T3
 	PlayEffect White Temp
+	MinimapIcon ICON_SIZE_SMALL White ICON_CURRENCY
 
 Show #.name t4
-	SetTextColor COLOR_CREAM OPACITY_MID
+	SetTextColor COLOR_CREAM OPACITY_HIGH
 	SetBackgroundColor COLOR_BLACK OPACITY_MID
 
 Show #.name t5
-    SetTextColor COLOR_CREAM OPACITY_LOW
+    SetTextColor COLOR_CREAM OPACITY_MID
 	SetBackgroundColor COLOR_BLACK OPACITY_LOW
 
 Show
     Show #.name catchall
-	MinimapIcon ICON_LARGE Pink Circle
+	MinimapIcon ICON_SIZE_LARGE Pink ICON_CURRENCY
 	#.import shared > miscellaneous -> catchall

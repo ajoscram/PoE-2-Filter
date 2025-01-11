@@ -4,7 +4,7 @@ Show #.name t1
 	SetBorderColor COLOR_CYAN OPACITY_HIGH
 	PlayAlertSoundPositional SOUND_SHORT_T1
 	PlayEffect Cyan
-	MinimapIcon ICON_MEDIUM Cyan Diamond
+	MinimapIcon ICON_SIZE_LARGE Cyan ICON_GEM
 
 Show #.name t2
 	SetTextColor COLOR_CYAN OPACITY_HIGH
@@ -12,23 +12,24 @@ Show #.name t2
 	SetBorderColor COLOR_CYAN OPACITY_LOW
 	PlayAlertSoundPositional SOUND_SHORT_T2
 	PlayEffect Cyan
-	MinimapIcon ICON_SMALL Cyan Diamond
+	MinimapIcon ICON_SIZE_MEDIUM Cyan ICON_GEM
 
 Show #.name t3
 	SetTextColor COLOR_CYAN OPACITY_HIGH
 	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
 	PlayAlertSoundPositional SOUND_SHORT_T3
 	PlayEffect Cyan Temp
+	MinimapIcon ICON_SIZE_SMALL Cyan ICON_GEM
 
 Show #.name t4
-	SetTextColor COLOR_CYAN OPACITY_MID
+	SetTextColor COLOR_CYAN OPACITY_HIGH
 	SetBackgroundColor COLOR_BLACK OPACITY_MID
 
 Show #.name t5
-    SetTextColor COLOR_CYAN OPACITY_LOW
+    SetTextColor COLOR_CYAN OPACITY_MID
 	SetBackgroundColor COLOR_BLACK OPACITY_LOW
 
 Show
     Show #.name catchall
-	MinimapIcon ICON_LARGE Pink Diamond
+	MinimapIcon ICON_SIZE_LARGE Pink ICON_GEM
 	#.import shared > miscellaneous -> catchall
