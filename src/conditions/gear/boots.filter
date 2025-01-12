@@ -85,11 +85,15 @@ Show
     BaseType == "Advanced Feathered Sandals" "Advanced Hunting Shoes" "Advanced Lizardscale Boots" "Advanced Pelt Leggings" "Advanced Stacked Sabatons" "Advanced Stone Greaves"
     AreaLevel < 65
 
-Show
+Show #.name overlap
     BaseType == "Expert Frayed Shoes" "Expert Iron Greaves" "Expert Laced Boots" "Expert Mail Sabatons" "Expert Padded Leggings" "Expert Wrapped Sandals"
+    AreaLevel < LEVEL_ENDGAME_START
+
+Show #.strict BASE .if Show
+    #.import -> overlap -> BaseType
     AreaLevel < 70
 
-Show
+Show #.strict BASE .if Show
     BaseType == "Expert Braced Sabatons" "Expert Secured Leggings" "Expert Silk Slippers" "Expert Steeltoe Boots" "Expert Threaded Shoes" "Expert Trimmed Greaves"
     AreaLevel < 75
 

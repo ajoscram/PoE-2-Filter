@@ -2,33 +2,29 @@
 
 # Sockets
 
-Show #.name salvage-bases .strict LENIENT .if Show
+Show #.name salvage .strict LENIENT .if Show
     Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields" "Foci"
     Sockets == 2
 
 Show #.strict BASE .if Show
-    #.import -> salvage-bases -> Class
+    #.import -> salvage -> Class
     Sockets == 1
 
 # Quality
 
 Show #.strict STRICT .if Show
-    #.import -> salvage-bases -> Class
+    #.import -> salvage -> Class
     Quality >= 20
 
 Show #.strict LENIENT .if Show
-    #.import -> salvage-bases -> Class
+    #.import -> salvage -> Class
     Quality >= 15
 
 Show #.strict BASE .if Show
-    #.import -> salvage-bases -> Class
+    #.import -> salvage -> Class
     Quality >= 10
 
 Show #.strict BASE .if Show
-    #.import -> salvage-bases -> Class
+    #.import -> salvage -> Class
     Quality >= 5
     AreaLevel < LEVEL_ENDGAME_START
-
-Hide
-    #.import -> salvage-bases -> Class
-    #.import STYLE | miscellaneous -> hidden

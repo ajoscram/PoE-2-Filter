@@ -2,18 +2,21 @@
 
 #.subsection Priming
 
-Show
+Show #.name gear
     Continue
+    Class == "Amulets" "Belts" "Rings" "Body Armours" "Boots" "Charms" "Gloves" "Helmets" "Shields" "Foci" "Life Flasks" "Mana Flasks" "Jewels" "Quivers" 
     Rarity == Rare
 	#.import STYLE | gear > rare -> t4
 
 Show
     Continue
+    #.import -> gear -> Class
     Rarity == Magic
 	#.import STYLE | gear > magic -> t4
 
 Show
     Continue
+    #.import -> gear -> Class
     Rarity == Normal
 	#.import STYLE | gear > normal -> t4
 
@@ -31,3 +34,23 @@ Show
 #.import shield
 #.import focus
 #.import salvage
+
+#.subsection Catchall
+
+Hide
+    #.import -> gear -> Class
+    Rarity == Rare
+	#.import STYLE | gear > rare -> t5
+    #.import STYLE | miscellaneous -> hidden
+
+Hide
+    #.import -> gear -> Class
+    Rarity == Magic
+	#.import STYLE | gear > magic -> t5
+    #.import STYLE | miscellaneous -> hidden
+
+Hide
+    #.import -> gear -> Class
+    Rarity == Normal
+	#.import STYLE | gear > normal -> t5
+    #.import STYLE | miscellaneous -> hidden

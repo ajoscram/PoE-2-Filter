@@ -117,11 +117,15 @@ Show
     BaseType == "Advanced Feathered Targe" "Advanced Heraldric Tower Shield" "Advanced Omen Crest Shield"
     AreaLevel < 65
 
-Show
+Show #.name overlap
     BaseType == "Expert Braced Tower Shield" "Expert Pelage Targe" "Expert Sigil Crest Shield"
+    AreaLevel < LEVEL_ENDGAME_START
+
+Show #.strict BASE .if Show
+    #.import -> overlap -> BaseType
     AreaLevel < 70
 
-Show
+Show #.strict BASE .if Show
     BaseType == "Expert Crescent Targe" "Expert Jingling Crest Shield" "Expert Rampart Tower Shield"
     AreaLevel < 75
 

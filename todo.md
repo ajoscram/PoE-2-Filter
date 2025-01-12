@@ -2,7 +2,6 @@
 * Go over conditions looking for: 
     * Check weapon mods for highest iLvl needed for best bases
     * Add a `#.strict BASE .if Show` for progression drops in case any gear base is outside campaign range
-    * Ensure progressions that hide at the end always set tier to 5
 
 * Clean up tabs on indentations
 * Find a final solution for gold tiering

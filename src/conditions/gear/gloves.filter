@@ -93,11 +93,15 @@ Show
     BaseType == "Advanced Aged Cuffs" "Advanced Doubled Gauntlets" "Advanced Intricate Gloves" "Advanced Linen Wraps" "Advanced Moulded Mitts"
     AreaLevel < 65
 
-Show
+Show #.name overlap
     BaseType == "Expert Gauze Wraps" "Expert Rope Cuffs" "Expert Sombre Gloves"
+    AreaLevel < LEVEL_ENDGAME_START
+
+Show #.strict BASE .if Show
+    #.import -> overlap -> BaseType
     AreaLevel < 70
 
-Show
+Show #.strict BASE .if Show
     BaseType == "Expert Jewelled Gloves"
     AreaLevel < 75
 

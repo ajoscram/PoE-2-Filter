@@ -49,7 +49,3 @@ Show #.strict BASE .if Show
     Class == "Rings"
     Rarity < Rare
     AreaLevel < LEVEL_ENDGAME_START
-
-Hide
-    Class == "Rings"
-    #.import STYLE | miscellaneous -> hidden

@@ -81,7 +81,3 @@ Show
 Show
 	#.import -> best-bases -> BaseType
     AreaLevel < LEVEL_ENDGAME_START
-
-Hide
-    Class == "Life Flasks" "Mana Flasks"
-    #.import STYLE | miscellaneous -> hidden

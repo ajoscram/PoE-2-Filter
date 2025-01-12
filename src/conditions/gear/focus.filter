@@ -97,11 +97,15 @@ Show
     BaseType == "Advanced Plumed Focus"
     AreaLevel < 65
 
-Show
+Show #.name overlap
     BaseType == "Expert Antler Focus"
+    AreaLevel < LEVEL_ENDGAME_START
+
+Show #.strict BASE .if Show
+    #.import -> overlap -> BaseType
     AreaLevel < 70
 
-Show
+Show #.strict BASE .if Show
     BaseType == "Expert Crystal Focus"
     AreaLevel < 75
 

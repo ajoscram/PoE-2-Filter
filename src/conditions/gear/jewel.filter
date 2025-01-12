@@ -36,7 +36,3 @@ Show
     Rarity == Rare
     AreaLevel < LEVEL_ENDGAME_START
     #.import STYLE | gear > rare -> t3
-
-Hide
-    Class == "Jewels"
-    #.import STYLE | miscellaneous -> hidden

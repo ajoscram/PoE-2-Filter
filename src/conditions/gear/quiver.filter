@@ -49,7 +49,3 @@ Show #.strict BASE .if Show
     Class == "Quivers"
     Rarity < Rare
     AreaLevel < LEVEL_ENDGAME_START
-
-Hide
-    Class == "Quivers"
-    #.import STYLE | miscellaneous -> hidden

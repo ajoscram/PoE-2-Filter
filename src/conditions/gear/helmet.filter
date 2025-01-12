@@ -113,11 +113,15 @@ Show
     BaseType == "Advanced Elite Greathelm" "Advanced Feathered Tiara" "Advanced Heavy Crown" "Advanced Hunter Hood" "Advanced Shielded Helm" "Advanced Tribal Mask"
     AreaLevel < 65
 
-Show
+Show #.name overlap
     BaseType == "Expert Face Mask" "Expert Felt Cap" "Expert Guarded Helm" "Expert Horned Crown" "Expert Soldier Greathelm" "Expert Wicker Tiara"
+    AreaLevel < LEVEL_ENDGAME_START
+
+Show #.strict BASE .if Show
+    #.import -> overlap -> BaseType
     AreaLevel < 70
 
-Show
+Show #.strict BASE .if Show
     BaseType == "Expert Chain Tiara" "Expert Cowled Helm" "Expert Martyr Crown" "Expert Spired Greathelm" "Expert Swathed Cap" "Expert Veiled Mask"
     AreaLevel < 75
 

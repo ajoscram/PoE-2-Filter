@@ -63,7 +63,3 @@ Show
 
 Show #.strict BASE .if Show
     #.import -> best-bases -> BaseType
-
-Hide    
-    Class == "Charms"
-    #.import STYLE | miscellaneous -> hidden
