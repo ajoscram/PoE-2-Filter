@@ -89,11 +89,15 @@ Show
     BaseType == "Advanced Forlorn Crossbow"
     AreaLevel < 67
 
-Show
+Show #.name overlap
     BaseType == "Expert Sturdy Crossbow"
+    AreaLevel < LEVEL_ENDGAME_START
+
+Show #.strict BASE .if Show
+    #.import -> overlap -> BaseType
     AreaLevel < 72
 
-Show
+Show #.strict BASE .if Show
     BaseType == "Expert Varnished Crossbow" "Advanced Bombard Crossbow" "Advanced Dyad Crossbow"
     AreaLevel < 77
 

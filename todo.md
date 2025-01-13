@@ -1,15 +1,16 @@
 # Immediately
-* Go over conditions looking for: 
-    * Check weapon mods for highest iLvl needed for best bases
-    * Add a `#.strict BASE .if Show` for progression drops in case any gear base is outside campaign range
+* Check gear bases on overlap because i think i fucked up the overlap area level number by copy pasting
 
 * Clean up tabs on indentations
-* Find a final solution for gold tiering
+* Find a final solution for gold tiering style
 * Implement relics
+
+* Consider adding a border across all tiers from t3 onwards, or have a "dark" version for all colors so that there's a clear dictinction between t4 and t3
 
 * Add the "Classic" style
     https://www.poewiki.net/wiki/Guide:Item_filter_guide#Color_Options
 
+* have the dev script actually use the strictness passed in to set the strictness
 * Pimp-up the readme file
 
 # Later / Bugs

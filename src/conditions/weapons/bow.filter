@@ -77,8 +77,12 @@ Show
     BaseType == "Advanced Zealot Bow" "Advanced Cultist Bow" "Advanced Dualstring Bow" "Advanced Composite Bow" "Advanced Warden Bow" "Advanced Shortbow"
     AreaLevel < 67
 
-Show
+Show #.name overlap
     BaseType == "Expert Composite Bow"
+    AreaLevel < LEVEL_ENDGAME_START
+
+Show #.strict BASE .if Show
+    #.import -> overlap -> BaseType
     AreaLevel < 77
 
 Show #.strict BASE .if Show

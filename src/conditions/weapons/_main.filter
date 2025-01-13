@@ -2,18 +2,21 @@
 
 # Subsection Priming
 
-Show
+Show #.name weapons
     Continue
+    Class == "Bows" "Crossbows" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Sceptres" "Staves" "Wands"
     Rarity == Rare
 	#.import STYLE | gear > rare -> t4
 
 Show
     Continue
+    #.import -> weapons -> Class
     Rarity == Magic
 	#.import STYLE | gear > magic -> t4
 
 Show
     Continue
+    #.import -> weapons -> Class
     Rarity == Normal
 	#.import STYLE | gear > normal -> t4
 
@@ -35,3 +38,23 @@ Show
 #.import trap
 #.import wand
 #.import salvage
+
+#.subsection Catchall
+
+Hide
+    #.import -> weapons -> Class
+    Rarity == Rare
+	#.import STYLE | gear > rare -> t5
+    #.import STYLE | miscellaneous -> hidden
+
+Hide
+    #.import -> weapons -> Class
+    Rarity == Magic
+	#.import STYLE | gear > magic -> t5
+    #.import STYLE | miscellaneous -> hidden
+
+Hide
+    #.import -> weapons -> Class
+    Rarity == Normal
+	#.import STYLE | gear > normal -> t5
+    #.import STYLE | miscellaneous -> hidden

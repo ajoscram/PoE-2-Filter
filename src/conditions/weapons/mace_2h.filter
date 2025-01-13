@@ -93,8 +93,12 @@ Show
     BaseType == "Advanced Crumbling Maul"
     AreaLevel < 67
 
-Show
+Show #.name overlap
     BaseType == "Expert Forge Maul"
+    AreaLevel < LEVEL_ENDGAME_START
+
+Show #.strict BASE .if Show
+    #.import -> overlap -> BaseType
     AreaLevel < 72
 
 Show #.strict BASE .if Show

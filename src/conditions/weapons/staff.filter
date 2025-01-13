@@ -11,7 +11,7 @@ Show
 
 Show #.name best-bases
     Class == "Staves"
-    ItemLevel >= 82
+    ItemLevel >= 81
     Rarity == Rare
     #.import STYLE | gear > rare -> t2
 

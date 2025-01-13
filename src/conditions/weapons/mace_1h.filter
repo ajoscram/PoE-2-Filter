@@ -85,8 +85,12 @@ Show
     BaseType == "Advanced Brigand Mace"
     AreaLevel < 62
 
-Show
+Show #.name overlap
     BaseType == "Expert Plated Mace" "Advanced Warpick" "Advanced Construct Hammer"
+    AreaLevel < LEVEL_ENDGAME_START
+
+Show #.strict BASE .if Show
+    #.import -> overlap -> BaseType
     AreaLevel < 77
 
 Show #.strict BASE .if Show
