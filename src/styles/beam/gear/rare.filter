@@ -1,17 +1,17 @@
 Show #.name t1
-	#.import < shared > rare -> t1
-	MinimapIcon ICON_SIZE_LARGE Yellow ICON_GEAR
+    #.import < shared > rare -> t1
+    MinimapIcon ICON_SIZE_LARGE Yellow ICON_GEAR
 
 Show #.name t2
-	#.import < shared > rare -> t2
-	MinimapIcon ICON_SIZE_MEDIUM Yellow ICON_GEAR
+    #.import < shared > rare -> t2
+    MinimapIcon ICON_SIZE_MEDIUM Yellow ICON_GEAR
 
 Show #.name t3
-	#.import < shared > rare -> t3
-	MinimapIcon ICON_SIZE_SMALL Yellow ICON_GEAR
+    #.import < shared > rare -> t3
+    MinimapIcon ICON_SIZE_SMALL Yellow ICON_GEAR
 
 Show #.name t4
-	#.import < shared > rare -> t4
+    #.import < shared > rare -> t4
 
 Show #.name t5
-	#.import < shared > rare -> t5
+    #.import < shared > rare -> t5

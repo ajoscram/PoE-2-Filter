@@ -1,16 +1,16 @@
 Show #.name t1
     #.import -> base
-	PlayEffect Green
-	PlayAlertSoundPositional SOUND_SHORT_T3
-	MinimapIcon ICON_SIZE_LARGE Green Star
+    PlayEffect Green
+    PlayAlertSoundPositional SOUND_SHORT_T3
+    MinimapIcon ICON_SIZE_LARGE Green Star
 
 Show #.name t2
     #.import -> base
-	PlayEffect Green Temp
-	PlayAlertSoundPositional SOUND_SHORT_T3
-	MinimapIcon ICON_SIZE_SMALL Green Star
+    PlayEffect Green Temp
+    PlayAlertSoundPositional SOUND_SHORT_T3
+    MinimapIcon ICON_SIZE_SMALL Green Star
 
 Show #.name base
-	SetTextColor COLOR_GREEN OPACITY_HIGH
-	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
-	SetBorderColor COLOR_GREEN OPACITY_LOW
+    SetTextColor COLOR_GREEN OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    SetBorderColor COLOR_GREEN OPACITY_LOW

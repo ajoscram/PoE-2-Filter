@@ -12,5 +12,5 @@
 #.subsection Catchall
 
 Show
-	Class == "Currency" "Socketable"
-	#.import STYLE | currency -> catchall
+    Class == "Currency" "Socketable"
+    #.import STYLE | currency -> catchall

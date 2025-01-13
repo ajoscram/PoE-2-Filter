@@ -1,7 +1,4 @@
 # Immediately
-* Check gear bases on overlap because i think i fucked up the overlap area level number by copy pasting
-
-* Clean up tabs on indentations
 * Find a final solution for gold tiering style
 * Implement relics
 

@@ -2,7 +2,7 @@
 
 # Sockets
 
-Show #.name salvage.strict LENIENT .if Show
+Show #.name salvage .strict LENIENT .if Show
     Class == "Bows" "Crossbows" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Sceptres" "Staves" "Wands"
     Sockets == 2
 

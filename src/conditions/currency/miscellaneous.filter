@@ -3,42 +3,42 @@
 # Tiered
 
 Show
-	BaseType == "Mirror of Kalandra" "Albino Rhoa Feather"
-	#.import STYLE | currency -> t0
+    BaseType == "Mirror of Kalandra" "Albino Rhoa Feather"
+    #.import STYLE | currency -> t0
 
 Show
-	BaseType == "Divine Orb" "Perfect Jeweller's Orb"
-	#.import STYLE | currency -> t1
+    BaseType == "Divine Orb" "Perfect Jeweller's Orb"
+    #.import STYLE | currency -> t1
 
 Show
-	BaseType == "Orb of Annulment" "Greater Jeweller's Orb"
-	#.import STYLE | currency -> t2
+    BaseType == "Orb of Annulment" "Greater Jeweller's Orb"
+    #.import STYLE | currency -> t2
 
 Show
-	BaseType == "Exalted Orb" "Chaos Orb" "Orb of Alchemy" "Vaal Orb" "Lesser Jeweller's Orb" "Orb of Chance" "Glassblower's Bauble" "Gemcutter's Prism"
-	#.import STYLE | currency -> t3
+    BaseType == "Exalted Orb" "Chaos Orb" "Orb of Alchemy" "Vaal Orb" "Lesser Jeweller's Orb" "Orb of Chance" "Glassblower's Bauble" "Gemcutter's Prism"
+    #.import STYLE | currency -> t3
 
 Show
-	BaseType == "Blacksmith's Whetstone" "Arcanist's Etcher" "Regal Orb"
-	#.import STYLE | currency -> t4
+    BaseType == "Blacksmith's Whetstone" "Arcanist's Etcher" "Regal Orb"
+    #.import STYLE | currency -> t4
 
 Show #.name common .strict LENIENT .if Show
-	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Armourer's Scrap" "Artificer's Orb" "Alchemy Shard" "Chance Shard" "Regal Shard"
-	#.import STYLE | currency -> t4
+    BaseType == "Orb of Transmutation" "Orb of Augmentation" "Armourer's Scrap" "Artificer's Orb" "Alchemy Shard" "Chance Shard" "Regal Shard"
+    #.import STYLE | currency -> t4
 
 Show #.name trash .strict BASE .if Show
-	BaseType == "Scroll of Wisdom" "Transmutation Shard" "Artificer's Shard"
-	AreaLevel < LEVEL_CAMPAIGN_MIDDLE
+    BaseType == "Scroll of Wisdom" "Transmutation Shard" "Artificer's Shard"
+    AreaLevel < LEVEL_CAMPAIGN_MIDDLE
     #.import STYLE | currency -> t5
 
 # Hidden
 
 Hide
-	#.import -> common -> BaseType
+    #.import -> common -> BaseType
     #.import STYLE | currency -> t5
     #.import STYLE | miscellaneous -> hidden
 
 Hide
-	#.import -> trash -> BaseType
+    #.import -> trash -> BaseType
     #.import STYLE | currency -> t5
     #.import STYLE | miscellaneous -> hidden

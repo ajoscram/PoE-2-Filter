@@ -1,6 +1,6 @@
 Show #.name catchall
-	PlayEffect Pink
-	SetBorderColor COLOR_BLACK
-	SetBackgroundColor COLOR_PINK
-	SetTextColor COLOR_BLACK
-	PlayAlertSoundPositional SOUND_ERROR
+    PlayEffect Pink
+    SetBorderColor COLOR_BLACK
+    SetBackgroundColor COLOR_PINK
+    SetTextColor COLOR_BLACK
+    PlayAlertSoundPositional SOUND_ERROR

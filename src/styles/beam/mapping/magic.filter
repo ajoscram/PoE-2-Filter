@@ -1,20 +1,20 @@
 Show #.name t1
-	#.import < shared > magic -> t1
-	MinimapIcon ICON_SIZE_LARGE Blue ICON_MAP
+    #.import < shared > magic -> t1
+    MinimapIcon ICON_SIZE_LARGE Blue ICON_MAP
 
 Show #.name t2
-	#.import < shared > magic -> t2
-	MinimapIcon ICON_SIZE_MEDIUM Blue ICON_MAP
+    #.import < shared > magic -> t2
+    MinimapIcon ICON_SIZE_MEDIUM Blue ICON_MAP
 
 Show #.name t3
-	#.import < shared > magic -> t3
+    #.import < shared > magic -> t3
     SetBorderColor COLOR_BLACK OPACITY_NONE
-	MinimapIcon ICON_SIZE_SMALL Blue ICON_MAP
+    MinimapIcon ICON_SIZE_SMALL Blue ICON_MAP
 
 Show #.name t4
-	#.import < shared > magic -> t4
+    #.import < shared > magic -> t4
     SetBorderColor COLOR_BLACK OPACITY_NONE
 
 Show #.name t5
-	#.import < shared > magic -> t5
+    #.import < shared > magic -> t5
     SetBorderColor COLOR_BLACK OPACITY_NONE

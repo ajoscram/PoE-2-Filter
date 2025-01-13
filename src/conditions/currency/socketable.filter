@@ -3,28 +3,28 @@
 # Tiered
 
 Show
-	BaseType == "Soul Core of Azcapa"
-	#.import STYLE | currency -> t1
+    BaseType == "Soul Core of Azcapa"
+    #.import STYLE | currency -> t1
 
 Show
-	BaseType == "Soul Core of Zalatl"
-	#.import STYLE | currency -> t2
+    BaseType == "Soul Core of Zalatl"
+    #.import STYLE | currency -> t2
 
 Show
-	BaseType == "Iron Rune" "Soul Core of Tacati" "Soul Core of Jiquani" "Soul Core of Citaqualotl" "Soul Core of Puhuarte" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Quipolatl" "Soul Core of Ticaba"
-	#.import STYLE | currency -> t3
+    BaseType == "Iron Rune" "Soul Core of Tacati" "Soul Core of Jiquani" "Soul Core of Citaqualotl" "Soul Core of Puhuarte" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Quipolatl" "Soul Core of Ticaba"
+    #.import STYLE | currency -> t3
 
 Show
-	BaseType == "Soul Core of Opiloti" "Soul Core of Topotante" "Soul Core of Atmohua" "Soul Core of Cholotl" "Soul Core of Zantipi"
-	#.import STYLE | currency -> t4
+    BaseType == "Soul Core of Opiloti" "Soul Core of Topotante" "Soul Core of Atmohua" "Soul Core of Cholotl" "Soul Core of Zantipi"
+    #.import STYLE | currency -> t4
 
 Show #.name trash .strict BASE .if Show
-	BaseType == "Desert Rune" "Glacial Rune" "Storm Rune" "Body Rune" "Mind Rune" "Rebirth Rune" "Inspiration Rune" "Stone Rune" "Vision Rune"
-	#.import STYLE | currency -> t4
+    BaseType == "Desert Rune" "Glacial Rune" "Storm Rune" "Body Rune" "Mind Rune" "Rebirth Rune" "Inspiration Rune" "Stone Rune" "Vision Rune"
+    #.import STYLE | currency -> t4
 
 # Hidden
 
 Hide
-	#.import -> trash -> BaseType
+    #.import -> trash -> BaseType
     #.import STYLE | currency -> t5
     #.import STYLE | miscellaneous -> hidden

@@ -1,35 +1,35 @@
 Show #.name t1
-	SetTextColor COLOR_RED OPACITY_HIGH
-	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
-	SetBorderColor COLOR_RED OPACITY_HIGH
-	PlayAlertSoundPositional SOUND_SHORT_T1
-	PlayEffect Red
-	MinimapIcon ICON_SIZE_LARGE Red ICON_MAP
+    SetTextColor COLOR_RED OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    SetBorderColor COLOR_RED OPACITY_HIGH
+    PlayAlertSoundPositional SOUND_SHORT_T1
+    PlayEffect Red
+    MinimapIcon ICON_SIZE_LARGE Red ICON_MAP
 
 Show #.name t2
-	SetTextColor COLOR_RED OPACITY_HIGH
-	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
-	SetBorderColor COLOR_RED OPACITY_LOW
-	PlayAlertSoundPositional SOUND_SHORT_T2
-	PlayEffect Red
-	MinimapIcon ICON_SIZE_MEDIUM Red ICON_MAP
+    SetTextColor COLOR_RED OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    SetBorderColor COLOR_RED OPACITY_LOW
+    PlayAlertSoundPositional SOUND_SHORT_T2
+    PlayEffect Red
+    MinimapIcon ICON_SIZE_MEDIUM Red ICON_MAP
 
 Show #.name t3
-	SetTextColor COLOR_RED OPACITY_HIGH
-	SetBackgroundColor COLOR_BLACK OPACITY_HIGH
-	PlayAlertSoundPositional SOUND_SHORT_T3
-	PlayEffect Red Temp
-	MinimapIcon ICON_SIZE_SMALL Red ICON_MAP
+    SetTextColor COLOR_RED OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    PlayAlertSoundPositional SOUND_SHORT_T3
+    PlayEffect Red Temp
+    MinimapIcon ICON_SIZE_SMALL Red ICON_MAP
 
 Show #.name t4
-	SetTextColor COLOR_RED OPACITY_HIGH
-	SetBackgroundColor COLOR_BLACK OPACITY_MID
+    SetTextColor COLOR_RED OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_MID
 
 Show #.name t5
     SetTextColor COLOR_RED OPACITY_MID
-	SetBackgroundColor COLOR_BLACK OPACITY_LOW
+    SetBackgroundColor COLOR_BLACK OPACITY_LOW
 
 Show
     Show #.name catchall
-	MinimapIcon ICON_SIZE_LARGE Pink ICON_MAP
-	#.import < shared > miscellaneous -> catchall
+    MinimapIcon ICON_SIZE_LARGE Pink ICON_MAP
+    #.import < shared > miscellaneous -> catchall

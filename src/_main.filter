@@ -10,8 +10,8 @@
 #.section Priming
 
 Show
-	Continue
-	#.import STYLE | miscellaneous -> shown
+    Continue
+    #.import STYLE | miscellaneous -> shown
 
 #.import conditions > quest
 #.import conditions > gold

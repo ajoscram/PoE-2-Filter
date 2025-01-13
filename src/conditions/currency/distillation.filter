@@ -1,17 +1,17 @@
 #.subsection Distillation
 
 Show
-	BaseType == "Distilled Suffering" "Distilled Isolation"
-	#.import STYLE | currency -> t1
+    BaseType == "Distilled Suffering" "Distilled Isolation"
+    #.import STYLE | currency -> t1
 
 Show
-	BaseType == "Distilled Despair" "Distilled Fear"
-	#.import STYLE | currency -> t2
+    BaseType == "Distilled Despair" "Distilled Fear"
+    #.import STYLE | currency -> t2
 
 Show
-	BaseType == "Distilled Paranoia" "Distilled Envy" "Distilled Disgust"
-	#.import STYLE | currency -> t3
+    BaseType == "Distilled Paranoia" "Distilled Envy" "Distilled Disgust"
+    #.import STYLE | currency -> t3
 
 Show
-	BaseType == "Distilled Ire" "Distilled Guilt" "Distilled Greed"
-	#.import STYLE | currency -> t4
+    BaseType == "Distilled Ire" "Distilled Guilt" "Distilled Greed"
+    #.import STYLE | currency -> t4

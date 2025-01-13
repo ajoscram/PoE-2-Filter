@@ -1,5 +1,5 @@
 Show #.name shown
-	SetFontSize 36
+    SetFontSize 36
 
 Show #.name hidden
     SetFontSize 18

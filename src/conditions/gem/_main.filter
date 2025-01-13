@@ -7,7 +7,7 @@ Show #.name gem-classes
 
 Show #.name gem-bases
     Continue
-	BaseType == "Uncut Skill Gem" "Uncut Spirit Gem" "Uncut Support Gem"
+    BaseType == "Uncut Skill Gem" "Uncut Spirit Gem" "Uncut Support Gem"
     #.import STYLE | gem -> t4
 
 #.import skill
@@ -16,9 +16,9 @@ Show #.name gem-bases
 #.import support
 
 Show
-	#.import -> gem-classes -> Class
-	#.import STYLE | gem -> catchall
+    #.import -> gem-classes -> Class
+    #.import STYLE | gem -> catchall
 
 Show
-	#.import -> gem-bases -> BaseType
-	#.import STYLE | gem -> catchall
+    #.import -> gem-bases -> BaseType
+    #.import STYLE | gem -> catchall

@@ -2,8 +2,8 @@
 
 Show
     BaseType == "Exotic Coinage"
-	#.import STYLE | currency -> t3
+    #.import STYLE | currency -> t3
 
 Show
-	BaseType == "Broken Circle Artifact" "Black Scythe Artifact" "Order Artifact" "Sun Artifact"
-	#.import STYLE | currency -> t4
+    BaseType == "Broken Circle Artifact" "Black Scythe Artifact" "Order Artifact" "Sun Artifact"
+    #.import STYLE | currency -> t4

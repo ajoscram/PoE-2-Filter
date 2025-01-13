@@ -1,17 +1,17 @@
 #.subsection Omen
 
 Show
-	BaseType == "Omen of Whittling" "Omen of Sinistral Erasure" "Omen of Dextral Erasure" "Omen of Sinistral Annulment" "Omen of Dextral Annulment"
-	#.import STYLE | currency -> t1
+    BaseType == "Omen of Whittling" "Omen of Sinistral Erasure" "Omen of Dextral Erasure" "Omen of Sinistral Annulment" "Omen of Dextral Annulment"
+    #.import STYLE | currency -> t1
 
 Show
-	BaseType == "Omen of Amelioration" "Omen of Corruption"
-	#.import STYLE | currency -> t2
+    BaseType == "Omen of Amelioration" "Omen of Corruption"
+    #.import STYLE | currency -> t2
 
 Show
-	BaseType == "Omen of Resurgence" "Omen of Sinistral Alchemy" "Omen of Dextral Alchemy" "Omen of Sinistral Coronation" "Omen of Dextral Coronation" "Omen of Greater Exaltation" "Omen of Sinistral Exaltation" "Omen of Dextral Exaltation" "Omen of Greater Annulment"
-	#.import STYLE | currency -> t3
+    BaseType == "Omen of Resurgence" "Omen of Sinistral Alchemy" "Omen of Dextral Alchemy" "Omen of Sinistral Coronation" "Omen of Dextral Coronation" "Omen of Greater Exaltation" "Omen of Sinistral Exaltation" "Omen of Dextral Exaltation" "Omen of Greater Annulment"
+    #.import STYLE | currency -> t3
 
 Show
-	BaseType == "Omen of Refreshment"
-	#.import STYLE | currency -> t4
+    BaseType == "Omen of Refreshment"
+    #.import STYLE | currency -> t4
