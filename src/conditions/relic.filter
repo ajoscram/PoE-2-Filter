@@ -1,1 +1,49 @@
 #.section Relic
+
+# Unique
+
+Show
+    #.import -> relics -> Class
+    Rarity == Unique
+    #.import STYLE | gear > unique -> t3
+
+# Exceptional
+
+Show #.name relics
+    Class == "Relics"
+    ItemLevel >= 80
+    Rarity == Magic
+    #.import STYLE | gear > magic -> t2
+
+Show
+    #.import -> relics -> Class
+    ItemLevel >= 80
+    Rarity == Normal
+    Corrupted == False
+    #.import STYLE | gear > normal -> t2
+
+# Miscellaneous
+
+Show #.strict LENIENT .if Show
+    #.import -> relics -> Class
+    Rarity == Magic
+    #.import STYLE | gear > magic -> t4
+
+Show #.strict LENIENT .if Show
+    #.import -> relics -> Class
+    Rarity == Normal
+    #.import STYLE | gear > normal -> t4
+
+# Hidden
+
+Hide
+    #.import -> relics -> Class
+    Rarity == Magic
+    #.import STYLE | gear > magic -> t5
+    #.import STYLE | miscellaneous -> hidden
+
+Hide
+    #.import -> relics -> Class
+    Rarity == Normal
+    #.import STYLE | gear > normal -> t5
+    #.import STYLE | miscellaneous -> hidden

@@ -1,5 +1,7 @@
 #.section Gems
 
+#.subsection Priming
+
 Show #.name gem-classes
     Continue
     Class == "Skill Gems" "Support Gems"
@@ -14,6 +16,8 @@ Show #.name gem-bases
 #.import uncut_skill
 #.import uncut_spirit
 #.import support
+
+#.subsection Catchall
 
 Show
     #.import -> gem-classes -> Class

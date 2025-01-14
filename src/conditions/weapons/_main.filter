@@ -1,6 +1,6 @@
 #.section Weapons
 
-# Subsection Priming
+#.subsection Priming
 
 Show #.name weapons
     Continue

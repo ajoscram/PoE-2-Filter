@@ -1,6 +1,6 @@
 #.section Mapping
 
-# Subsection Priming
+#.subsection Priming
 
 Show
     Continue
@@ -24,6 +24,8 @@ Show
 #.import tablet
 #.import barya
 #.import miscellaneous
+
+#.subsection Catchall
 
 Show
     Class == "Pinnacle Keys" "Waystones" "Tablet" "Misc Map Items" "Map Fragments"
