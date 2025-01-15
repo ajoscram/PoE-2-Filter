@@ -17,21 +17,21 @@ Show #.name best-bases
     BaseType == "Expert Hexer's Robe" "Expert Iron Cuirass" "Expert Pathfinder Coat" "Expert Pelt Mantle" "Expert Rogue Armour" "Expert Waxed Jacket" "Expert Cloaked Mail" "Expert Keth Raiment" "Expert Shaman Mantle" "Expert Steel Plate" "Expert Studded Vest" "Expert Wayfarer Jacket" "Expert Altar Robe" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Scalper's Jacket" "Expert Serpentscale Coat" "Expert Vaal Cuirass"
     ItemLevel >= 82
     Rarity == Rare
-    #.import STYLE | gear > rare -> t2
+    #.import STYLE | gear > rare -> t3
 
 Show
     #.import -> best-bases -> BaseType
     #.import -> best-bases -> ItemLevel
     Rarity == Magic
     Corrupted == False
-    #.import STYLE | gear > magic -> t2
+    #.import STYLE | gear > magic -> t3
 
 Show
     #.import -> best-bases -> BaseType
     #.import -> best-bases -> ItemLevel
     Rarity == Normal
     Corrupted == False
-    #.import STYLE | gear > normal -> t2
+    #.import STYLE | gear > normal -> t3
 
 Show #.strict BASE .tag craft Bodies .if Show
     #.import -> best-bases -> BaseType

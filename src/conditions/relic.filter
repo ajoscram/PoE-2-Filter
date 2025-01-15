@@ -13,14 +13,14 @@ Show #.name relics
     Class == "Relics"
     ItemLevel >= 80
     Rarity == Magic
-    #.import STYLE | gear > magic -> t2
+    #.import STYLE | gear > magic -> t3
 
 Show
     #.import -> relics -> Class
     ItemLevel >= 80
     Rarity == Normal
     Corrupted == False
-    #.import STYLE | gear > normal -> t2
+    #.import STYLE | gear > normal -> t3
 
 # Miscellaneous
 

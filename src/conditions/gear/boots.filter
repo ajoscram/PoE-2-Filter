@@ -17,21 +17,21 @@ Show #.name best-bases
     BaseType == "Expert Feathered Sandals" "Expert Hunting Shoes" "Expert Lizardscale Boots" "Expert Pelt Leggings" "Expert Stacked Sabatons" "Expert Stone Greaves"
     ItemLevel >= 82
     Rarity == Rare
-    #.import STYLE | gear > rare -> t2
+    #.import STYLE | gear > rare -> t3
 
 Show
     #.import -> best-bases -> BaseType
     #.import -> best-bases -> ItemLevel
     Rarity == Magic
     Corrupted == False
-    #.import STYLE | gear > magic -> t2
+    #.import STYLE | gear > magic -> t3
 
 Show
     #.import -> best-bases -> BaseType
     #.import -> best-bases -> ItemLevel
     Rarity == Normal
     Corrupted == False
-    #.import STYLE | gear > normal -> t2
+    #.import STYLE | gear > normal -> t3
 
 Show #.strict BASE .tag craft Boots .if Show
     #.import -> best-bases -> BaseType

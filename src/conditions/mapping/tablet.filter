@@ -3,19 +3,19 @@
 Show #.name best-bases
     BaseType == "Breach Precursor Tablet" "Delirium Precursor Tablet"
     Rarity == Magic
-    #.import STYLE | gear > magic -> t2
+    #.import STYLE | mapping > magic -> t2
 
 Show
     #.import -> best-bases -> BaseType
     Rarity == Normal
-    #.import STYLE | gear > normal -> t2
+    #.import STYLE | mapping > normal -> t2
 
 Show #.name worst-bases
     BaseType == "Precursor Tablet" "Expedition Precursor Tablet" "Ritual Precursor Tablet"
     Rarity == Magic
-    #.import STYLE | gear > magic -> t3
+    #.import STYLE | mapping > magic -> t3
 
 Show
     #.import -> worst-bases -> BaseType
     Rarity == Normal
-    #.import STYLE | gear > normal -> t3
+    #.import STYLE | mapping > normal -> t3

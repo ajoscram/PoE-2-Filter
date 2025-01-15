@@ -13,13 +13,13 @@ Show #.name best-bases
     BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
     ItemLevel >= 83
     Rarity == Magic
-    #.import STYLE | gear > magic -> t2
+    #.import STYLE | gear > magic -> t3
 
 Show
     #.import -> best-bases -> BaseType
     ItemLevel >= 83
     Rarity == Normal
-    #.import STYLE | gear > normal -> t2
+    #.import STYLE | gear > normal -> t3
 
 # Quality
 

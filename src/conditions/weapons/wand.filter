@@ -13,21 +13,21 @@ Show #.name best-bases
     Class == "Wands"
     ItemLevel >= 81
     Rarity == Rare
-    #.import STYLE | gear > rare -> t2
+    #.import STYLE | gear > rare -> t3
 
 Show
     Class == "Wands"
     #.import -> best-bases -> ItemLevel
     Rarity == Magic
     Corrupted == False
-    #.import STYLE | gear > magic -> t2
+    #.import STYLE | gear > magic -> t3
 
 Show
     Class == "Wands"
     #.import -> best-bases -> ItemLevel
     Rarity == Normal
     Corrupted == False
-    #.import STYLE | gear > normal -> t2
+    #.import STYLE | gear > normal -> t3
 
 Show #.strict BASE .tag craft Wands .if Show
     Class == "Wands"

@@ -13,13 +13,13 @@ Show #.name best-bases
     BaseType == "Thawing Charm" "Staunching Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Stone Charm" "Golden Charm" "Amethyst Charm" "Silver Charm"
     ItemLevel >= 83
     Rarity == Magic
-    #.import STYLE | gear > magic -> t2
+    #.import STYLE | gear > magic -> t3
 
 Show
     #.import -> best-bases -> BaseType
     #.import -> best-bases -> ItemLevel
     Rarity == Normal
-    #.import STYLE | gear > normal -> t2
+    #.import STYLE | gear > normal -> t3
 
 # Quality
 
@@ -27,13 +27,13 @@ Show
     #.import -> best-bases -> BaseType
     Rarity == Magic
     Quality >= 20
-    #.import STYLE | gear > magic -> t2
+    #.import STYLE | gear > magic -> t3
 
 Show
     #.import -> best-bases -> BaseType
     Rarity == Normal
     Quality >= 20
-    #.import STYLE | gear > normal -> t2
+    #.import STYLE | gear > normal -> t3
 
 Show #.strict STRICT .if Show
     #.import -> best-bases -> BaseType

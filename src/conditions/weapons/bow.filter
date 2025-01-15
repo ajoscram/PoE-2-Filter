@@ -13,21 +13,21 @@ Show #.name best-bases
     BaseType == "Expert Cultist Bow" "Expert Dualstring Bow" "Expert Warden Bow" "Expert Zealot Bow" "Expert Shortbow"
     ItemLevel >= 82
     Rarity == Rare
-    #.import STYLE | gear > rare -> t2
+    #.import STYLE | gear > rare -> t3
 
 Show
     #.import -> best-bases -> BaseType
     #.import -> best-bases -> ItemLevel
     Rarity == Magic
     Corrupted == False
-    #.import STYLE | gear > magic -> t2
+    #.import STYLE | gear > magic -> t3
 
 Show
     #.import -> best-bases -> BaseType
     #.import -> best-bases -> ItemLevel
     Rarity == Normal
     Corrupted == False
-    #.import STYLE | gear > normal -> t2
+    #.import STYLE | gear > normal -> t3
 
 Show #.strict BASE .tag craft Bows .if Show
     #.import -> best-bases -> BaseType
