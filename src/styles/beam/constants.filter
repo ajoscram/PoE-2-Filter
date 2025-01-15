@@ -2,7 +2,7 @@
 
 #.alias COLOR_BLACK   = 0 0 0
 #.alias COLOR_WHITE   = 255 255 255
-#.alias COLOR_CREAM   = 255 255 210
+#.alias COLOR_CREAM   = 250 230 180
 #.alias COLOR_RED     = 255 75 75
 #.alias COLOR_GREEN   = 115 255 75
 #.alias COLOR_BLUE    = 50 150 255

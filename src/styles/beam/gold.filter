@@ -1,14 +1,11 @@
 Show #.name t1
     #.import -> t3
-    PlayAlertSoundPositional SOUND_SHORT_T3
     PlayEffect White
     MinimapIcon 2 White ICON_CURRENCY
 
 Show #.name t2
     #.import -> t3
-    PlayAlertSoundPositional SOUND_SHORT_T3
     PlayEffect White Temp
-    MinimapIcon 2 White ICON_CURRENCY
 
 Show #.name t3
     SetTextColor COLOR_CREAM OPACITY_HIGH

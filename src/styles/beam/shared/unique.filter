@@ -1,20 +1,21 @@
 Show #.name t1
-    SetTextColor COLOR_ORANGE OPACITY_HIGH
-    SetBackgroundColor COLOR_BLACK OPACITY_HIGH
-    SetBorderColor COLOR_ORANGE OPACITY_HIGH
+    SetTextColor COLOR_BLACK OPACITY_HIGH
+    SetBackgroundColor COLOR_ORANGE OPACITY_HIGH
+    SetBorderColor COLOR_BLACK OPACITY_HIGH
     PlayAlertSoundPositional SOUND_SHORT_T1
     PlayEffect Orange
 
 Show #.name t2
     SetTextColor COLOR_ORANGE OPACITY_HIGH
     SetBackgroundColor COLOR_BLACK OPACITY_HIGH
-    SetBorderColor COLOR_ORANGE OPACITY_LOW
+    SetBorderColor COLOR_ORANGE OPACITY_HIGH
     PlayAlertSoundPositional SOUND_SHORT_T2
     PlayEffect Orange
 
 Show #.name t3
     SetTextColor COLOR_ORANGE OPACITY_HIGH
-    SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_MID
+    SetBorderColor COLOR_ORANGE OPACITY_LOW
     PlayAlertSoundPositional SOUND_SHORT_T3
     PlayEffect Orange Temp
 

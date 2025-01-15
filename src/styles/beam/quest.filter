@@ -1,16 +1,18 @@
 Show #.name t1
     #.import -> base
+    SetBorderColor COLOR_GREEN OPACITY_MID
     PlayEffect Green
     PlayAlertSoundPositional SOUND_SHORT_T3
     MinimapIcon ICON_SIZE_LARGE Green Star
 
 Show #.name t2
     #.import -> base
+    SetBorderColor COLOR_GREEN OPACITY_LOW
     PlayEffect Green Temp
     PlayAlertSoundPositional SOUND_SHORT_T3
-    MinimapIcon ICON_SIZE_SMALL Green Star
+    MinimapIcon ICON_SIZE_MEDIUM Green Star
 
 Show #.name base
     SetTextColor COLOR_GREEN OPACITY_HIGH
-    SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_MID
     SetBorderColor COLOR_GREEN OPACITY_LOW

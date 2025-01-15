@@ -1,20 +1,21 @@
 Show #.name t1
-    SetTextColor COLOR_BLUE OPACITY_HIGH
-    SetBackgroundColor COLOR_BLACK OPACITY_HIGH
-    SetBorderColor COLOR_BLUE OPACITY_HIGH
+    SetTextColor COLOR_BLACK OPACITY_HIGH
+    SetBackgroundColor COLOR_BLUE OPACITY_HIGH
+    SetBorderColor COLOR_BLACK OPACITY_HIGH
     PlayAlertSoundPositional SOUND_SHORT_T1
     PlayEffect Blue
 
 Show #.name t2
     SetTextColor COLOR_BLUE OPACITY_HIGH
     SetBackgroundColor COLOR_BLACK OPACITY_HIGH
-    SetBorderColor COLOR_BLUE OPACITY_LOW
+    SetBorderColor COLOR_BLUE OPACITY_HIGH
     PlayAlertSoundPositional SOUND_SHORT_T2
     PlayEffect Blue
 
 Show #.name t3
     SetTextColor COLOR_BLUE OPACITY_HIGH
-    SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_MID
+    SetBorderColor COLOR_BLUE OPACITY_LOW
     PlayAlertSoundPositional SOUND_SHORT_T3
     PlayEffect Blue Temp
 

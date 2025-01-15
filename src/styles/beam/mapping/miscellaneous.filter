@@ -1,7 +1,7 @@
 Show #.name t1
-    SetTextColor COLOR_RED OPACITY_HIGH
-    SetBackgroundColor COLOR_BLACK OPACITY_HIGH
-    SetBorderColor COLOR_RED OPACITY_HIGH
+    SetTextColor COLOR_BLACK OPACITY_HIGH
+    SetBackgroundColor COLOR_RED OPACITY_HIGH
+    SetBorderColor COLOR_BLACK OPACITY_HIGH
     PlayAlertSoundPositional SOUND_SHORT_T1
     PlayEffect Red
     MinimapIcon ICON_SIZE_LARGE Red ICON_MAP
@@ -9,14 +9,15 @@ Show #.name t1
 Show #.name t2
     SetTextColor COLOR_RED OPACITY_HIGH
     SetBackgroundColor COLOR_BLACK OPACITY_HIGH
-    SetBorderColor COLOR_RED OPACITY_LOW
+    SetBorderColor COLOR_RED OPACITY_HIGH
     PlayAlertSoundPositional SOUND_SHORT_T2
     PlayEffect Red
     MinimapIcon ICON_SIZE_MEDIUM Red ICON_MAP
 
 Show #.name t3
     SetTextColor COLOR_RED OPACITY_HIGH
-    SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_MID
+    SetBorderColor COLOR_RED OPACITY_LOW
     PlayAlertSoundPositional SOUND_SHORT_T3
     PlayEffect Red Temp
     MinimapIcon ICON_SIZE_SMALL Red ICON_MAP

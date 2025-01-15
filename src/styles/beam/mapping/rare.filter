@@ -8,7 +8,6 @@ Show #.name t2
 
 Show #.name t3
     #.import < shared > rare -> t3
-    SetBorderColor COLOR_BLACK OPACITY_NONE
     MinimapIcon ICON_SIZE_SMALL Yellow ICON_MAP
 
 Show #.name t4

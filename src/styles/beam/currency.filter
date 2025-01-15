@@ -1,15 +1,15 @@
 Show #.name t0
-    SetTextColor COLOR_CREAM OPACITY_HIGH
-    SetBackgroundColor COLOR_RED OPACITY_HIGH
-    SetBorderColor COLOR_CREAM OPACITY_HIGH
+    SetTextColor COLOR_RED OPACITY_HIGH
+    SetBackgroundColor COLOR_CREAM OPACITY_HIGH
+    SetBorderColor COLOR_RED OPACITY_HIGH
     PlayAlertSoundPositional SOUND_SHORT_T0
     PlayEffect White
     MinimapIcon ICON_SIZE_LARGE White ICON_CURRENCY
 
 Show #.name t1
-    SetTextColor COLOR_CREAM OPACITY_HIGH
-    SetBackgroundColor COLOR_BLACK OPACITY_HIGH
-    SetBorderColor COLOR_CREAM OPACITY_HIGH
+    SetTextColor COLOR_BLACK OPACITY_HIGH
+    SetBackgroundColor COLOR_CREAM OPACITY_HIGH
+    SetBorderColor COLOR_BLACK OPACITY_HIGH
     PlayAlertSoundPositional SOUND_SHORT_T1
     PlayEffect White
     MinimapIcon ICON_SIZE_LARGE White ICON_CURRENCY
@@ -17,14 +17,15 @@ Show #.name t1
 Show #.name t2
     SetTextColor COLOR_CREAM OPACITY_HIGH
     SetBackgroundColor COLOR_BLACK OPACITY_HIGH
-    SetBorderColor COLOR_CREAM OPACITY_LOW
+    SetBorderColor COLOR_CREAM OPACITY_HIGH
     PlayAlertSoundPositional SOUND_SHORT_T2
     PlayEffect White
     MinimapIcon ICON_SIZE_MEDIUM White ICON_CURRENCY
 
 Show #.name t3
     SetTextColor COLOR_CREAM OPACITY_HIGH
-    SetBackgroundColor COLOR_BLACK OPACITY_HIGH
+    SetBackgroundColor COLOR_BLACK OPACITY_MID
+    SetBorderColor COLOR_CREAM OPACITY_LOW
     PlayAlertSoundPositional SOUND_SHORT_T3
     PlayEffect White Temp
     MinimapIcon ICON_SIZE_SMALL White ICON_CURRENCY

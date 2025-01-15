@@ -1,7 +1,4 @@
 # Immediately
-* Consider adding a border across all tiers from t3 onwards, or have a "dark" version for all colors so that there's a clear distinction between t4 and t3
-* Find a final solution for gold tiering style
-
 * have the dev script actually use the strictness passed in to set the strictness
 
 * Add the "Classic" style
@@ -15,3 +12,4 @@
     * Manually filter through meta-gems (?)
 * Filter and tier uniques
 * Add mod tiering for items
+* Remove the crafting subfilters and instead provide a batch file for people to run so they can tune their filter to their needs (?)
