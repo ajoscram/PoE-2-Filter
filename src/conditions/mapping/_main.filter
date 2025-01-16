@@ -2,7 +2,7 @@
 
 #.subsection Priming
 
-Show
+Show #.name primable-mapping
     Continue
     Class == "Waystones" "Tablet"
     Rarity == Rare
@@ -10,13 +10,13 @@ Show
 
 Show
     Continue
-    Class == "Waystones" "Tablet"
+    #.import -> primable-mapping -> Class
     Rarity == Magic
     #.import STYLE | mapping > magic -> t3
 
 Show
     Continue
-    Class == "Waystones" "Tablet"
+    #.import -> primable-mapping -> Class
     Rarity == Normal
     #.import STYLE | mapping > normal -> t3
 

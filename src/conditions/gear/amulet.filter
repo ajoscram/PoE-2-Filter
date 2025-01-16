@@ -13,30 +13,27 @@ Show #.name best-bases
     BaseType == "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Solar Amulet" "Gold Amulet"
     ItemLevel >= 82
     Rarity == Rare
-    #.import STYLE | gear > rare -> t3
+    #.import STYLE | gear > rare -> t2
 
 Show
     #.import -> best-bases -> BaseType
     #.import -> best-bases -> ItemLevel
     Rarity == Magic
     Corrupted == False
-    #.import STYLE | gear > magic -> t3
+    #.import STYLE | gear > magic -> t2
 
 Show
     #.import -> best-bases -> BaseType
     #.import -> best-bases -> ItemLevel
     Rarity == Normal
     Corrupted == False
-    #.import STYLE | gear > normal -> t3
+    #.import STYLE | gear > normal -> t2
 
 Show #.strict LENIENT .tag craft _ .if Show
     #.import -> best-bases -> BaseType
     Rarity == Normal
     Corrupted == False
-
-Show #.strict STRICT .if Show
-    Class == "Amulets"
-    Rarity == Rare
+    #.import STYLE | gear > normal -> t3
 
 # Progression
 
@@ -44,8 +41,33 @@ Show
     Class == "Amulets"
     Rarity == Rare
     AreaLevel < LEVEL_ENDGAME_START
+    #.import STYLE | gear > rare -> t3
 
-Show #.strict BASE .if Show
+Show
     Class == "Amulets"
-    Rarity < Rare
+    Rarity == Magic
     AreaLevel < LEVEL_ENDGAME_START
+    #.import STYLE | gear > magic -> t3
+
+Show
+    Class == "Amulets"
+    Rarity == Normal
+    AreaLevel < LEVEL_ENDGAME_START
+    #.import STYLE | gear > normal -> t3
+
+# Miscellaneous
+
+Show #.strict STRICT .if Show
+    Class == "Amulets"
+    Rarity == Rare
+    #.import STYLE | gear > rare -> t3
+
+Show #.strict LENIENT .if Show
+    Class == "Amulets"
+    Rarity == Magic
+    #.import STYLE | gear > magic -> t3
+
+Show #.strict LENIENT .if Show
+    Class == "Amulets"
+    Rarity == Normal
+    #.import STYLE | gear > normal -> t3

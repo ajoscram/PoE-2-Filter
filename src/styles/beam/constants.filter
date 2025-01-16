@@ -8,7 +8,7 @@
 #.alias COLOR_BLUE    = 50 150 255
 #.alias COLOR_BROWN   = 200 100 0
 #.alias COLOR_YELLOW  = 255 200 0
-#.alias COLOR_CYAN    = 0 255 255
+#.alias COLOR_CYAN    = 0 230 230
 #.alias COLOR_ORANGE  = 255 150 0
 #.alias COLOR_PINK    = 255 100 255
 #.alias COLOR_PURPLE  = 150 100 255

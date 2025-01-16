@@ -13,7 +13,6 @@ Show
     Continue
     #.import STYLE | miscellaneous -> shown
 
-#.import conditions > quest
 #.import conditions > gold
 #.import conditions > currency > _main
 #.import conditions > mapping > _main
@@ -21,6 +20,7 @@ Show
 #.import conditions > gear > _main
 #.import conditions > weapons > _main
 #.import conditions > relic
+#.import conditions > quest
 
 #.section Catchall
 

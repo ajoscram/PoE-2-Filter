@@ -1,4 +1,9 @@
 # Immediately
+* Rings and amulets should be shown when magic or lower strictnesses, they're hidden
+* Rings and amulets should probably be displayed with a higher rarity
+
+* Rare items should always drop during the campaign, regardless of base
+
 * have the dev script actually use the strictness passed in to set the strictness
 
 * Add the "Classic" style
@@ -7,6 +12,7 @@
 * Pimp-up the readme file
 
 # Later / Bugs
+* Add valuable `Chance Orb` bases
 * The base types for pinnacle keys cannot be used for filtering
 * Investigate why there is no `Meta Gems` item class
     * Manually filter through meta-gems (?)
