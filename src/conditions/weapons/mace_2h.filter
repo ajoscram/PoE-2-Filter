@@ -7,7 +7,7 @@ Show
     Rarity == Unique
     #.import STYLE | gear > unique -> t3
 
-# Exceptional
+# Best Bases
 
 Show #.name best-bases
     BaseType == "Expert Crumbling Maul" "Expert Cultist Greathammer" "Expert Oak Greathammer" "Expert Leaden Greathammer" "Expert Temple Maul"
@@ -33,10 +33,6 @@ Show #.strict BASE .tag craft Maces_2h .if Show
     #.import -> best-bases -> BaseType
     Rarity == Normal
     Corrupted == False
-
-Show #.strict LENIENT .if Show
-    Class == "Two Hand Maces"
-    Rarity == Rare
 
 # Progression
 # Logic based on https://www.poe2wiki.net/wiki/Mace

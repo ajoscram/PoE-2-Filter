@@ -7,7 +7,7 @@ Show
     Rarity == Unique
     #.import STYLE | gear > unique -> t3
 
-# Exceptional
+# Best Bases
 
 Show #.name best-bases
     BaseType == "Expert Bombard Crossbow" "Expert Dyad Crossbow" "Expert Forlorn Crossbow" "Expert Tense Crossbow"
@@ -33,10 +33,6 @@ Show #.strict BASE .tag craft Crossbows .if Show
     #.import -> best-bases -> BaseType
     Rarity == Normal
     Corrupted == False
-
-Show #.strict LENIENT .if Show
-    Class == "Crossbows"
-    Rarity == Rare
 
 # Progression
 # Logic based on https://www.poe2wiki.net/wiki/Crossbow

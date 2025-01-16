@@ -7,7 +7,7 @@ Show
     Rarity == Unique
     #.import STYLE | gear > unique -> t3
 
-# Exceptional
+# Best Bases
 
 Show #.name best-bases
     Class == "Wands"
@@ -34,11 +34,11 @@ Show #.strict BASE .tag craft Wands .if Show
     Rarity == Normal
     Corrupted == False
 
-# Miscellaneous
+# Progression
 
-Show #.strict LENIENT .if Show
+Show
     Class == "Wands"
-    Rarity == Rare
+    AreaLevel < LEVEL_ENDGAME_START
 
 Show #.strict BASE .if Show
     Class == "Wands"

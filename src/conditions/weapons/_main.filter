@@ -37,9 +37,50 @@ Show
 #.import sword_2h
 #.import trap
 #.import wand
-#.import salvage
 
-#.subsection Catchall
+#.subsection Miscellaneous
+
+# Sockets
+
+Show #.name salvage .strict LENIENT .if Show
+    #.import -> weapons -> Class
+    Sockets == 2
+
+Show #.strict BASE .if Show
+    #.import -> weapons -> Class
+    Sockets == 1
+
+# Quality
+
+Show #.strict STRICT .if Show
+    #.import -> weapons -> Class
+    Quality >= 20
+
+Show #.strict LENIENT .if Show
+    #.import -> weapons -> Class
+    Quality >= 15
+
+Show #.strict BASE .if Show
+    #.import -> weapons -> Class
+    Quality >= 10
+
+Show #.strict BASE .if Show
+    #.import -> weapons -> Class
+    Quality >= 5
+    AreaLevel < LEVEL_ENDGAME_START
+
+# Miscellaneous
+
+Show #.strict LENIENT .if Show
+    #.import -> weapons -> Class
+    Rarity == Rare
+
+Show
+    #.import -> weapons -> Class
+    Rarity == Rare
+    AreaLevel < LEVEL_ENDGAME_START
+
+# Hidden
 
 Hide
     #.import -> weapons -> Class

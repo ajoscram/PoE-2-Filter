@@ -33,9 +33,50 @@ Show
 #.import quiver
 #.import shield
 #.import focus
-#.import salvage
 
-#.subsection Catchall
+#.subsection Miscellaneous
+
+# Sockets
+
+Show #.name salvage .strict LENIENT .if Show
+    Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields" "Foci"
+    Sockets == 2
+
+Show #.strict BASE .if Show
+    #.import -> salvage -> Class
+    Sockets == 1
+
+# Quality
+
+Show #.strict STRICT .if Show
+    #.import -> salvage -> Class
+    Quality >= 20
+
+Show #.strict LENIENT .if Show
+    #.import -> salvage -> Class
+    Quality >= 15
+
+Show #.strict BASE .if Show
+    #.import -> salvage -> Class
+    Quality >= 10
+
+Show #.strict BASE .if Show
+    #.import -> salvage -> Class
+    Quality >= 5
+    AreaLevel < LEVEL_ENDGAME_START
+
+# Rares
+
+Show #.strict LENIENT .if Show
+    #.import -> gear -> Class
+    Rarity == Rare
+
+Show
+    #.import -> gear -> Class
+    Rarity == Rare
+    AreaLevel < LEVEL_ENDGAME_START
+
+# Hidden
 
 Hide
     #.import -> gear -> Class

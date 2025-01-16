@@ -7,7 +7,7 @@ Show
     Rarity == Unique
     #.import STYLE | gear > unique -> t3
 
-# Exceptional
+# Best Bases
 
 Show #.name best-bases
     BaseType == "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Gold Ring" "Breach Ring"

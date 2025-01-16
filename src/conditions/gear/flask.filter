@@ -7,7 +7,7 @@ Show
     Rarity == Unique
     #.import STYLE | gear > unique -> t3
 
-# Exceptional
+# Best Bases
 
 Show #.name best-bases
     BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"

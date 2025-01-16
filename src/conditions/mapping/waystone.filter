@@ -1,6 +1,6 @@
 #.subsection Waystone
 
-# Exceptional
+# Tier 16
 
 Show
     Class == "Waystones"
@@ -19,6 +19,8 @@ Show
     WaystoneTier >= 16
     Rarity == Normal
     #.import STYLE | mapping > normal -> t2
+
+# Rares
 
 Show #.strict STRICT .if Show
     Class == "Waystones"

@@ -7,7 +7,7 @@ Show
     Rarity == Unique
     #.import STYLE | gear > unique -> t3
 
-# Exceptional
+# Best Bases
 
 Show #.name best-bases
     BaseType == "Sacral Quiver" "Two-Point Quiver" "Blunt Quiver" "Toxic Quiver" "Serrated Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver"
@@ -33,10 +33,6 @@ Show #.strict LENIENT .tag craft Quivers .if Show
     #.import -> best-bases -> BaseType
     Rarity == Normal
     Corrupted == False
-
-Show #.strict LENIENT .if Show
-    Class == "Quivers"
-    Rarity == Rare
 
 # Progression
 

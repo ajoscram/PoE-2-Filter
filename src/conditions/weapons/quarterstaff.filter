@@ -7,7 +7,7 @@ Show
     Rarity == Unique
     #.import STYLE | gear > unique -> t3
 
-# Exceptional
+# Best Bases
 
 Show #.name best-bases
     BaseType == "Expert Barrier Quarterstaff" "Expert Crackling Quarterstaff" "Expert Slicing Quarterstaff" "Expert Long Quarterstaff" "Expert Crescent Quarterstaff" "Expert Gothic Quarterstaff"
@@ -33,10 +33,6 @@ Show #.strict BASE .tag craft Quarterstaves .if Show
     #.import -> best-bases -> BaseType
     Rarity == Normal
     Corrupted == False
-
-Show #.strict LENIENT .if Show
-    Class == "Quarterstaves"
-    Rarity == Rare
 
 # Progression
 # Logic based on https://www.poe2wiki.net/wiki/Quarterstaff

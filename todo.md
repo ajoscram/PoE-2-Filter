@@ -1,9 +1,5 @@
 # Immediately
-* Rings and amulets should be shown when magic or lower strictnesses, they're hidden
-* Rings and amulets should probably be displayed with a higher rarity
-
-* Rare items should always drop during the campaign, regardless of base
-
+* Prime gear entries that default at T3 to avoid a bunch of repeated code, this could also work for capturing rares at the end of the gear section
 * have the dev script actually use the strictness passed in to set the strictness
 
 * Add the "Classic" style

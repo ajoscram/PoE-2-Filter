@@ -7,7 +7,7 @@ Show
     Rarity == Unique
     #.import STYLE | gear > unique -> t3
 
-# Exceptional
+# Best Bases
 
 Show #.name best-bases
     Class == "Staves"
@@ -34,11 +34,11 @@ Show #.strict BASE .tag craft Staves .if Show
     Rarity == Normal
     Corrupted == False
 
-# Miscellaneous
+# Progression
 
-Show #.strict LENIENT .if Show
+Show
     Class == "Staves"
-    Rarity == Rare
+    AreaLevel < LEVEL_ENDGAME_START
 
 Show #.strict BASE .if Show
     Class == "Staves"

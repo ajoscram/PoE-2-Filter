@@ -7,7 +7,7 @@ Show
     Rarity == Unique
     #.import STYLE | gear > unique -> t3
 
-# Exceptions
+# Time-Lost
 
 Show #.name time-lost-bases
     BaseType == "Time-Lost Ruby" "Time-Lost Emerald" "Time-Lost Sapphire"
@@ -19,9 +19,12 @@ Show
     Rarity == Magic
     #.import STYLE | gear > magic -> t3
 
-Show #.strict STRICT .if Show
+# Progression
+
+Show
     Class == "Jewels"
     Rarity == Rare
+    AreaLevel < LEVEL_ENDGAME_START
     #.import STYLE | gear > rare -> t3
 
 Show #.strict LENIENT .if Show
@@ -29,10 +32,7 @@ Show #.strict LENIENT .if Show
     Rarity == Magic
     #.import STYLE | gear > magic -> t3
 
-# Progression
-
-Show
+Show #.strict STRICT .if Show
     Class == "Jewels"
     Rarity == Rare
-    AreaLevel < LEVEL_ENDGAME_START
     #.import STYLE | gear > rare -> t3

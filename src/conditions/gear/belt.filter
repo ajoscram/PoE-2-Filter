@@ -7,7 +7,7 @@ Show
     Rarity == Unique
     #.import STYLE | gear > unique -> t3
 
-# Exceptional
+# Best Bases
 
 Show #.name best-bases
     BaseType == "Plate Belt" "Heavy Belt"
@@ -29,23 +29,16 @@ Show
     Corrupted == False
     #.import STYLE | gear > normal -> t3
 
-Show #.strict LENIENT .tag craft Belts .if Show
+Show #.strict BASE .tag craft Belts .if Show
     #.import -> best-bases -> BaseType
     Rarity == Normal
     Corrupted == False
-
-Show #.strict STRICT .if Show
-    Class == "Belts"
-    Rarity == Rare
 
 # Progression
 
 Show
     Class == "Belts"
-    Rarity == Rare
     AreaLevel < LEVEL_ENDGAME_START
 
 Show #.strict BASE .if Show
     Class == "Belts"
-    Rarity < Rare
-    AreaLevel < LEVEL_ENDGAME_START
