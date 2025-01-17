@@ -1,8 +1,9 @@
 #.section Gear
 
-#.alias GEAR_SALVAGE  = "Body Armours" "Boots" "Gloves" "Helmets" "Shields" "Foci" "Life Flasks" "Mana Flasks"
-#.alias GEAR_VALUABLE = "Amulets" "Rings" "Jewels"
-#.alias GEAR_MISC     = "Belts" "Charms" "Quivers"
+#.alias GEAR_FLASKS     = "Life Flasks" "Mana Flasks"
+#.alias GEAR_SOCKETABLE = "Body Armours" "Boots" "Gloves" "Helmets" "Shields" "Foci"
+#.alias GEAR_VALUABLE   = "Amulets" "Rings" "Jewels"
+#.alias GEAR_MISC       = "Belts" "Charms" "Quivers"
 
 #.subsection Priming
 
@@ -30,19 +31,19 @@ Show
 
 Show
     Continue
-    Class == GEAR_MISC GEAR_SALVAGE
+    Class == GEAR_MISC GEAR_SOCKETABLE GEAR_FLASKS
     Rarity == Rare
     #.import STYLE | gear > rare -> t4
 
 Show
     Continue
-    Class == GEAR_MISC GEAR_SALVAGE
+    Class == GEAR_MISC GEAR_SOCKETABLE GEAR_FLASKS
     Rarity == Magic
     #.import STYLE | gear > magic -> t4
 
 Show
     Continue
-    Class == GEAR_MISC GEAR_SALVAGE
+    Class == GEAR_MISC GEAR_SOCKETABLE GEAR_FLASKS
     Rarity == Normal
     #.import STYLE | gear > normal -> t4
 
@@ -65,29 +66,29 @@ Show
 # Sockets
 
 Show #.strict LENIENT .if Show
-    Class == GEAR_SALVAGE
+    Class == GEAR_SOCKETABLE
     Sockets == 2
 
 Show #.strict BASE .if Show
-    Class == GEAR_SALVAGE
+    Class == GEAR_SOCKETABLE
     Sockets == 1
 
 # Quality
 
 Show #.strict STRICT .if Show
-    Class == GEAR_SALVAGE
+    Class == GEAR_SOCKETABLE GEAR_FLASKS
     Quality >= 20
 
 Show #.strict LENIENT .if Show
-    Class == GEAR_SALVAGE
+    Class == GEAR_SOCKETABLE GEAR_FLASKS
     Quality >= 15
 
 Show #.strict BASE .if Show
-    Class == GEAR_SALVAGE
+    Class == GEAR_SOCKETABLE GEAR_FLASKS
     Quality >= 10
 
 Show #.strict BASE .if Show
-    Class == GEAR_SALVAGE
+    Class == GEAR_SOCKETABLE GEAR_FLASKS
     Quality >= 5
     AreaLevel < LEVEL_ENDGAME_START
 
@@ -98,30 +99,30 @@ Show #.strict STRICT .if Show
     Rarity == Rare
 
 Show #.strict LENIENT .if Show
-    Class == GEAR_MISC GEAR_SALVAGE
+    Class == GEAR_MISC GEAR_SOCKETABLE GEAR_FLASKS
     Rarity == Rare
 
 Show
-    Class == GEAR_MISC GEAR_SALVAGE GEAR_VALUABLE
+    Class == GEAR_MISC GEAR_VALUABLE GEAR_SOCKETABLE GEAR_FLASKS
     Rarity == Rare
     AreaLevel < LEVEL_ENDGAME_START
 
 # Hidden
 
 Hide
-    Class == GEAR_MISC GEAR_SALVAGE GEAR_VALUABLE
+    Class == GEAR_MISC GEAR_VALUABLE GEAR_SOCKETABLE GEAR_FLASKS
     Rarity == Rare
     #.import STYLE | gear > rare -> t5
     #.import STYLE | miscellaneous -> hidden
 
 Hide
-    Class == GEAR_MISC GEAR_SALVAGE GEAR_VALUABLE
+    Class == GEAR_MISC GEAR_VALUABLE GEAR_SOCKETABLE GEAR_FLASKS
     Rarity == Magic
     #.import STYLE | gear > magic -> t5
     #.import STYLE | miscellaneous -> hidden
 
 Hide
-    Class == GEAR_MISC GEAR_SALVAGE GEAR_VALUABLE
+    Class == GEAR_MISC GEAR_SOCKETABLE GEAR_VALUABLE GEAR_FLASKS
     Rarity == Normal
     #.import STYLE | gear > normal -> t5
     #.import STYLE | miscellaneous -> hidden

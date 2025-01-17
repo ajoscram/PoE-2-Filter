@@ -21,28 +21,6 @@ Show
     Rarity == Normal
     #.import STYLE | gear > normal -> t3
 
-# Quality
-
-Show #.strict STRICT
-    #.import -> best-bases -> BaseType
-    Rarity == Magic
-    Quality >= 20
-    #.import STYLE | gear > magic -> t3
-
-Show #.strict STRICT
-    #.import -> best-bases -> BaseType
-    Rarity == Normal
-    Quality >= 20
-    #.import STYLE | gear > normal -> t3
-
-Show #.strict LENIENT .if Show
-    #.import -> best-bases -> BaseType
-    Quality > 10
-
-Show #.strict BASE .if Show
-    #.import -> best-bases -> BaseType
-    Quality > 0
-
 # Progression
 # Logic based on https://www.poe2wiki.net/wiki/Flask
 

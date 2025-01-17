@@ -1,5 +1,7 @@
 # Early Access
 
+## 0.1b
+
 ## 0.1
 ### General Changes
 * Implemented the base filter.

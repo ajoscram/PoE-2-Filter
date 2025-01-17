@@ -9,7 +9,7 @@ Show
 
 # Time-Lost
 
-Show #.name time-lost-bases
+Show
     BaseType == "Time-Lost Ruby" "Time-Lost Emerald" "Time-Lost Sapphire"
 
 # Progression
