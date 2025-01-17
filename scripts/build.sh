@@ -1,11 +1,6 @@
 source scripts/utils.sh
 source .env
 
-get_strictness_values(){
-    cat src/conditions/constants.filter | \
-    sed -rn 's/^[[:space:]]*#\.alias[[:space:]]*([[:alnum:]]+)[[:space:]]*=[[:space:]]*([[:digit:]]+)/\1 \2/p'
-}
-
 get_craft_bases(){
     find src/conditions -type f | while read filepath ; do
         cat $filepath | \
