@@ -1,5 +1,4 @@
 # Immediately
-* Add new precursor tablets
 * have the dev script actually use the strictness passed in to set the strictness
 
 * Add the "Classic" style

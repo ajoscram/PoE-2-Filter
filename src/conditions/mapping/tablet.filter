@@ -1,7 +1,7 @@
 #.subsection Tablet
 
 Show #.name best-bases
-    BaseType == "Breach Precursor Tablet" "Delirium Precursor Tablet"
+    BaseType == "Overseer Precursor Tablet" "Breach Precursor Tablet" "Delirium Precursor Tablet"
     Rarity == Magic
     #.import STYLE | mapping > magic -> t2
 
