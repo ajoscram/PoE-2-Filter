@@ -1,22 +1,48 @@
 #.section Gear
 
+#.alias GEAR_SALVAGE  = "Body Armours" "Boots" "Gloves" "Helmets" "Shields" "Foci" "Life Flasks" "Mana Flasks"
+#.alias GEAR_VALUABLE = "Amulets" "Rings" "Jewels"
+#.alias GEAR_MISC     = "Belts" "Charms" "Quivers"
+
 #.subsection Priming
 
-Show #.name gear
+# Valuables
+
+Show
     Continue
-    Class == "Amulets" "Belts" "Rings" "Body Armours" "Boots" "Charms" "Gloves" "Helmets" "Shields" "Foci" "Life Flasks" "Mana Flasks" "Jewels" "Quivers" 
+    Class == GEAR_VALUABLE
+    Rarity == Rare
+    #.import STYLE | gear > rare -> t3
+
+Show
+    Continue
+    Class == GEAR_VALUABLE
+    Rarity == Magic
+    #.import STYLE | gear > magic -> t3
+
+Show
+    Continue
+    Class == GEAR_VALUABLE
+    Rarity == Normal
+    #.import STYLE | gear > normal -> t3
+
+# Miscellaneous
+
+Show
+    Continue
+    Class == GEAR_MISC GEAR_SALVAGE
     Rarity == Rare
     #.import STYLE | gear > rare -> t4
 
 Show
     Continue
-    #.import -> gear -> Class
+    Class == GEAR_MISC GEAR_SALVAGE
     Rarity == Magic
     #.import STYLE | gear > magic -> t4
 
 Show
     Continue
-    #.import -> gear -> Class
+    Class == GEAR_MISC GEAR_SALVAGE
     Rarity == Normal
     #.import STYLE | gear > normal -> t4
 
@@ -38,60 +64,64 @@ Show
 
 # Sockets
 
-Show #.name salvage .strict LENIENT .if Show
-    Class == "Body Armours" "Boots" "Gloves" "Helmets" "Shields" "Foci"
+Show #.strict LENIENT .if Show
+    Class == GEAR_SALVAGE
     Sockets == 2
 
 Show #.strict BASE .if Show
-    #.import -> salvage -> Class
+    Class == GEAR_SALVAGE
     Sockets == 1
 
 # Quality
 
 Show #.strict STRICT .if Show
-    #.import -> salvage -> Class
+    Class == GEAR_SALVAGE
     Quality >= 20
 
 Show #.strict LENIENT .if Show
-    #.import -> salvage -> Class
+    Class == GEAR_SALVAGE
     Quality >= 15
 
 Show #.strict BASE .if Show
-    #.import -> salvage -> Class
+    Class == GEAR_SALVAGE
     Quality >= 10
 
 Show #.strict BASE .if Show
-    #.import -> salvage -> Class
+    Class == GEAR_SALVAGE
     Quality >= 5
     AreaLevel < LEVEL_ENDGAME_START
 
 # Rares
 
+Show #.strict STRICT .if Show
+    Class == GEAR_VALUABLE
+    Rarity == Rare
+
 Show #.strict LENIENT .if Show
-    #.import -> gear -> Class
+    Class == GEAR_MISC GEAR_SALVAGE
     Rarity == Rare
 
 Show
-    #.import -> gear -> Class
+    Class == GEAR_MISC GEAR_SALVAGE GEAR_VALUABLE
     Rarity == Rare
     AreaLevel < LEVEL_ENDGAME_START
 
 # Hidden
 
 Hide
-    #.import -> gear -> Class
+    Class == GEAR_MISC GEAR_SALVAGE GEAR_VALUABLE
     Rarity == Rare
     #.import STYLE | gear > rare -> t5
     #.import STYLE | miscellaneous -> hidden
 
 Hide
-    #.import -> gear -> Class
+    Class == GEAR_MISC GEAR_SALVAGE GEAR_VALUABLE
     Rarity == Magic
     #.import STYLE | gear > magic -> t5
     #.import STYLE | miscellaneous -> hidden
 
 Hide
-    #.import -> gear -> Class
+    Class == GEAR_MISC GEAR_SALVAGE GEAR_VALUABLE
     Rarity == Normal
     #.import STYLE | gear > normal -> t5
     #.import STYLE | miscellaneous -> hidden

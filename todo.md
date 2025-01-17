@@ -1,5 +1,5 @@
 # Immediately
-* Prime gear entries that default at T3 to avoid a bunch of repeated code, this could also work for capturing rares at the end of the gear section
+* Add new precursor tablets
 * have the dev script actually use the strictness passed in to set the strictness
 
 * Add the "Classic" style

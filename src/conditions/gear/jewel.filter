@@ -11,28 +11,12 @@ Show
 
 Show #.name time-lost-bases
     BaseType == "Time-Lost Ruby" "Time-Lost Emerald" "Time-Lost Sapphire"
-    Rarity == Rare
-    #.import STYLE | gear > rare -> t3
-
-Show
-    #.import -> time-lost-bases -> BaseType
-    Rarity == Magic
-    #.import STYLE | gear > magic -> t3
 
 # Progression
 
 Show
     Class == "Jewels"
-    Rarity == Rare
     AreaLevel < LEVEL_ENDGAME_START
-    #.import STYLE | gear > rare -> t3
 
 Show #.strict LENIENT .if Show
     Class == "Jewels"
-    Rarity == Magic
-    #.import STYLE | gear > magic -> t3
-
-Show #.strict STRICT .if Show
-    Class == "Jewels"
-    Rarity == Rare
-    #.import STYLE | gear > rare -> t3
