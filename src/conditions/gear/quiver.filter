@@ -29,7 +29,7 @@ Show
     Corrupted == False
     #.import STYLE | gear > normal -> t3
 
-Show #.strict LENIENT .tag craft Quivers .if Show
+Show #.strict BASE .tag craft Quivers .if Show
     #.import -> best-bases -> BaseType
     Rarity == Normal
     Corrupted == False

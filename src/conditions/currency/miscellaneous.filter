@@ -15,15 +15,15 @@ Show
     #.import STYLE | currency -> t2
 
 Show
-    BaseType == "Exalted Orb" "Chaos Orb" "Orb of Alchemy" "Vaal Orb" "Lesser Jeweller's Orb" "Orb of Chance" "Glassblower's Bauble" "Gemcutter's Prism"
+    BaseType == "Exalted Orb" "Chaos Orb" "Orb of Alchemy" "Vaal Orb" "Lesser Jeweller's Orb" "Orb of Chance" "Gemcutter's Prism"
     #.import STYLE | currency -> t3
 
 Show
-    BaseType == "Blacksmith's Whetstone" "Arcanist's Etcher" "Regal Orb"
+    BaseType == "Artificer's Orb" "Armourer's Scrap" "Blacksmith's Whetstone" "Arcanist's Etcher" "Regal Orb" "Glassblower's Bauble"
     #.import STYLE | currency -> t4
 
 Show #.name common .strict LENIENT .if Show
-    BaseType == "Orb of Transmutation" "Orb of Augmentation" "Armourer's Scrap" "Artificer's Orb" "Alchemy Shard" "Chance Shard" "Regal Shard"
+    BaseType == "Orb of Transmutation" "Orb of Augmentation" "Alchemy Shard" "Chance Shard" "Regal Shard"
     #.import STYLE | currency -> t4
 
 Show #.name trash .strict BASE .if Show
